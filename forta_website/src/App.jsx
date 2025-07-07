@@ -1,12 +1,17 @@
+import {Routes, Route, Link} from 'react-router-dom'
+
+// Pages Import
+import Home from './pages/home'
+import About from './pages/about'
 
 function App() {
-
-  return (
-    <>
-      <div></div>
-      <h1 className='text-amber-300'>Louis </h1>
-    </>
+  return(
+    <div>
+      <Routes>
+        <Route index element={<Home/>}></Route>
+        <Route path='/about' element={<About/>}></Route>
+      </Routes>
+    </div>   
   )
 }
-
 export default App

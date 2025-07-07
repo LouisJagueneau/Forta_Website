@@ -3,24 +3,26 @@ import Nav from "./nav"
 import Footer from "./footer"
 
 function Layout({ children }) {
-    <div>
-        <div className="container w-screen min-h-screen mx-auto px-10 xl:px-30 2xl:px-50">
-            <div className="hidden md:block">
-                <Nav />
-            </div>
-
-            <div className="md:hidden">
-                <MobileNav />
-            </div>
-
-            <main>
-                <div>
-                    {children}
+    return (
+        <div>
+            <div>
+                <div className="hidden lg:block fixe top-0 left-0 w-full z-20">
+                    <Nav />
                 </div>
-            </main>
+
+                <div className="lg:hidden fixed top-0 left-0 w-full z-20">
+                    <MobileNav />
+                </div>
+
+                <main>
+                    <div>
+                        {children}
+                    </div>
+                </main>
+            </div>
+            <Footer />
         </div>
-        <Footer/>
-    </div>
+    )
 }
 
 export default Layout
