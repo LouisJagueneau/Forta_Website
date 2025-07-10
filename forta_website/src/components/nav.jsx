@@ -12,7 +12,7 @@ function Nav() {
                         <li className="text-white cursor-pointer relative group font-poppins after:content-[''] after:absolute after:left-1/2 after:bottom-[-8px] after:w-0 after:h-[2px] after:bg-[#ec1c24] after:transition-all after:duration-300 hover:after:w-full hover:after:left-0 flex items-center gap-1">Services <IoIosArrowDown className="group-hover:rotate-180 transition-transform duration-300" />
                         <div className="absolute top-full mt-2 z-50 bg-[#0f0f0f] border-[#ffffff34] border-l-[1px] w-max left-0 pointer-events-none opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300">
                                 <ul className="flex flex-col text-sm">
-                                    <li><Link className="px-4 py-2 w-full block hover:bg-[#ffffff1d]">Plastic Engineering</Link></li>
+                                    <li><Link to='/plasticEngineering' className="px-4 py-2 w-full block hover:bg-[#ffffff1d]">Plastic Engineering</Link></li>
                                     <li><Link className="px-4 py-2 w-full block hover:bg-[#ffffff1d]">CNC parts</Link></li>
                                 </ul>
                         </div>

@@ -9,3 +9,16 @@
 .font-Stock_No_Bills {
   font-family: 'Stick No Bills', sans-serif ;
 }
+
+.custom-pagination .swiper-pagination-bullet {
+    background-color: #d1d1d1;
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+    border-radius: 9999px;
+    transition: background-color 0.3s;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+    background-color: #ec1c24;
+}

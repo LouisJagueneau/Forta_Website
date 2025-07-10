@@ -32,7 +32,7 @@ function MobileNav() {
                                 <IoIosArrowDown className={`transform ${isServicesOpen ? 'rotate-180' : 'rotate-none'}`} />
                             </div>
                             <ul className={` transform ${isServicesOpen? 'flex opacity-100' : 'hidden opacity-0'} flex-col gap-3 ml-4 transition-all duration-300 text-[0.85rem] text-gray-300 mt-3`}>
-                                <li><Link className="hover:text-gray-400 transition-colors duration-300">Plastic Engineering</Link></li>
+                                <li><Link to='/plasticEngineering' className="hover:text-gray-400 transition-colors duration-300">Plastic Engineering</Link></li>
                                 <li><Link className="hover:text-gray-400 transition-colors duration-300">CNC Parts</Link></li>
                             </ul>
 
