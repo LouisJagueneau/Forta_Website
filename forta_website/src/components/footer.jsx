@@ -1,10 +1,10 @@
-import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="bg-[#0e171e] border-t border-[#ffffff27] font-poppins">
-      <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-5 gap-8 text-sm text-neutral-900 text-white">
+      <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-5 gap-8 text-sm text-white">
         {/* LOGO */}
         
         <div className="col-span-2 md:col-span-1 flex flex-col gap-2 items-start">
@@ -32,7 +32,7 @@ const Footer = () => {
         <div>
           <h2 className="font-semibold mb-3">LEGAL</h2>
           <ul className="space-y-1">
-            <li className="hover:underline cursor-pointer">Confidentiality Policy</li>
+            <li className="hover:underline cursor-pointer"><Link to='/confidentialityPolicy'>Confidentiality Policy</Link></li>
             <li className="hover:underline cursor-pointer"><Link to='/legalNotice'>Legal Notice</Link></li>
           </ul>
         </div>

@@ -6,6 +6,7 @@ import About from './pages/about'
 import PlasticEngineering from './pages/plasticEngineering'
 import CncParts from './pages/cncParts'
 import LegalNotice from './pages/legalNotice'
+import ConfidentialityPolicy from './pages/confidentialityPolicy'
 
 function App() {
   return(
@@ -16,6 +17,7 @@ function App() {
         <Route path='/plasticEngineering' element={<PlasticEngineering/>} ></Route>
         <Route path='/cncParts'element={<CncParts/>}></Route>
         <Route path='/legalNotice' element={<LegalNotice/>}></Route>
+        <Route path='/confidentialityPolicy' element={<ConfidentialityPolicy/>}></Route>
       </Routes>
     </div>   
   )
