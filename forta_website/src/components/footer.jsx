@@ -33,7 +33,7 @@ const Footer = () => {
           <h2 className="font-semibold mb-3">LEGAL</h2>
           <ul className="space-y-1">
             <li className="hover:underline cursor-pointer">Confidentiality Policy</li>
-            <li className="hover:underline cursor-pointer">Legal Notice</li>
+            <li className="hover:underline cursor-pointer"><Link to='/legalNotice'>Legal Notice</Link></li>
           </ul>
         </div>
 
@@ -54,17 +54,6 @@ const Footer = () => {
           Copyright © <span className="font-semibold text-gray-300">Forta ltd</span> all
           rights reserved
         </p>
-        <div className="flex space-x-3 mt-2 md:mt-0">
-          <div className="p-2 bg-[#f4f4f4] rounded-full hover:bg-gray-200 cursor-pointer">
-            <FaFacebookF />
-          </div>
-          <div className="p-2 bg-[#f4f4f4] rounded-full hover:bg-gray-200 cursor-pointer">
-            <FaTwitter />
-          </div>
-          <div className="p-2 bg-[#f4f4f4] rounded-full hover:bg-gray-200 cursor-pointer">
-            <FaInstagram />
-          </div>
-        </div>
       </div>
     </footer >
   );
