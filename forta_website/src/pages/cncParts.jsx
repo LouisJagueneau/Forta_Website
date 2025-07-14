@@ -1,71 +1,75 @@
 import { FaArrowRight } from "react-icons/fa6";
-import PlasticEngineeringImage from '../assets/platsicEngineeringImage.png'
 import { Link } from "react-router-dom";
 import Slider from '../components/slider'
-import SheetsImage from '../assets/SheetsImage.png'
-import RodsImage from '../assets/RodsImage.png'
-import CutImage from '../assets/CutImage.png'
-import { Droplet, FlaskRound, Shield, Thermometer, Settings, Recycle, Lightbulb, Wrench } from 'lucide-react'
+import CNC5AxesImage from '../assets/CNC5AxesImage.png'
+import CNCMillingImage from '../assets/CNCMillingImage.png'
+import CNCPartsImage from '../assets/CNCPartsImage.png'
+import CNCTurningImage from '../assets/CNCTurningImage.png'
+import FeedScrew from '../assets/FeedScrew.png'
+import Flanges from '../assets/Flanges.png'
+import GuidesImages from '../assets/GuidesImages.png'
+import RingsImage from '../assets/RingsImage.png'
+import SlidersImage from '../assets/SlidersImage.png'
+import TimingScrew from '../assets/TimingScrew.png'
 import { motion } from "framer-motion"
 
 const slides = [
     {
-        item: "Sheets",
-        image: SheetsImage,
-        description: "Flat plastic sheets available in various thicknesses for machining or direct use."
+        item: "CNC Turning",
+        image: CNCTurningImage,
+        description: "High-precision turning for cylindrical parts with smooth finishes and tight tolerances."
     },
     {
-        item: "Rods",
-        image: RodsImage,
-        description: "Flat plastic sheets available in various thicknesses for machining or direct use."
+        item: "CNC Milling",
+        image: CNCMillingImage,
+        description: "Accurate milling of flat and complex surfaces for custom mechanical components."
     },
     {
-        item: "Cut-to-size parts",
-        image: CutImage,
-        description: "Flat plastic sheets available in various thicknesses for machining or direct use."
+        item: "5-Axis Machining",
+        image: CNC5AxesImage,
+        description: "Advanced 5-axis machining for detailed, multi-face parts in a single pass."
     },
     {
-        item: "Element 4",
-        image: CutImage,
-        description: "Flat plastic sheets available in various thicknesses for machining or direct use."
+        item: "Laser Cutting",
+        image: CNC5AxesImage,
+        description: "Flat plastic sheAdvanced 5-axis machining for detailed, multi-face parts in a single pass."
     },
     {
-        item: "Element 5",
-        image: CutImage,
-        description: "Flat plastic sheets available in various thicknesses for machining or direct use."
+        item: "Welding",
+        image: CNC5AxesImage,
+        description: "Advanced 5-axis machining for detailed, multi-face parts in a single pass."
+    },
+    {
+        item: "Bending",
+        image: CNC5AxesImage,
+        description: "Flat plastic sheets available in various thicknesses for machining or direct use.Advanced 5-axis machining for detailed, multi-face parts in a single pass."
     },
 ]
 
 const plastics = [
     {
-        name: "PP (Polypropylene)",
-        description: "It’s a lightweight, chemical-resistant, ideal for food and chemical applications.",
-        icon: <FlaskRound className="text-[#ec1c24] w-5 h-5" />
+        name: "Feed Screw",
+        img: <img src={FeedScrew} alt="FeedScrew" />
     },
     {
-        name: "PEHD",
-        description: "High impact resistance, low moisture absorption, excellent for piping.",
-        icon: <Droplet className="text-[#ec1c24] w-5 h-5" />
+        name: "Flanges",
+        img: <img src={Flanges} alt="Flanges" />
     },
     {
-        name: "PE300/500/1000",
-        description: "UHMW grades, low friction and abrasion-resistant for mechanical use.",
-        icon: <Recycle className="text-[#ec1c24] w-5 h-5" />
+        name: "Guides",
+        img: <img src={GuidesImages} alt="GuidesImages" />
     },
     {
-        name: "PA6 (Polyamide 6)",
-        description: "Strong and tough, widely used in mechanical engineering.",
-        icon: <Wrench className="text-[#ec1c24] w-5 h-5" />
+        name: "Rings",
+        img: <img src={RingsImage} alt="RingsImage" />
     },
     {
-        name: "POM-C",
-        description: "(Polyoxymethylene Copo). High stiffness and dimensional stability, perfect for precision parts.",
-        icon: <Settings className="text-[#ec1c24] w-5 h-5" />
+        name: "Sliders",
+        img: <img src={SlidersImage} alt="SlidersImage" />
     },
     {
-        name: "PTFE",
-        description: "(Polytetrafluoroethylene / Teflon®). Excellent chemical resistance, non-stick, used in harsh environments.",
-        icon: <Thermometer className="text-[#ec1c24] w-5 h-5" />
+        name: "Timing Screw",
+        img: <img src={TimingScrew} alt="TimingScrew" />
     },
     // {
     //     name: "PEEK",
@@ -74,9 +78,7 @@ const plastics = [
     // }
 ]
 
-
-
-function PlasticEngineering() {
+function CncParts() {
     return (
         <>
             {/* Title Section */}
@@ -97,8 +99,8 @@ function PlasticEngineering() {
                                         <span className="absolute left-0 bottom-[-15px] h-[2px] bg-[#ec1c24] w-[100%] rounded-full"></span>
 
                                     </h1>
-                                    <p className="font-poppins mb-10 xl:text-[1.1rem] xl:leading-8 text-justify">We supply and machine technical plastics in sheets, rods, and custom parts.
-                                        Our solutions are tailored to meet the high standards of industrial performance and durability.</p>
+                                    <p className="font-poppins mb-10 xl:text-[1.1rem] xl:leading-8 text-justify">High-Precision CNC Machining for Industrial Applications
+                                        We deliver custom CNC parts engineered for durability, accuracy, and performance.</p>
                                 </div>
                                 <div>
                                     <button className="flex items-center gap-3 bg-[#ec1c24] px-4 py-2 rounded-sm font-semibold cursor-pointer transition duration-300 hover:bg-[#b8141a]" aria-label="Contact us button"><FaArrowRight />Contact Us</button>
@@ -111,7 +113,7 @@ function PlasticEngineering() {
                                 transition={{ duration: 0.8, ease: "easeOut" }}
                                 viewport={{ once: true }}
                                 className="h-auto w-[200px] lg:flex-1 lg:w-full lg:flex lg:items-center">
-                                <img className="w-full h-auto" src={PlasticEngineeringImage} alt="PlasticEngineeringImage" />
+                                <img className="w-full h-auto" src={CNCPartsImage} alt="PlasticEngineeringImage" />
                             </motion.div>
                         </div>
                     </section>
@@ -144,12 +146,11 @@ function PlasticEngineering() {
                 <div className="bg-white p-8 lg:px-12 xl:px-20 xl:pb-16 xl:pt-12 rounded-sm flex items-center justify-center flex-col gap-8 xl:gap-12">
                     <div className="">
                         <h2 className="inline font-Stock_No_Bills text-[2.0rem] lg:text-[2.4rem] xl:text-[2.8rem] font-semibold">
-                            Plastic We{" "}
+                            Types of Parts We{" "}
                             <span className="relative inline-block">
-                                Work
+                                Manufacture
                                 <span className="absolute h-[2px] xl:h-[4px] bg-[#ec1c24] w-full left-0 bottom-[-6px]"></span>
                             </span>
-                            <span>{" "} With</span>
                         </h2>
                     </div>
                     <div className="grid grid-cols-1 gap-y-5 sm:gap-y-6 lg:gap-y-8 sm:grid-cols-2 sm:gap-x-5 lg:grid-cols-3 2xl:grid-cols-3">
@@ -160,12 +161,11 @@ function PlasticEngineering() {
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.8, delay: index * 0.15, ease: [0.25, 0.8, 0.25, 1], }}
                                 key={plastic.name}
-                                className="bg-[#f6f6f7] rounded-xl shadow-sm p-6 xl:px-8 xl:py-6 flex flex-col gap-4 transition-transform duration-300 hover:scale-[1.03] hover:shadow-lg"
+                                className="bg-[#f6f6f7] rounded-xl shadow-sm p-4 xl:px-6 xl:py-4 flex flex-col gap-4 transition-transform duration-300 hover:scale-[1.03] hover:shadow-lg"
                             >
 
-                                <div className="bg-white p-2 w-fit rounded-md">{plastic.icon}</div>
-                                <h4 className="font-poppins text-[#1e1e1e] text-[1rem] font-semibold tracking-wide">{plastic.name}</h4>
-                                <p className="text-justify font-poppins text-[0.85rem] text-[#6d6d6d] leading-6">{plastic.description}</p>
+                                <div className="w-fit rounded-md">{plastic.img}</div>
+                                <h4 className="font-poppins text-[#1e1e1e] text-[1rem] tracking-wide">{plastic.name}</h4>
 
                             </motion.div>
                         ))}
@@ -177,4 +177,4 @@ function PlasticEngineering() {
     )
 }
 
-export default PlasticEngineering
+export default CncParts;
