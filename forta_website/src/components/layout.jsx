@@ -6,7 +6,7 @@ function Layout({ children }) {
     return (
         <div>
             <div>
-                <div className="hidden lg:block fixe top-0 left-0 w-full z-20">
+                <div className="hidden lg:fixed lg:block fixe top-0 left-0 w-full z-20">
                     <Nav />
                 </div>
 
