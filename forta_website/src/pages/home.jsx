@@ -1,6 +1,8 @@
 import backgroundImage from '../assets/backgroundImage.png';
 import roundedPlasticEngineering from '../assets/RoundedPlasticEngeeniring.png';
 import roundedCNCParts from '../assets/Rounded CNC Parts.png';
+import CountUp from 'react-countup'
+import { useInView } from 'react-intersection-observer'
 import aboutImage from '../assets/About imag.png'
 import { CiForkAndKnife } from "react-icons/ci";
 import { FaArrowRight } from "react-icons/fa6";
@@ -13,6 +15,12 @@ import { Link } from 'react-router-dom'
 
 
 function Home() {
+
+  const { ref: countRef, inView: countInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5
+  });
+
   return (
     <div className="font-poppins">
 
@@ -43,7 +51,7 @@ function Home() {
 
             {/* Button */}
             <div className="flex justify-center xl:justify-start">
-              <button className="flex items-center gap-2 text-white font-semibold text-[0.8rem] sm:text-[0.85rem] bg-[#ec1c24] px-5 py-2 rounded-sm">
+              <button className="flex items-center gap-2 text-white font-semibold text-[0.8rem] sm:text-[0.85rem] bg-[#ec1c24] px-5 py-2 rounded-sm hover:bg-[#c71a20] transition-colors duration-200" onClick={() => {const service = document.getElementById('services'); if(service) {service.scrollIntoView({behavior:'smooth'})}}}>
                 <FaArrowRight /> OUR SERVICES
               </button>
             </div>
@@ -54,10 +62,10 @@ function Home() {
 
 
       {/* Services Section */}
-      <section className="w-full py-12 bg-white">
+      <section id='services' className="w-full py-12 bg-white">
         <div className="container mx-auto px-4 sm:px-6 md:px-10 xl:px-30 2xl:px-50">
           <div className="text-center mb-12">
-            <h2 className="font-Stock_No_Bills text-[2rem] sm:text-[2.6rem] font-semibold">Our Services</h2>
+            <h2  className="font-Stock_No_Bills text-[2rem] sm:text-[2.6rem] font-semibold">Our Services</h2>
             <span className="border-2 border-[#ec1c24] block rounded-full w-[120px] mx-auto mt-2"></span>
           </div>
 
@@ -81,8 +89,8 @@ function Home() {
                   </p>
                 </div>
                 <div className="flex justify-center sm:justify-start">
-                  <button className="flex items-center gap-2 text-white bg-[#ec1c24] text-xs px-3 py-1 rounded-sm">
-                    <FaArrowRight /> See More
+                  <button className=" text-white bg-[#ec1c24] text-xs px-3 py-1 rounded-sm hover:bg-[#c71a20] transition-colors duration-200">
+                    <Link className='flex items-center gap-2' to='/plasticEngineering'><FaArrowRight /> See More</Link>
                   </button>
                 </div>
               </div>
@@ -109,8 +117,8 @@ function Home() {
                   </p>
                 </div>
                 <div className="flex justify-center sm:justify-start">
-                  <button className="flex items-center gap-2 text-white bg-[#ec1c24] text-xs px-3 py-1 rounded-sm">
-                    <FaArrowRight /> See More
+                  <button className="text-white bg-[#ec1c24] text-xs px-3 py-1 rounded-sm hover:bg-[#c71a20] transition-colors duration-200">
+                    <Link className='flex items-center gap-2' to='/plasticEngineering'><FaArrowRight /> See More</Link>
                   </button>
                 </div>
               </div>
@@ -136,19 +144,21 @@ function Home() {
               <div className='lg:w-6/6 2xl:w-5/6'>
                 <h3 className='font-poppins font-semibold text-[1.1rem] xl:text-[1.3rem] mb-4'>About  Forta Ltd ?</h3>
                 <p className='text-black text-[0.8rem] xl:text-[0.95rem] text-justify mb-6 lg:mb-12 lg:leading-6 xl:leading-7.5 '>With over 30 years of experience, Forta Ltd. designs and manufactures high-quality custom mechanical parts. We specialize in CNC machining and engineering plastics, serving industries such as food, chemical, automotive, and automation. From design to maintenance, we deliver complete technical solutions with precision and reliability.</p>
-                <button className="flex items-center gap-2 text-white bg-[#ec1c24] text-[0.75rem] xl:text-[0.95rem] px-3 py-1 rounded-sm">
-                  <FaArrowRight /> See More
+                <button className=" text-white bg-[#ec1c24] text-[0.75rem] xl:text-[0.95rem] px-3 py-1 rounded-sm hover:bg-[#c71a20] transition-colors duration-200">
+                  <Link to='/about' className='flex items-center gap-2'><FaArrowRight /> See More</Link>
                 </button>
               </div>
               <div className=' overflow-hidden relative'>
                 <img className='shadow-lg hidden lg:block h-full w-full object-cover rounded-sm' src={aboutImage} alt="aboutImage" />
               </div>
             </div>
-            <div className="grid xs:grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-8 text-left lg:flex lg:flex-row lg:justify-between ">
+            <div ref={countRef} className="grid xs:grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-8 text-left lg:flex lg:flex-row lg:justify-between ">
 
               {/* Bloc 1 */}
               <div className="flex flex-row items-center gap-3 py-4 px-4 shadow-md rounded-md lg:shadow-none lg:rounded-none">
-                <p className="text-[#ec1c24] text-3xl font-light leading-none">+30</p>
+                <p className="text-[#ec1c24] text-3xl font-light leading-none ">
+                  {countInView && <CountUp start={0} end={30} duration={3} prefix='+' />}
+                </p>
                 <div className="text-xs text-[#444] leading-tight">
                   <p>years of</p>
                   <p>experience</p>
@@ -159,7 +169,9 @@ function Home() {
 
               {/* Bloc 2 */}
               <div className="flex flex-row items-center gap-3 py-4 px-4 shadow-md rounded-md lg:shadow-none lg:rounded-none">
-                <p className="text-[#ec1c24] text-3xl font-light leading-none">+200</p>
+                <p className="text-[#ec1c24] text-3xl font-light leading-none">
+                  {countInView && <CountUp start={0} end={200} duration={3} prefix='+' />}
+                </p>
                 <div className="text-xs text-[#444] leading-tight">
                   <p>clients in</p>
                   <p>Europe</p>
@@ -170,7 +182,9 @@ function Home() {
 
               {/* Bloc 3 */}
               <div className="flex flex-row items-center gap-3 py-4 px-4 shadow-md rounded-md lg:shadow-none lg:rounded-none">
-                <p className="text-[#ec1c24] text-3xl font-light leading-none">+10K</p>
+                <p className="text-[#ec1c24] text-3xl font-light leading-none">
+                  {countInView && <CountUp start={0} end={10} duration={3} prefix='+' suffix='K' />}
+                </p>
                 <div className="text-xs text-[#444] leading-tight">
                   <p>projects</p>
                   <p>realised</p>
@@ -181,7 +195,9 @@ function Home() {
 
               {/* Bloc 4 */}
               <div className="flex flex-row items-center gap-3 py-4 px-4  shadow-md rounded-md lg:shadow-none lg:rounded-none">
-                <p className="text-[#ec1c24] text-3xl font-light leading-none">+25</p>
+                <p className="text-[#ec1c24] text-3xl font-light leading-none">
+                  {countInView && <CountUp start={0} end={25} duration={3} prefix='+' />}
+                </p>
                 <div className="text-xs text-[#444] leading-tight">
                   <p>trusted partner</p>
                   <p>companies</p>

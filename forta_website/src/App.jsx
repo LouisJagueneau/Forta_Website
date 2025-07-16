@@ -7,10 +7,12 @@ import PlasticEngineering from './pages/plasticEngineering'
 import CncParts from './pages/cncParts'
 import LegalNotice from './pages/legalNotice'
 import ConfidentialityPolicy from './pages/confidentialityPolicy'
+import ScrollToTop from './components/scrollToTop'
 
 function App() {
   return(
     <div>
+      <ScrollToTop/>
       <Routes>
         <Route index element={<Home/>}></Route>
         <Route path='/about' element={<About/>}></Route>
