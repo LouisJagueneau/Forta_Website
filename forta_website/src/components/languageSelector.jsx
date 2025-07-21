@@ -29,7 +29,10 @@ function LanguageSelector() {
                         return (
                             <li
                                 key={language.name}
-                                onClick={() => setIsSelected(language.flag)}
+                                onClick={() => {
+                                    setIsSelected(language.flag);
+                                    changeLanguage(language.code.toLocaleLowerCase());
+                                }}
                                 className={`${isSelected === language.flag ? 'hidden' : 'block'} uppercase`}>
                                 <span className={`fi fi-${language.flag}`}></span> {language.code}
                             </li>

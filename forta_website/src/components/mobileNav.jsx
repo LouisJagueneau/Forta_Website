@@ -3,8 +3,10 @@ import { IoClose } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io"
 import { useState } from "react";
 import {Link} from 'react-router-dom'
+import { useTranslation } from 'react-i18next'; // Import useTranslation
 
 function MobileNav() {
+    const { t } = useTranslation(); // Initialize useTranslation hook
 
     const [isOpen, setIsOpen] = useState(false);
     const [isServicesOpen, setIsServicesOpen] = useState(false)
@@ -25,20 +27,20 @@ function MobileNav() {
                 </div>
                 <div>
                     <ul className="font-poppins text-white text-[0.92rem] flex flex-col space-y-4 cursor-pointer ">
-                        <li><Link to='/' onClick={() => setIsOpen(false)} className="hover:text-[#ec1c24] transition-colors duration-200">Home</Link></li>
+                        <li><Link to='/' onClick={() => setIsOpen(false)} className="hover:text-[#ec1c24] transition-colors duration-200">{t('mobile_nav_home')}</Link></li>
                         <li className="relative" >
                             <div onClick={() => setIsServicesOpen(!isServicesOpen)} className="flex items-center gap-1 hover:text-[#ec1c24] transition-colors duration-300">
-                                <span>Services</span>
+                                <span>{t('mobile_nav_services')}</span>
                                 <IoIosArrowDown className={`transform ${isServicesOpen ? 'rotate-180' : 'rotate-none'}`} />
                             </div>
                             <ul className={` transform ${isServicesOpen? 'flex opacity-100' : 'hidden opacity-0'} flex-col gap-3 ml-4 transition-all duration-300 text-[0.85rem] text-gray-300 mt-3`}>
-                                <li><Link to='/plasticEngineering' className="hover:text-gray-400 transition-colors duration-300">Plastic Engineering</Link></li>
-                                <li><Link to='/cncParts' className="hover:text-gray-400 transition-colors duration-300">CNC Parts</Link></li>
+                                <li><Link to='/plasticEngineering' onClick={() => setIsOpen(false)} className="hover:text-gray-400 transition-colors duration-300">{t('mobile_nav_plastic_engineering')}</Link></li>
+                                <li><Link to='/cncParts' onClick={() => setIsOpen(false)} className="hover:text-gray-400 transition-colors duration-300">{t('mobile_nav_cnc_parts')}</Link></li>
                             </ul>
 
                         </li>
-                        <li><Link to='/about' onClick={() => setIsOpen(false)} className="hover:text-[#ec1c24] transition-colors duration-200">About</Link></li>
-                        <li><Link className="hover:text-[#ec1c24] transition-colors duration-200">Contact us</Link></li>
+                        <li><Link to='/about' onClick={() => setIsOpen(false)} className="hover:text-[#ec1c24] transition-colors duration-200">{t('mobile_nav_about')}</Link></li>
+                        <li><Link to='/contact' onClick={() => setIsOpen(false)} className="hover:text-[#ec1c24] transition-colors duration-200">{t('mobile_nav_contact_us')}</Link></li> {/* Added Link to /contact */}
                     </ul>
                 </div>
             </div>

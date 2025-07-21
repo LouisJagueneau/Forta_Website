@@ -12,9 +12,11 @@ import { CiBoxes } from "react-icons/ci";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { IoSettingsOutline } from "react-icons/io5";
 import { Link } from 'react-router-dom'
-
+import { useTranslation } from 'react-i18next';
 
 function Home() {
+
+  const { t } = useTranslation()
 
   const { ref: countRef, inView: countInView } = useInView({
     triggerOnce: true,
@@ -36,9 +38,9 @@ function Home() {
 
             {/* Title */}
             <h1 className="text-white font-Stock_No_Bills text-[2rem] sm:text-[2.5rem] md:text-[3rem] xl:text-[4rem] leading-tight sm:leading-[3rem] xl:leading-[4rem] mb-5">
-              <span className="block sm:inline">Precision CNC Parts</span>
+              <span className="block sm:inline">{t('welcomeTitle1')}</span>
               <span className="text-[#ec1c24] block sm:inline">{' '}&{' '}</span>
-              <span className="block sm:inline">Engineering Plastics</span>
+              <span className="block sm:inline">{t('welcomeTitle2')}</span>
             </h1>
 
             {/* Line */}
@@ -46,13 +48,13 @@ function Home() {
 
             {/* Paragraph */}
             <p className="text-white text-[0.9rem] sm:text-[0.85rem] w-[90%] sm:w-[75%] mx-auto xl:mx-0 mb-8 xl:mb-14 text-center xl:text-justify leading-relaxed">
-              We are committed to delivering exceptional quality, precision, and reliability in every part we produce. Our expertise, combined with our comprehensive service offerings, makes us your ideal partner for custom CNC solutions.
+              {t('heroParagraph')}
             </p>
 
             {/* Button */}
             <div className="flex justify-center xl:justify-start">
-              <button className="flex items-center gap-2 text-white font-semibold text-[0.8rem] sm:text-[0.85rem] bg-[#ec1c24] px-5 py-2 rounded-sm hover:bg-[#c71a20] transition-colors duration-200" onClick={() => {const service = document.getElementById('services'); if(service) {service.scrollIntoView({behavior:'smooth'})}}}>
-                <FaArrowRight /> OUR SERVICES
+              <button className="flex items-center gap-2 text-white font-semibold text-[0.8rem] sm:text-[0.85rem] bg-[#ec1c24] px-5 py-2 rounded-sm hover:bg-[#c71a20] transition-colors duration-200" onClick={() => { const service = document.getElementById('services'); if (service) { service.scrollIntoView({ behavior: 'smooth' }) } }}>
+                <FaArrowRight /> {t('heroButton')}
               </button>
             </div>
 
@@ -65,7 +67,7 @@ function Home() {
       <section id='services' className="w-full py-12 bg-white">
         <div className="container mx-auto px-4 sm:px-6 md:px-10 xl:px-30 2xl:px-50">
           <div className="text-center mb-12">
-            <h2  className="font-Stock_No_Bills text-[2rem] sm:text-[2.6rem] font-semibold">Our Services</h2>
+            <h2 className="font-Stock_No_Bills text-[2rem] sm:text-[2.6rem] font-semibold">{t('servicesTitle')}</h2>
             <span className="border-2 border-[#ec1c24] block rounded-full w-[120px] mx-auto mt-2"></span>
           </div>
 
@@ -78,19 +80,19 @@ function Home() {
                 className="w-[120px] sm:w-[160px] rounded-full shadow-md"
               />
               <div className="text-center sm:text-left">
-                <h3 className="font-semibold text-[1.2rem] mb-3">Plastic engineering</h3>
+                <h3 className="font-semibold text-[1.2rem] mb-3">{t('plasticTitle')}</h3>
                 <p className="text-[#777777] text-sm mb-3 text-justify">
-                  We supply high-performance plastic components crafted from industrial-grade materials. Our plastics offer excellent mechanical, thermal, and chemical properties, making them ideal for demanding environments across multiple industries.
+                  {t('plasticDescription')}
                 </p>
                 <div className="flex items-start justify-center sm:justify-start gap-2 mb-3">
                   <span className="w-[10px] h-[10px] rounded-full bg-[#ec1c24] mt-1"></span>
                   <p className="text-[#777777] text-sm">
-                    Services: PP ; PEHD, PE300, PE500, PE1000, PA6, POM-C, PTFE, PEEK.
+                    {t('plasticList')}
                   </p>
                 </div>
                 <div className="flex justify-center sm:justify-start">
                   <button className=" text-white bg-[#ec1c24] text-xs px-3 py-1 rounded-sm hover:bg-[#c71a20] transition-colors duration-200">
-                    <Link className='flex items-center gap-2' to='/plasticEngineering'><FaArrowRight /> See More</Link>
+                    <Link className='flex items-center gap-2' to='/plasticEngineering'><FaArrowRight /> {t('plasticButton')}</Link>
                   </button>
                 </div>
               </div>
@@ -106,19 +108,19 @@ function Home() {
                 className="w-[120px] sm:w-[160px] rounded-full shadow-md"
               />
               <div className="text-center sm:text-left">
-                <h3 className="font-semibold text-[1.2rem] mb-3">CNC Parts</h3>
+                <h3 className="font-semibold text-[1.2rem] mb-3">{t('cncTitle')}</h3>
                 <p className="text-[#777777] text-sm mb-3 text-justify">
-                  We offer high-precision CNC machining services tailored to meet the needs of demanding industrial applications. Whether you require single prototypes or full production runs, our expertise ensures reliable, accurate, and repeatable parts every time.
+                  {t('cncDescription')}
                 </p>
                 <div className="flex items-start justify-center sm:justify-start gap-2 mb-3">
                   <span className="w-[10px] h-[10px] rounded-full bg-[#ec1c24] mt-1"></span>
                   <p className="text-[#777777] text-sm">
-                    Services: CNC Turning ; CNC Milling ; 5-Axis Machining ; Laser Cutting ...
+                    {t('cncList')}
                   </p>
                 </div>
                 <div className="flex justify-center sm:justify-start">
                   <button className="text-white bg-[#ec1c24] text-xs px-3 py-1 rounded-sm hover:bg-[#c71a20] transition-colors duration-200">
-                    <Link className='flex items-center gap-2' to='/plasticEngineering'><FaArrowRight /> See More</Link>
+                    <Link className='flex items-center gap-2' to='/plasticEngineering'><FaArrowRight /> {t('cncButton')}</Link>
                   </button>
                 </div>
               </div>
@@ -133,19 +135,19 @@ function Home() {
         <div className="container mx-auto px-6 md:px-10 xl:px-30 2xl:px-50">
           <div className="bg-white rounded-lg p-8">
             <h2 className="font-Stock_No_Bills text-3xl md:text-4xl text-center md:text-left font-semibold mb-10">
-              We{" "}
+              {t('aboutTitle').split(' ')[0]}{" "}
               <span className="inline-flex flex-col items-start">
-                <span>build</span>
+                <span>{t('aboutTitle').split(' ')[1]}</span>
                 <span className="h-[2px] w-full bg-red-500 mt-1"></span>
               </span>{" "}
-              your solutions, piece by piece.
+              {t('aboutTitle').split(' ').slice(2).join(' ')}
             </h2>
             <div className='flex flex-col lg:flex-row lg:gap-15 items-stretch mb-8 lg:mb-15'>
               <div className='lg:w-6/6 2xl:w-5/6'>
-                <h3 className='font-poppins font-semibold text-[1.1rem] xl:text-[1.3rem] mb-4'>About  Forta Ltd ?</h3>
-                <p className='text-black text-[0.8rem] xl:text-[0.95rem] text-justify mb-6 lg:mb-12 lg:leading-6 xl:leading-7.5 '>With over 30 years of experience, Forta Ltd. designs and manufactures high-quality custom mechanical parts. We specialize in CNC machining and engineering plastics, serving industries such as food, chemical, automotive, and automation. From design to maintenance, we deliver complete technical solutions with precision and reliability.</p>
+                <h3 className='font-poppins font-semibold text-[1.1rem] xl:text-[1.3rem] mb-4'>{t('aboutSubtitle')}</h3>
+                <p className='text-black text-[0.8rem] xl:text-[0.95rem] text-justify mb-6 lg:mb-12 lg:leading-6 xl:leading-7.5 '>{t('aboutDescription')}</p>
                 <button className=" text-white bg-[#ec1c24] text-[0.75rem] xl:text-[0.95rem] px-3 py-1 rounded-sm hover:bg-[#c71a20] transition-colors duration-200">
-                  <Link to='/about' className='flex items-center gap-2'><FaArrowRight /> See More</Link>
+                  <Link to='/about' className='flex items-center gap-2'><FaArrowRight /> {t('aboutButton')}</Link>
                 </button>
               </div>
               <div className=' overflow-hidden relative'>
@@ -160,8 +162,8 @@ function Home() {
                   {countInView && <CountUp start={0} end={30} duration={3} prefix='+' />}
                 </p>
                 <div className="text-xs text-[#444] leading-tight">
-                  <p>years of</p>
-                  <p>experience</p>
+                  <p>{t('countYears').split('\n')[0]}</p>
+                  <p>{t('countYears').split('\n')[1]}</p>
                 </div>
               </div>
 
@@ -173,8 +175,8 @@ function Home() {
                   {countInView && <CountUp start={0} end={200} duration={3} prefix='+' />}
                 </p>
                 <div className="text-xs text-[#444] leading-tight">
-                  <p>clients in</p>
-                  <p>Europe</p>
+                  <p>{t('countClients').split('\n')[0]}</p>
+                  <p>{t('countClients').split('\n')[1]}</p>
                 </div>
               </div>
 
@@ -186,21 +188,21 @@ function Home() {
                   {countInView && <CountUp start={0} end={10} duration={3} prefix='+' suffix='K' />}
                 </p>
                 <div className="text-xs text-[#444] leading-tight">
-                  <p>projects</p>
-                  <p>realised</p>
+                  <p>{t('countProjects').split('\n')[0]}</p>
+                  <p>{t('countProjects').split('\n')[1]}</p>
                 </div>
               </div>
 
               <span className='border-[1px] border-gray-300 h-[auto] hidden lg:flex rounded-full'></span>
 
               {/* Bloc 4 */}
-              <div className="flex flex-row items-center gap-3 py-4 px-4  shadow-md rounded-md lg:shadow-none lg:rounded-none">
+              <div className="flex flex-row items-center gap-3 py-4 px-4  shadow-md rounded-md lg:shadow-none lg:rounded-none">
                 <p className="text-[#ec1c24] text-3xl font-light leading-none">
                   {countInView && <CountUp start={0} end={25} duration={3} prefix='+' />}
                 </p>
                 <div className="text-xs text-[#444] leading-tight">
-                  <p>trusted partner</p>
-                  <p>companies</p>
+                  <p>{t('countPartners').split('\n')[0]}</p>
+                  <p>{t('countPartners').split('\n')[1]}</p>
                 </div>
               </div>
             </div>
@@ -212,7 +214,7 @@ function Home() {
       <section className='w-full bg-[#0f181f] py-12'>
         <div className="container mx-auto px-6 md:px-10 xl:px-30 2xl:px-50">
           <div className="text-center mb-20 ">
-            <h2 className="font-Stock_No_Bills text-[2.6rem] font-semibold text-white inline-block relative">Industrie Served
+            <h2 className="font-Stock_No_Bills text-[2.6rem] font-semibold text-white inline-block relative">{t('industriesTitle')}
               <span className="bg-[#ec1c24] rounded-full absolute bottom-[-10px] w-full h-[2px] left-0"></span>
             </h2>
           </div>
@@ -223,60 +225,60 @@ function Home() {
             <div className='bg-[#272f35] p-5 rounded-lg border-[#ffffff3b] border-[1px]'>
               <div className='flex justify-between items-center mb-5'>
                 <div className='flex flex-col items-start'>
-                  <p className='font-poppins font-semibold text-white'>Food & Beverage</p>
+                  <p className='font-poppins font-semibold text-white'>{t('industryFood')}</p>
                   <span className="border-1 border-[#ec1c24] block rounded-full w-[100%]"></span>
                 </div>
                 <CiForkAndKnife className='text-[#ef1c24] text-[1.8rem]' />
               </div>
-              <p className='text-[#B9B9B9] font-poppins text-[0.8rem] text-justify'>We supply food-grade plastic and precision CNC parts for hygienic and durable use in food processing and bottling lines.</p>
+              <p className='text-[#B9B9B9] font-poppins text-[0.8rem] text-justify'>{t('industryFoodDesc')}</p>
             </div>
 
             {/* Second Element */}
             <div className='bg-[#272f35] p-5 rounded-lg border-[#ffffff3b] border-[1px]'>
               <div className='flex justify-between items-center mb-5'>
                 <div className='flex flex-col items-start'>
-                  <p className='font-poppins font-semibold text-white'>Pharmaceutical</p>
+                  <p className='font-poppins font-semibold text-white'>{t('industryPharma')}</p>
                   <span className="border-1 border-[#ec1c24] block rounded-full w-[100%]"></span>
                 </div>
                 <CiMedicalCross className='text-[#ef1c24] text-[1.8rem]' />
               </div>
-              <p className='text-[#B9B9B9] font-poppins text-[0.8rem] text-justify'>Our corrosion-resistant components are ideal for use in chemical tanks, lab equipment, and pharmaceutical packaging systems.</p>
+              <p className='text-[#B9B9B9] font-poppins text-[0.8rem] text-justify'>{t('industryPharmaDesc')}</p>
             </div>
 
             {/* Third Element */}
             <div className='bg-[#272f35] p-5 rounded-lg border-[#ffffff3b] border-[1px]'>
               <div className='flex justify-between items-center mb-5'>
                 <div className='flex flex-col items-start'>
-                  <p className='font-poppins font-semibold text-white'>Automation</p>
+                  <p className='font-poppins font-semibold text-white'>{t('industryAutomation')}</p>
                   <span className="border-1 border-[#ec1c24] block rounded-full w-[100%]"></span>
                 </div>
                 <CiBoxes className='text-[#ef1c24] text-[1.8rem]' />
               </div>
-              <p className='text-[#B9B9B9] font-poppins text-[0.8rem] text-justify'>We produce timing screws, guides, and CNC components that keep automated filling and packaging lines running smoothly and efficiently.</p>
+              <p className='text-[#B9B9B9] font-poppins text-[0.8rem] text-justify'>{t('industryAutomationDesc')}</p>
             </div>
 
             {/* Fourth Element */}
             <div className='bg-[#272f35] p-5 rounded-lg border-[#ffffff3b] border-[1px]'>
               <div className='flex justify-between items-center mb-5'>
                 <div className='flex flex-col items-start'>
-                  <p className='font-poppins font-semibold text-white'>Automotive</p>
+                  <p className='font-poppins font-semibold text-white'>{t('industryAuto')}</p>
                   <span className="border-1 border-[#ec1c24] block rounded-full w-[100%]"></span>
                 </div>
                 <CiDeliveryTruck className='text-[#ef1c24] text-[1.8rem]' />
               </div>
-              <p className='text-[#B9B9B9] font-poppins text-[0.8rem] text-justify'>Forta delivers robust and accurate plastic and CNC parts used in testing, assembly, and prototype phases of automotive manufacturing.</p>
+              <p className='text-[#B9B9B9] font-poppins text-[0.8rem] text-justify'>{t('industryAutoDesc')}</p>
             </div>
 
             {/* Fifth Element */}
             <div className='bg-[#272f35] p-5 rounded-lg border-[#ffffff3b] border-[1px]'>
               <div className='flex justify-between items-center mb-5'>
                 <div className='flex flex-col items-start'>
-                  <p className='font-poppins font-semibold text-white'>Energy & Utilities</p>
+                  <p className='font-poppins font-semibold text-white'>{t('industryEnergy')}</p>
                   <span className="border-1 border-[#ec1c24] block rounded-full w-[100%]"></span>
                 </div>
                 <SlEnergy className='text-[#ef1c24] text-[1.8rem]' />
               </div>
-              <p className='text-[#B9B9B9] font-poppins text-[0.8rem] text-justify'>Our engineering plastics  are built to withstand extreme conditions in power systems, industrial utilities, and clean energy installations.</p>
+              <p className='text-[#B9B9B9] font-poppins text-[0.8rem] text-justify'>{t('industryEnergyDesc')}</p>
             </div>
 
 
@@ -284,12 +286,12 @@ function Home() {
             <div className='bg-[#272f35] p-5 rounded-lg border-[#ffffff3b] border-[1px]'>
               <div className='flex justify-between items-center mb-5'>
                 <div className='flex flex-col items-start'>
-                  <p className='font-poppins font-semibold text-white'>Industrial Machinery</p>
+                  <p className='font-poppins font-semibold text-white'>{t('industryMachinery')}</p>
                   <span className="border-1 border-[#ec1c24] block rounded-full w-[100%]"></span>
                 </div>
                 <IoSettingsOutline className='text-[#ef1c24] text-[1.5rem]' />
               </div>
-              <p className='text-[#B9B9B9] font-poppins text-[0.8rem] text-justify'>We provide custom-engineered CNC components for conveyor systems and machinery, ensuring durability, precision, and smooth operation.</p>
+              <p className='text-[#B9B9B9] font-poppins text-[0.8rem] text-justify'>{t('industryMachineryDesc')}</p>
             </div>
 
           </div>
