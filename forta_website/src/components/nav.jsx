@@ -1,5 +1,6 @@
 import { IoIosArrowDown } from "react-icons/io"
 import { Link } from "react-router-dom"
+import LanguageSelector from "./languageSelector"
 
 function Nav() {
     return (
@@ -18,7 +19,7 @@ function Nav() {
                         </div>
                         </li>
                         <li><Link to='/about'className="text-white cursor-pointer relative font-poppins after:content-[''] after:absolute after:left-1/2 after:bottom-[-8px] after:w-0 after:h-[2px] after:bg-[#ec1c24] after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">About</Link></li>
-                        <li><Link className="text-white cursor-pointer relative font-poppins after:content-[''] after:absolute after:left-1/2 after:bottom-[-8px] after:w-0 after:h-[2px] after:bg-[#ec1c24] after:transition-all after:duration-300 hover:after:w-full hover:after:left-0 flex items-center gap-1">EN <IoIosArrowDown /></Link></li>
+                        <li><LanguageSelector/></li>
                     </ul>
                     <button className='font-poppins text-white ml-12  bg-[#ec1c24] hover:bg-[#ec1c23d4] hover:rounded-sm transition duration-700  px-4 py-1 rounded-full cursor-pointer'>Contact us</button>
                 </div>
