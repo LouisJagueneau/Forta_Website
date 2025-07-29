@@ -24,7 +24,7 @@ function LanguageSelector() {
         <div>
             <div className='group relative cursor-pointer'>
                 <span className='flex gap-2 items-center font-poppins text-white uppercase'><span className={`fi fi-${isSelected}`}></span>{isSelected} <IoIosArrowDown className="group-hover:rotate-180 transition-transform duration-300" /></span>
-                <ul className='hidden absolute text-white group-hover:block z-50'>
+                <ul className='hidden absolute text-white group-hover:flex group-hover:flex-col gap-2 z-50 bg-[#0f0f0f] pr-3 py-2 border-white'>
                     {languages.map((language) => {
                         return (
                             <li
@@ -33,7 +33,7 @@ function LanguageSelector() {
                                     setIsSelected(language.flag);
                                     changeLanguage(language.code.toLocaleLowerCase());
                                 }}
-                                className={`${isSelected === language.flag ? 'hidden' : 'block'} uppercase`}>
+                                className={`${isSelected === language.flag ? 'hidden' : 'block'} uppercase flex items-center gap-3`}>
                                 <span className={`fi fi-${language.flag}`}></span> {language.code}
                             </li>
                         )

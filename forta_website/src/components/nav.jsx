@@ -10,7 +10,7 @@ function Nav() {
     return (
         <div className="bg-[#0f0f0f]">
             <div className={`container mx-auto px-10 md:px-14 lg:px-22 xl:px-30 2xl:px-50  flex items-center justify-between min-h-[70px]`}>
-                <Link to='/' className="text-white sm:text-red-500 md:text-amber-300 lg:text-purple-400 xl:text-green-400 2xl:text-blue-400 text-[2.0rem] font-bold font-Stock_No_Bills ">Forta ltd.</Link>
+                <Link to='/' className="text-white text-[2.0rem] font-bold font-Stock_No_Bills ">Forta ltd.</Link>
                 <div className='flex flex-row'>
                     <ul className='flex flex-row items-center gap-12 text-[1.0rem] font-light'>
                         <li><Link to='/' className="text-white cursor-pointer relative font-poppins after:content-[''] after:absolute after:left-1/2 after:bottom-[-8px] after:w-0 after:h-[2px] after:bg-[#ec1c24] after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">{t('nav_home')}</Link></li>
@@ -25,7 +25,7 @@ function Nav() {
                         <li><Link to='/about'className="text-white cursor-pointer relative font-poppins after:content-[''] after:absolute after:left-1/2 after:bottom-[-8px] after:w-0 after:h-[2px] after:bg-[#ec1c24] after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">{t('nav_about')}</Link></li>
                         <li><LanguageSelector/></li>
                     </ul>
-                    <button className='font-poppins text-white ml-12  bg-[#ec1c24] hover:bg-[#ec1c23d4] hover:rounded-sm transition duration-700  px-4 py-1 rounded-full cursor-pointer'>{t('nav_contact_us')}</button>
+                    <Link to='/contactus' className='font-poppins text-white ml-12  bg-[#ec1c24] hover:bg-[#ec1c23d4] hover:rounded-sm transition duration-700  px-4 py-1 rounded-full cursor-pointer'>{t('nav_contact_us')}</Link>
                 </div>
             </div>
         </div>

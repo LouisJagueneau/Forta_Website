@@ -40,7 +40,7 @@ const Footer = () => {
 
         {/* CONTACT */}
         <div>
-          <h2 className="font-semibold mb-3">{t('footer_contact_title')}</h2>
+          <h2 className="font-semibold mb-3"><Link to='/contactUs'>{t('footer_contact_title')}</Link></h2>
           <p className="mb-1">{t('footer_phone_number')}</p>
           <p className="mb-3">{t('footer_email')}</p>
         </div>

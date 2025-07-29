@@ -15,7 +15,7 @@ function MobileNav() {
         <div className="bg-[#0f0f0f]">
             <div className={`container mx-auto px-10 md:px-14 xl:px-30 2xl:px-50  flex items-center justify-between min-h-[50px]`}>
                 <div>
-                    <Link to='/' onClick={() => setIsOpen(false)} className="text-white sm:text-red-500 md:text-amber-400 text-[1.6rem] font-bold font-Stock_No_Bills ">Forta ltd.</Link>
+                    <Link to='/' onClick={() => setIsOpen(false)} className="text-white text-[1.6rem] font-bold font-Stock_No_Bills ">Forta ltd.</Link>
                 </div>
                 <div className="">
                     <RxHamburgerMenu className="text-[#ec1c24] cursor-pointer text-[1.6rem]" onClick={() => setIsOpen(!isOpen)} />
@@ -40,7 +40,7 @@ function MobileNav() {
 
                         </li>
                         <li><Link to='/about' onClick={() => setIsOpen(false)} className="hover:text-[#ec1c24] transition-colors duration-200">{t('mobile_nav_about')}</Link></li>
-                        <li><Link to='/contact' onClick={() => setIsOpen(false)} className="hover:text-[#ec1c24] transition-colors duration-200">{t('mobile_nav_contact_us')}</Link></li> {/* Added Link to /contact */}
+                        <li><Link to='/contactUs' onClick={() => setIsOpen(false)} className="hover:text-[#ec1c24] transition-colors duration-200">{t('mobile_nav_contact_us')}</Link></li>
                     </ul>
                 </div>
             </div>
