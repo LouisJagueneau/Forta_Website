@@ -9,6 +9,7 @@ import LegalNotice from './pages/legalNotice'
 import ConfidentialityPolicy from './pages/confidentialityPolicy'
 import ScrollToTop from './components/scrollToTop'
 import ContactUs from './pages/contactUs'
+import Feedback from './pages/feedback'
 
 function App() {
   return(
@@ -22,6 +23,7 @@ function App() {
         <Route path='/legalNotice' element={<LegalNotice/>}></Route>
         <Route path='/confidentialityPolicy' element={<ConfidentialityPolicy/>}></Route>
         <Route path='/contactUs' element={<ContactUs/>}></Route>
+        <Route path='/feedback' element={<Feedback/>}></Route>
       </Routes>
     </div>   
   )

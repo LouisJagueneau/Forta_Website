@@ -29,14 +29,14 @@ function ContactUs() {
                     <div className="container mx-auto lg:mx-0 px-10 md:px-14 lg:px-22 xl:px-30 2xl:px-50 ">
                         <div className="flex flex-col-reverse gap-10">
                             <section>
-                                <div className="-2 border-green-400 bg-[#1d262d] px-10 py-6 rounded-sm">
+                                <div className=" bg-[#1d262d] px-10 py-6 rounded-sm">
                                     <h2 className="text-white font-light font-poppins text-[2.0rem] lg:text-[2.4rem] xl:text-[2.8rem] mb-8">Contact us</h2>
-                                    <form action="" className="text-white placeholder-[#a9a9ab] font-poppins font-light flex flex-col gap-y-5">
-                                        <input type="text" placeholder="Name" className="px-4 py-5  h-[48px] border border-white/10 focus:border-[#ec1c24] outline-none" />
-                                        <input type="text" placeholder="Email" className="px-4 py-5  h-[48px] border border-white/10 focus:border-[#ec1c24] outline-none" />
-                                        <input type="text" placeholder="Subject" className="px-4 py-5  h-[48px] border border-white/10 focus:border-[#ec1c24] outline-none" />
-                                        <textarea name="" id="" placeholder="Type your message here ..." className="px-4 py-5  min-h-[150px] border border-white/10 focus:border-[#ec1c24] outline-none"></textarea>
-                                        <input type="submit" value='Submit' className="bg-[#ec1c24] rounded-sm py-2" />
+                                    <form method='POST' action="/react/contact.php" className="text-white placeholder-[#a9a9ab] font-poppins font-light flex flex-col gap-y-5">
+                                        <input type="text" name="name" placeholder="Name" className="px-4 py-5  h-[48px] border border-white/10 focus:border-[#ec1c24] outline-none" />
+                                        <input type="email" name="email" placeholder="Email" className="px-4 py-5  h-[48px] border border-white/10 focus:border-[#ec1c24] outline-none" />
+                                        <input type="text" name="subject" placeholder="Subject" className="px-4 py-5  h-[48px] border border-white/10 focus:border-[#ec1c24] outline-none" />
+                                        <textarea name="message" id="" placeholder="Type your message here ..." className="px-4 py-5  min-h-[150px] border border-white/10 focus:border-[#ec1c24] outline-none"></textarea>
+                                        <input type="submit" value='Send' className="bg-[#ec1c24] rounded-sm py-2" />
                                     </form>
                                 </div>
                             </section>
