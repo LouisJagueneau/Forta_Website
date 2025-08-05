@@ -25,4 +25,15 @@
     background-color: #ec1c24;
 }
 
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 20px));
+  }
+}
 
+.infinite-scroll {
+  animation: infinite-scroll 40s linear infinite;
+}

@@ -5,7 +5,7 @@ import CountUp from 'react-countup'
 import { useInView } from 'react-intersection-observer'
 import aboutImage from '../assets/About imag.png'
 import { CiForkAndKnife } from "react-icons/ci";
-import { FaArrowRight } from "react-icons/fa6";
+import { FaArrowRight, FaUpLong } from "react-icons/fa6";
 import { CiMedicalCross } from "react-icons/ci";
 import { SlEnergy } from "react-icons/sl";
 import { CiBoxes } from "react-icons/ci";
@@ -13,9 +13,18 @@ import { CiDeliveryTruck } from "react-icons/ci";
 import { IoSettingsOutline } from "react-icons/io5";
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
+import FeedbackCard from '../components/feedbackCard';
+import { useEffect, useRef } from 'react';
 
 function Home() {
 
+  const feedbacks = [
+    { name: "Alice", rating: 5, message: "Super service, j’ai adoré du début à la fin. L’équipe est au top." },
+    { name: "Bob", rating: 4, message: "Très bonne expérience, je recommande fortement à mes amis et collègues." },
+    { name: "Charlie", rating: 5, message: "Rapide, efficace et toujours disponible. Merci beaucoup ! Je reviendrai." },
+    { name: "Diana", rating: 3, message: "Bon, mais peut mieux faire. Quelques lenteurs dans le support technique." },
+    { name: "Eli", rating: 5, message: "Parfait. Rien à dire. Travail sérieux, délais respectés. Je suis ravi !" },
+  ];
   const { t } = useTranslation()
 
   const { ref: countRef, inView: countInView } = useInView({
@@ -296,6 +305,26 @@ function Home() {
 
           </div>
 
+        </div>
+      </section>
+
+      {/* Feedback Section */}
+      <section className='w-full bg-[#ffffff] py-12'>
+        <div className="container mx-auto px-6 md:px-10 xl:px-30 2xl:px-50">
+          <div className='flex flex-col items-center gap-12'>
+            <h2 className='font-Stock_No_Bills text-[2.6rem] font-semibold text-black inline-block relative'>What our customers say!<span className='absolute bottom-[-10px] bg-[#ef1c24] h-1 w-[100%] left-0 rounded-full'></span></h2>
+
+            <div className='w-full overflow-x-hidden flex'>
+              <ul className='flex gap-6 py-4 infinite-scroll'>
+                {[...feedbacks, ...feedbacks].map((feedback, index) => (
+                  <li key={index} className='transition-transform duration-300 hover:scale-[1.02]'>
+                    <FeedbackCard  name={feedback.name} message={feedback.message} rating={feedback.rating} />
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+          </div>
         </div>
       </section>
     </div>
