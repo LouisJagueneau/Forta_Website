@@ -14,23 +14,28 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
 import FeedbackCard from '../components/feedbackCard';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 function Home() {
 
-  const feedbacks = [
-    { name: "Alice", rating: 5, message: "Super service, j’ai adoré du début à la fin. L’équipe est au top." },
-    { name: "Bob", rating: 4, message: "Très bonne expérience, je recommande fortement à mes amis et collègues." },
-    { name: "Charlie", rating: 5, message: "Rapide, efficace et toujours disponible. Merci beaucoup ! Je reviendrai." },
-    { name: "Diana", rating: 3, message: "Bon, mais peut mieux faire. Quelques lenteurs dans le support technique." },
-    { name: "Eli", rating: 5, message: "Parfait. Rien à dire. Travail sérieux, délais respectés. Je suis ravi !" },
-  ];
   const { t } = useTranslation()
+  
+  const [feedbacks, setFeedbacks] = useState([])
 
   const { ref: countRef, inView: countInView } = useInView({
     triggerOnce: true,
     threshold: 0.5
   });
+
+  useEffect(() => {
+    fetch('/react/get-feedback.php')
+    .then((res) => res.json())
+    .then((data) => setFeedbacks(data))
+    .catch((error) => console.log('Error during fetch:', error))
+  })
+
+  const firstLine = feedbacks.slice(0, Math.ceil(feedbacks.length /2));
+  const secondLine = feedbacks.slice(Math.ceil(feedbacks.length / 2))
 
   return (
     <div className="font-poppins">
@@ -316,7 +321,7 @@ function Home() {
 
             <div className='w-full overflow-x-hidden flex'>
               <ul className='flex gap-6 py-2 infinite-scroll'>
-                {[...feedbacks, ...feedbacks].map((feedback, index) => (
+                {[...firstLine, ...firstLine].map((feedback, index) => (
                   <li key={index} className='transition-transform duration-300 hover:scale-[1.02]'>
                     <FeedbackCard  name={feedback.name} message={feedback.message} rating={feedback.rating} />
                   </li>
@@ -326,7 +331,7 @@ function Home() {
 
             <div className='w-full overflow-x-hidden flex flex-row-reverse '>
               <ul className='flex gap-6 py-2 infinite-scroll-reverse'>
-                {[...feedbacks, ...feedbacks].map((feedback, index) => (
+                {[...secondLine, ...secondLine].map((feedback, index) => (
                   <li key={index} className='transition-transform duration-300 hover:scale-[1.02]'>
                     <FeedbackCard  name={feedback.name} message={feedback.message} rating={feedback.rating} />
                   </li>
