@@ -315,7 +315,17 @@ function Home() {
             <h2 className='font-Stock_No_Bills text-[2.6rem] font-semibold text-black inline-block relative'>What our customers say!<span className='absolute bottom-[-10px] bg-[#ef1c24] h-1 w-[100%] left-0 rounded-full'></span></h2>
 
             <div className='w-full overflow-x-hidden flex'>
-              <ul className='flex gap-6 py-4 infinite-scroll'>
+              <ul className='flex gap-6 py-2 infinite-scroll'>
+                {[...feedbacks, ...feedbacks].map((feedback, index) => (
+                  <li key={index} className='transition-transform duration-300 hover:scale-[1.02]'>
+                    <FeedbackCard  name={feedback.name} message={feedback.message} rating={feedback.rating} />
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className='w-full overflow-x-hidden flex flex-row-reverse '>
+              <ul className='flex gap-6 py-2 infinite-scroll-reverse'>
                 {[...feedbacks, ...feedbacks].map((feedback, index) => (
                   <li key={index} className='transition-transform duration-300 hover:scale-[1.02]'>
                     <FeedbackCard  name={feedback.name} message={feedback.message} rating={feedback.rating} />

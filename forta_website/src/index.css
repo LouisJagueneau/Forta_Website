@@ -25,6 +25,7 @@
     background-color: #ec1c24;
 }
 
+/* Scrolling Right to Left Animation  */
 @keyframes infinite-scroll {
   0% {
     transform: translateX(0);
@@ -36,4 +37,18 @@
 
 .infinite-scroll {
   animation: infinite-scroll 40s linear infinite;
+}
+
+/* Scrolling Left to Right Animation  */
+@keyframes infinite-scroll-reverse {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(50% + 20px));
+  }
+}
+
+.infinite-scroll-reverse {
+  animation: infinite-scroll-reverse 40s linear infinite;
 }
