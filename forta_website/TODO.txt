@@ -1,0 +1,15 @@
+- Enlever le fixed de la nav-bar
+- Ajouter les mots à  la traduction
+- Refaire le design des titres de sections
+- Mettre les images des outils de Karlo
+- Mettre le bon texte dans les carrousels
+- Mettre un pop-up quand on clique sur un plastic
+- Revoir le About us
+- Faire le responsive de la page nous contacter 
+- Revoir le design de la page pour faire un feedback
+
+// Revoir le resposnsive de la page d'accueil quand petit
+
+- Trouver une autre image pour la page d'accueil
+- Dans le header, enlever le hover moche
+- Dans la page d'accueil, mettre le même design dans nos services

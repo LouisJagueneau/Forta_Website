@@ -51,10 +51,9 @@ function Home() {
           <div className="container mx-auto px-6 sm:px-10 md:px-14 lg:px-22 xl:px-30 2xl:px-50 text-center xl:text-start">
 
             {/* Title */}
-            <h1 className="text-white font-Stock_No_Bills text-[2rem] sm:text-[2.5rem] md:text-[3rem] xl:text-[4rem] leading-tight sm:leading-[3rem] xl:leading-[4rem] mb-5">
-              <span className="block sm:inline">{t('welcomeTitle1')}</span>
-              <span className="text-[#ec1c24] block sm:inline">{' '}&{' '}</span>
-              <span className="block sm:inline">{t('welcomeTitle2')}</span>
+            <h1 className="text-white font-Stock_No_Bills text-[2.5rem] sm:text-[2.8rem] md:text-[3rem] xl:text-[4rem] leading-tight sm:leading-[3rem] xl:leading-[4rem] mb-5">
+              <span className="block ">{t('welcomeTitle1')} <span className="text-[#ec1c24]">{' '}&{' '}</span></span>
+              <span className="block">{t('welcomeTitle2')}</span>
             </h1>
 
             {/* Line */}
@@ -86,7 +85,7 @@ function Home() {
           </div>
 
           {/* Plastic Engineering */}
-          <div className="bg-white border border-gray-200 rounded-lg shadow-md p-5 sm:p-6 mb-10">
+          <div className="bg-white border border-gray-200 rounded-lg shadow-md p-7 sm:p-7 mb-10">
             <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-10">
               <img
                 src={roundedPlasticEngineering}
@@ -114,15 +113,15 @@ function Home() {
           </div>
 
           {/* CNC Parts */}
-          <div className="bg-white border border-gray-200 rounded-lg shadow-md p-5 sm:p-6">
-            <div className="flex flex-col sm:flex-row-reverse items-center gap-6 sm:gap-10">
+          <div className="bg-white border border-gray-200 rounded-lg shadow-md p-7 sm:p-7 mb-10">
+            <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-10">
               <img
                 src={roundedCNCParts}
-                alt="CNC Parts"
+                alt="Plastic Engineering"
                 className="w-[120px] sm:w-[160px] rounded-full shadow-md"
               />
               <div className="text-center sm:text-left">
-                <h3 className="font-semibold text-[1.2rem] mb-3">{t('cncTitle')}</h3>
+                <h3 className="font-semibold text-[1.2rem] mb-3">{t('plasticTitle')}</h3>
                 <p className="text-[#777777] text-sm mb-3 text-justify">
                   {t('cncDescription')}
                 </p>
@@ -133,13 +132,14 @@ function Home() {
                   </p>
                 </div>
                 <div className="flex justify-center sm:justify-start">
-                  <button className="text-white bg-[#ec1c24] text-xs px-3 py-1 rounded-sm hover:bg-[#c71a20] transition-colors duration-200">
-                    <Link className='flex items-center gap-2' to='/plasticEngineering'><FaArrowRight /> {t('cncButton')}</Link>
+                  <button className=" text-white bg-[#ec1c24] text-xs px-3 py-1 rounded-sm hover:bg-[#c71a20] transition-colors duration-200">
+                    <Link className='flex items-center gap-2' to='/plasticEngineering'><FaArrowRight /> {t('plasticButton')}</Link>
                   </button>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </section>
 
@@ -168,7 +168,7 @@ function Home() {
                 <img className='shadow-lg hidden lg:block h-full w-full object-cover rounded-sm' src={aboutImage} alt="aboutImage" />
               </div>
             </div>
-            <div ref={countRef} className="grid xs:grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-8 text-left lg:flex lg:flex-row lg:justify-between ">
+            <div ref={countRef} className="grid grid-cols-2 gap-x-8 gap-y-8 text-left lg:flex lg:flex-row lg:justify-between ">
 
               {/* Bloc 1 */}
               <div className="flex flex-row items-center gap-3 py-4 px-4 shadow-md rounded-md lg:shadow-none lg:rounded-none">
@@ -210,7 +210,7 @@ function Home() {
               <span className='border-[1px] border-gray-300 h-[auto] hidden lg:flex rounded-full'></span>
 
               {/* Bloc 4 */}
-              <div className="flex flex-row items-center gap-3 py-4 px-4  shadow-md rounded-md lg:shadow-none lg:rounded-none">
+              <div className="flex flex-row items-center gap-3 py-4 px-4 shadow-md rounded-md lg:shadow-none lg:rounded-none">
                 <p className="text-[#ec1c24] text-3xl font-light leading-none">
                   {countInView && <CountUp start={0} end={25} duration={3} prefix='+' />}
                 </p>
