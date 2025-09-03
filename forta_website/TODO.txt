@@ -1,5 +1,4 @@
-- Enlever le fixed de la nav-bar
-- Ajouter les mots à  la traduction
+// Ajouter les mots à  la traduction
 - Refaire le design des titres de sections
 - Mettre les images des outils de Karlo
 - Mettre le bon texte dans les carrousels

@@ -4,6 +4,7 @@
   "heroParagraph": "Wir verpflichten uns, außergewöhnliche Qualität, Präzision und Zuverlässigkeit in jedem von uns gefertigten Teil zu liefern. Unsere Expertise, kombiniert mit unserem umfassenden Serviceangebot, macht uns zu Ihrem idealen Partner für kundenspezifische CNC-Lösungen.",
   "heroButton": "UNSERE DIENSTLEISTUNGEN",
   "servicesTitle": "Unsere Dienstleistungen",
+  "servicesUpTitle": "Industrielle Lösungen",
   "plasticTitle": "Kunststofftechnik",
   "plasticDescription": "Wir liefern hochleistungsfähige Kunststoffkomponenten aus Industriematerialien. Unsere Kunststoffe bieten hervorragende mechanische, thermische und chemische Eigenschaften, was sie ideal für anspruchsvolle Umgebungen in verschiedenen Branchen macht.",
   "plasticList": "Dienstleistungen: PP ; PEHD, PE300, PE500, PE1000, PA6, POM-C, PTFE, PEEK.",
@@ -21,6 +22,7 @@
   "countProjects": "Projekte\nrealisiert",
   "countPartners": "vertrauenswürdige\nPartnerunternehmen",
   "industriesTitle": "Bediente Branchen",
+  "industriesUpTitle":"Unsere Branchen",
   "industryFood": "Lebensmittel & Getränke",
   "industryFoodDesc": "Wir liefern lebensmittelechte Kunststoff- und Präzisions-CNC-Teile für den hygienischen und langlebigen Einsatz in Lebensmittelverarbeitungs- und Abfüllanlagen.",
   "industryPharma": "Pharmazeutika",
@@ -33,6 +35,8 @@
   "industryEnergyDesc": "Unsere technischen Kunststoffe sind für extreme Bedingungen in Energiesystemen, industriellen Versorgungsunternehmen und Anlagen für saubere Energie ausgelegt.",
   "industryMachinery": "Industriemaschinen",
   "industryMachineryDesc": "Wir entwickeln und bearbeiten Teile, die die Betriebsstabilität und Langlebigkeit in komplexen Industrieanlagen und Produktionssystemen gewährleisten.",
+  "feebackTitle": "Was unsere Kunden denken!",
+  "feebackUpTitle": "Rückmeldung",
   "plasticEngineeringTitle": "Hochleistungs-Konstruktionskunststoffe für industrielle Anwendungen",
   "plasticEngineeringParagraph": "Wir liefern und bearbeiten technische Kunststoffe in Platten, Stäben und kundenspezifischen Teilen. Unsere Lösungen sind auf die hohen Standards industrieller Leistung und Langlebigkeit zugeschnitten.",
   "contactUsButton": "Kontaktieren Sie uns",
@@ -159,5 +163,12 @@
   "conf_policy_contact_email_label": "E-Mail:",
   "conf_policy_contact_email_value": "[info@forta.hr]",
   "conf_policy_contact_phone_label": "Telefon:",
-  "conf_policy_contact_phone_value": "[+385 xx xxx xxxx]"
+  "conf_policy_contact_phone_value": "[+385 xx xxx xxxx]",
+  "feedback_form_title": "Geben Sie uns Ihr Feedback",
+  "feedback_form_name": "Name",
+  "feedback_form_name_placeholder": "Ihr Name",
+  "feedback_form_rating": "Bewerten Sie Ihre Erfahrung",
+  "feedback_form_message": "Ihr feedback",
+  "feedback_form_placeholder": "Schreiben Sie hier Ihr Feedback...",
+  "feedback_form_button": "Schicken"
 }

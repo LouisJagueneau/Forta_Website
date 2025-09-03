@@ -1,9 +1,16 @@
+import CountUp from 'react-countup'
+import { useInView } from 'react-intersection-observer'
+import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next';
+import { useEffect, useRef, useState } from 'react';
+
+//image
+import aboutImage from '../assets/About imag.png'
 import backgroundImage from '../assets/backgroundImage.png';
 import roundedPlasticEngineering from '../assets/RoundedPlasticEngeeniring.png';
 import roundedCNCParts from '../assets/Rounded CNC Parts.png';
-import CountUp from 'react-countup'
-import { useInView } from 'react-intersection-observer'
-import aboutImage from '../assets/About imag.png'
+
+//icons
 import { CiForkAndKnife } from "react-icons/ci";
 import { FaArrowRight, FaUpLong } from "react-icons/fa6";
 import { CiMedicalCross } from "react-icons/ci";
@@ -11,15 +18,16 @@ import { SlEnergy } from "react-icons/sl";
 import { CiBoxes } from "react-icons/ci";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { IoSettingsOutline } from "react-icons/io5";
-import { Link } from 'react-router-dom'
-import { useTranslation } from 'react-i18next';
+
+//components
+import IndustrieCard from '../components/industrieCard';
 import FeedbackCard from '../components/feedbackCard';
-import { useEffect, useRef, useState } from 'react';
+import ServicesCard from '../components/servicesCard';
 
 function Home() {
 
   const { t } = useTranslation()
-  
+
   const [feedbacks, setFeedbacks] = useState([])
 
   const { ref: countRef, inView: countInView } = useInView({
@@ -29,12 +37,12 @@ function Home() {
 
   useEffect(() => {
     fetch('/react/get-feedback.php')
-    .then((res) => res.json())
-    .then((data) => setFeedbacks(data))
-    .catch((error) => console.log('Error during fetch:', error))
+      .then((res) => res.json())
+      .then((data) => setFeedbacks(data))
+      .catch((error) => console.log('Error during fetch:', error))
   })
 
-  const firstLine = feedbacks.slice(0, Math.ceil(feedbacks.length /2));
+  const firstLine = feedbacks.slice(0, Math.ceil(feedbacks.length / 2));
   const secondLine = feedbacks.slice(Math.ceil(feedbacks.length / 2))
 
   return (
@@ -80,66 +88,11 @@ function Home() {
       <section id='services' className="w-full py-12 bg-white">
         <div className="container mx-auto px-4 sm:px-6 md:px-10 xl:px-30 2xl:px-50">
           <div className="text-center mb-12">
-            <h2 className="font-Stock_No_Bills text-[2rem] sm:text-[2.6rem] font-semibold">{t('servicesTitle')}</h2>
-            <span className="border-2 border-[#ec1c24] block rounded-full w-[120px] mx-auto mt-2"></span>
+            <span className='uppercase font-poppins text-[#ec1c24] tracking-wider font-medium'>{t('servicesUpTitle')} </span>
+            <h2 className="font-Stock_No_Bills text-[2.2rem] sm:text-[2.6rem] font-bold">{t('servicesTitle')}</h2>
           </div>
-
-          {/* Plastic Engineering */}
-          <div className="bg-white border border-gray-200 rounded-lg shadow-md p-7 sm:p-7 mb-10">
-            <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-10">
-              <img
-                src={roundedPlasticEngineering}
-                alt="Plastic Engineering"
-                className="w-[120px] sm:w-[160px] rounded-full shadow-md"
-              />
-              <div className="text-center sm:text-left">
-                <h3 className="font-semibold text-[1.2rem] mb-3">{t('plasticTitle')}</h3>
-                <p className="text-[#777777] text-sm mb-3 text-justify">
-                  {t('plasticDescription')}
-                </p>
-                <div className="flex items-start justify-center sm:justify-start gap-2 mb-3">
-                  <span className="w-[10px] h-[10px] rounded-full bg-[#ec1c24] mt-1"></span>
-                  <p className="text-[#777777] text-sm">
-                    {t('plasticList')}
-                  </p>
-                </div>
-                <div className="flex justify-center sm:justify-start">
-                  <button className=" text-white bg-[#ec1c24] text-xs px-3 py-1 rounded-sm hover:bg-[#c71a20] transition-colors duration-200">
-                    <Link className='flex items-center gap-2' to='/plasticEngineering'><FaArrowRight /> {t('plasticButton')}</Link>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* CNC Parts */}
-          <div className="bg-white border border-gray-200 rounded-lg shadow-md p-7 sm:p-7 mb-10">
-            <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-10">
-              <img
-                src={roundedCNCParts}
-                alt="Plastic Engineering"
-                className="w-[120px] sm:w-[160px] rounded-full shadow-md"
-              />
-              <div className="text-center sm:text-left">
-                <h3 className="font-semibold text-[1.2rem] mb-3">{t('plasticTitle')}</h3>
-                <p className="text-[#777777] text-sm mb-3 text-justify">
-                  {t('cncDescription')}
-                </p>
-                <div className="flex items-start justify-center sm:justify-start gap-2 mb-3">
-                  <span className="w-[10px] h-[10px] rounded-full bg-[#ec1c24] mt-1"></span>
-                  <p className="text-[#777777] text-sm">
-                    {t('cncList')}
-                  </p>
-                </div>
-                <div className="flex justify-center sm:justify-start">
-                  <button className=" text-white bg-[#ec1c24] text-xs px-3 py-1 rounded-sm hover:bg-[#c71a20] transition-colors duration-200">
-                    <Link className='flex items-center gap-2' to='/plasticEngineering'><FaArrowRight /> {t('plasticButton')}</Link>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
+          <ServicesCard img={roundedPlasticEngineering} title={t('plasticTitle')} description={t('plasticDescription')} list={t('plasticList')} link='/plasticEngineering' buttonText={t('plasticButton')} />
+          <ServicesCard img={roundedCNCParts} title={t('cncTitle')} description={t('cncDescription')} list={t('cncList')} link='/cncParts' buttonText={t('plasticButton')} />
         </div>
       </section>
 
@@ -227,87 +180,18 @@ function Home() {
       {/* Industrie Section */}
       <section className='w-full bg-[#0f181f] py-12'>
         <div className="container mx-auto px-6 md:px-10 xl:px-30 2xl:px-50">
-          <div className="text-center mb-20 ">
+          <div className="text-center mb-20 flex flex-col">
+            <span className='uppercase font-poppins text-[#ec1c24] tracking-wider font-medium'>{t('industriesUpTitle')} </span>
             <h2 className="font-Stock_No_Bills text-[2.6rem] font-semibold text-white inline-block relative">{t('industriesTitle')}
-              <span className="bg-[#ec1c24] rounded-full absolute bottom-[-10px] w-full h-[2px] left-0"></span>
             </h2>
           </div>
-
           <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-5 xl:gap-y-9 xl:gap-x-9 gap-y-5 items-stretch mb-10'>
-
-            {/* First Element */}
-            <div className='bg-[#272f35] p-5 rounded-lg border-[#ffffff3b] border-[1px]'>
-              <div className='flex justify-between items-center mb-5'>
-                <div className='flex flex-col items-start'>
-                  <p className='font-poppins font-semibold text-white'>{t('industryFood')}</p>
-                  <span className="border-1 border-[#ec1c24] block rounded-full w-[100%]"></span>
-                </div>
-                <CiForkAndKnife className='text-[#ef1c24] text-[1.8rem]' />
-              </div>
-              <p className='text-[#B9B9B9] font-poppins text-[0.8rem] text-justify'>{t('industryFoodDesc')}</p>
-            </div>
-
-            {/* Second Element */}
-            <div className='bg-[#272f35] p-5 rounded-lg border-[#ffffff3b] border-[1px]'>
-              <div className='flex justify-between items-center mb-5'>
-                <div className='flex flex-col items-start'>
-                  <p className='font-poppins font-semibold text-white'>{t('industryPharma')}</p>
-                  <span className="border-1 border-[#ec1c24] block rounded-full w-[100%]"></span>
-                </div>
-                <CiMedicalCross className='text-[#ef1c24] text-[1.8rem]' />
-              </div>
-              <p className='text-[#B9B9B9] font-poppins text-[0.8rem] text-justify'>{t('industryPharmaDesc')}</p>
-            </div>
-
-            {/* Third Element */}
-            <div className='bg-[#272f35] p-5 rounded-lg border-[#ffffff3b] border-[1px]'>
-              <div className='flex justify-between items-center mb-5'>
-                <div className='flex flex-col items-start'>
-                  <p className='font-poppins font-semibold text-white'>{t('industryAutomation')}</p>
-                  <span className="border-1 border-[#ec1c24] block rounded-full w-[100%]"></span>
-                </div>
-                <CiBoxes className='text-[#ef1c24] text-[1.8rem]' />
-              </div>
-              <p className='text-[#B9B9B9] font-poppins text-[0.8rem] text-justify'>{t('industryAutomationDesc')}</p>
-            </div>
-
-            {/* Fourth Element */}
-            <div className='bg-[#272f35] p-5 rounded-lg border-[#ffffff3b] border-[1px]'>
-              <div className='flex justify-between items-center mb-5'>
-                <div className='flex flex-col items-start'>
-                  <p className='font-poppins font-semibold text-white'>{t('industryAuto')}</p>
-                  <span className="border-1 border-[#ec1c24] block rounded-full w-[100%]"></span>
-                </div>
-                <CiDeliveryTruck className='text-[#ef1c24] text-[1.8rem]' />
-              </div>
-              <p className='text-[#B9B9B9] font-poppins text-[0.8rem] text-justify'>{t('industryAutoDesc')}</p>
-            </div>
-
-            {/* Fifth Element */}
-            <div className='bg-[#272f35] p-5 rounded-lg border-[#ffffff3b] border-[1px]'>
-              <div className='flex justify-between items-center mb-5'>
-                <div className='flex flex-col items-start'>
-                  <p className='font-poppins font-semibold text-white'>{t('industryEnergy')}</p>
-                  <span className="border-1 border-[#ec1c24] block rounded-full w-[100%]"></span>
-                </div>
-                <SlEnergy className='text-[#ef1c24] text-[1.8rem]' />
-              </div>
-              <p className='text-[#B9B9B9] font-poppins text-[0.8rem] text-justify'>{t('industryEnergyDesc')}</p>
-            </div>
-
-
-            {/* Sixth Element */}
-            <div className='bg-[#272f35] p-5 rounded-lg border-[#ffffff3b] border-[1px]'>
-              <div className='flex justify-between items-center mb-5'>
-                <div className='flex flex-col items-start'>
-                  <p className='font-poppins font-semibold text-white'>{t('industryMachinery')}</p>
-                  <span className="border-1 border-[#ec1c24] block rounded-full w-[100%]"></span>
-                </div>
-                <IoSettingsOutline className='text-[#ef1c24] text-[1.5rem]' />
-              </div>
-              <p className='text-[#B9B9B9] font-poppins text-[0.8rem] text-justify'>{t('industryMachineryDesc')}</p>
-            </div>
-
+            <IndustrieCard title={t('industryFood')} description={t('industryFoodDesc')} Icon={CiForkAndKnife} />
+            <IndustrieCard title={t('industryPharma')} description={t('industryPharmaDesc')} Icon={CiMedicalCross} />
+            <IndustrieCard title={t('industryAutomation')} description={t('industryAutomationDesc')} Icon={CiBoxes} />
+            <IndustrieCard title={t('industryAuto')} description={t('industryAutoDesc')} Icon={CiDeliveryTruck} />
+            <IndustrieCard title={t('industryEnergy')} description={t('industryEnergyDesc')} Icon={SlEnergy} />
+            <IndustrieCard title={t('industryMachinery')} description={t('industryMachineryDesc')} Icon={IoSettingsOutline} />
           </div>
 
         </div>
@@ -317,13 +201,15 @@ function Home() {
       <section className='w-full bg-[#ffffff] py-12'>
         <div className="container mx-auto px-6 md:px-10 xl:px-30 2xl:px-50">
           <div className='flex flex-col items-center gap-12'>
-            <h2 className='font-Stock_No_Bills text-[2.6rem] font-semibold text-black inline-block relative'>What our customers say!<span className='absolute bottom-[-10px] bg-[#ef1c24] h-1 w-[100%] left-0 rounded-full'></span></h2>
-
+            <div className='text-center'>
+              <span className='uppercase font-poppins text-[#ec1c24] tracking-wider font-medium'>{t('feebackUpTitle')} </span>
+              <h2 className='font-Stock_No_Bills text-[2.6rem] font-semibold text-black'>{t('feebackTitle')}</h2>
+            </div>
             <div className='w-full overflow-x-hidden flex'>
               <ul className='flex gap-6 py-2 infinite-scroll'>
                 {[...firstLine, ...firstLine].map((feedback, index) => (
                   <li key={index} className='transition-transform duration-300 hover:scale-[1.02]'>
-                    <FeedbackCard  name={feedback.name} message={feedback.message} rating={feedback.rating} />
+                    <FeedbackCard name={feedback.name} message={feedback.message} rating={feedback.rating} />
                   </li>
                 ))}
               </ul>
@@ -333,7 +219,7 @@ function Home() {
               <ul className='flex gap-6 py-2 infinite-scroll-reverse'>
                 {[...secondLine, ...secondLine].map((feedback, index) => (
                   <li key={index} className='transition-transform duration-300 hover:scale-[1.02]'>
-                    <FeedbackCard  name={feedback.name} message={feedback.message} rating={feedback.rating} />
+                    <FeedbackCard name={feedback.name} message={feedback.message} rating={feedback.rating} />
                   </li>
                 ))}
               </ul>
