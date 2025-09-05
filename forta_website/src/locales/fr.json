@@ -35,7 +35,7 @@
   "industryEnergyDesc": "Nos plastiques techniques sont conçus pour résister à des conditions extrêmes dans les systèmes électriques, les services publics industriels et les installations d'énergie propre.",
   "industryMachinery": "Machinerie Industrielle",
   "industryMachineryDesc": "Nous concevons et usinons des pièces qui garantissent la stabilité opérationnelle et la durabilité des équipements industriels complexes et des systèmes de production.",
-  "feebackTitle": "Ce que nos client en pense !",
+  "feebackTitle": "Témoignages clients",
   "feebackUpTitle": "Avis",
   "plasticEngineeringTitle": "Plastiques Techniques Haute Performance pour Applications Industrielles",
   "plasticEngineeringParagraph": "Nous fournissons et usinons des plastiques techniques en feuilles, barres et pièces sur mesure. Nos solutions sont adaptées pour répondre aux normes élevées de performance et de durabilité industrielles.",
@@ -170,5 +170,6 @@
   "feedback_form_rating": "Évaluer votre expérience",
   "feedback_form_message": "Votre avis",
   "feedback_form_placeholder": "Ecrivez votre avis ici...",
-  "feedback_form_button": "Envoyer"
+  "feedback_form_button": "Envoyer",
+  "feedback_see_more_button": "Lire la suite"
 }

@@ -35,7 +35,7 @@
   "industryEnergyDesc": "Naša inženjerska plastika izrađena je da izdrži ekstremne uvjete u energetskim sustavima, industrijskim komunalnim uslugama i instalacijama čiste energije.",
   "industryMachinery": "Industrijski strojevi",
   "industryMachineryDesc": "Projektiramo i obrađujemo dijelove koji osiguravaju operativnu stabilnost i trajnost u složenoj industrijskoj opremi i proizvodnim sustavima.",
-  "feebackTitle": "Što naši kupci misle!",
+  "feebackTitle": "Kundenstimmen",
   "feebackUpTitle": "povratne informacije",
   "plasticEngineeringTitle": "Visokoučinkovita inženjerska plastika za industrijske primjene",
   "plasticEngineeringParagraph": "Isporučujemo i obrađujemo tehničku plastiku u pločama, šipkama i prilagođenim dijelovima. Naša rješenja prilagođena su visokim standardima industrijskih performansi i trajnosti.",
@@ -170,5 +170,7 @@
   "feedback_form_rating": "Ocijenite svoje iskustvo",
   "feedback_form_message": "Vaše povratne informacije",
   "feedback_form_placeholder": "Napišite svoje povratne informacije ovdje...",
-  "feedback_form_button": "Poslati"
+  "feedback_form_button": "Poslati",
+  "feedback_see_more_button": "Pročitaj više"
+
 }

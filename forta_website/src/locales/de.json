@@ -35,7 +35,7 @@
   "industryEnergyDesc": "Unsere technischen Kunststoffe sind für extreme Bedingungen in Energiesystemen, industriellen Versorgungsunternehmen und Anlagen für saubere Energie ausgelegt.",
   "industryMachinery": "Industriemaschinen",
   "industryMachineryDesc": "Wir entwickeln und bearbeiten Teile, die die Betriebsstabilität und Langlebigkeit in komplexen Industrieanlagen und Produktionssystemen gewährleisten.",
-  "feebackTitle": "Was unsere Kunden denken!",
+  "feebackTitle": "Kundenstimmen",
   "feebackUpTitle": "Rückmeldung",
   "plasticEngineeringTitle": "Hochleistungs-Konstruktionskunststoffe für industrielle Anwendungen",
   "plasticEngineeringParagraph": "Wir liefern und bearbeiten technische Kunststoffe in Platten, Stäben und kundenspezifischen Teilen. Unsere Lösungen sind auf die hohen Standards industrieller Leistung und Langlebigkeit zugeschnitten.",
@@ -170,5 +170,6 @@
   "feedback_form_rating": "Bewerten Sie Ihre Erfahrung",
   "feedback_form_message": "Ihr feedback",
   "feedback_form_placeholder": "Schreiben Sie hier Ihr Feedback...",
-  "feedback_form_button": "Schicken"
+  "feedback_form_button": "Schicken",
+  "feedback_see_more_button": "Mehr lesen"
 }

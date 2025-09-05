@@ -35,7 +35,7 @@
     "industryEnergyDesc": "Our engineering plastics are built to withstand extreme conditions in power systems, industrial utilities, and clean energy installations.",
     "industryMachinery": "Industrial Machinery",
     "industryMachineryDesc": "We engineer and machine parts that ensure operational stability and durability in complex industrial equipment and production systems.",
-    "feebackTitle":"What our customers say!",
+    "feebackTitle":"Customer Testimonials",
     "feebackUpTitle": "Feedbacks",
     "plasticEngineeringTitle": "High-Performance Engineering Plastics for Industrial Applications",
     "plasticEngineeringParagraph": "We supply and machine technical plastics in sheets, rods, and custom parts. Our solutions are tailored to meet the high standards of industrial performance and durability.",
@@ -170,5 +170,6 @@
   "feedback_form_rating": "Rate your experience",
   "feedback_form_message": "Your feedback",
   "feedback_form_placeholder": "Write your feedback here...",
-  "feedback_form_button":"Send"
+  "feedback_form_button":"Send",
+  "feedback_see_more_button": "See more"
 }

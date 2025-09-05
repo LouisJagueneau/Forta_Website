@@ -209,6 +209,7 @@ function Home() {
               <ul className='flex gap-6 py-2 infinite-scroll'>
                 {[...firstLine, ...firstLine].map((feedback, index) => (
                   <li key={index} className='transition-transform duration-300 hover:scale-[1.02]'>
+                    
                     <FeedbackCard name={feedback.name} message={feedback.message} rating={feedback.rating} />
                   </li>
                 ))}
