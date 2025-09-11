@@ -3,11 +3,14 @@ import { useInView } from 'react-intersection-observer'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
 import { useEffect, useRef, useState } from 'react';
-
+import { motion } from "motion/react"
 //image
 import aboutImage from '../assets/About imag.png'
 import backgroundImage from '../assets/backgroundImage.png';
-import roundedPlasticEngineering from '../assets/RoundedPlasticEngeeniring.png';
+import backgroundImageV2 from '../assets/backgroundImageV2.jpg';
+import backgroundImageV3 from '../assets/backgroundImageV3.jpg';
+import backgroundImageV4 from '../assets/backgroundImageV4.jpg';
+import roundedPlasticEngineering from '../assets/EngineeringPlastic.jpg';
 import roundedCNCParts from '../assets/Rounded CNC Parts.png';
 
 //icons
@@ -40,7 +43,7 @@ function Home() {
       .then((res) => res.json())
       .then((data) => setFeedbacks(data))
       .catch((error) => console.log('Error during fetch:', error))
-  })
+  }, [])
 
   const firstLine = feedbacks.slice(0, Math.ceil(feedbacks.length / 2));
   const secondLine = feedbacks.slice(Math.ceil(feedbacks.length / 2))
@@ -50,34 +53,32 @@ function Home() {
 
       <section
         className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
+        style={{ backgroundImage: `url(${backgroundImageV4})` }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black opacity-20 z-0"></div>
+        <div className="absolute inset-0 bg-black opacity-60 z-0"></div>
 
-        <div className="relative z-10 flex items-center justify-center xl:justify-normal xl:w-3/5 2xl:w-4/6 min-h-screen">
-          <div className="container mx-auto px-6 sm:px-10 md:px-14 lg:px-22 xl:px-30 2xl:px-50 text-center xl:text-start">
+        <div className="relative z-10 flex justify-center pt-[10rem] min-h-screen">
+          <div className="container mx-auto px-6 sm:px-10 md:px-14 lg:px-22 xl:px-30 2xl:px-50 text-center  flex flex-col items-center">
 
             {/* Title */}
-            <h1 className="text-white font-Stock_No_Bills text-[2.5rem] sm:text-[2.8rem] md:text-[3rem] xl:text-[4rem] leading-tight sm:leading-[3rem] xl:leading-[4rem] mb-5">
-              <span className="block ">{t('welcomeTitle1')} <span className="text-[#ec1c24]">{' '}&{' '}</span></span>
-              <span className="block">{t('welcomeTitle2')}</span>
-            </h1>
-
-            {/* Line */}
-            <span className="border-2 border-[#ec1c24] block rounded-full w-[60%] sm:w-[75%] mx-auto xl:mx-0 mb-4"></span>
-
+            <motion.h1 initial={{opacity:0, scale:0.7}} animate={{opacity:1, scale:1}} transition={{duration:0.6}} viewport={{once:true}}
+              className="text-white font-Stock_No_Bills text-[2.5rem] sm:text-[3.5rem] md:text-[4.2rem] xl:text-[5rem] leading-tight sm:leading-[4rem] md:leading-[4.7rem] xl:leading-[6rem] mb-10">
+              <span className="block ">{t('welcomeTitle1')}<span className="text-[#ec1c24]">{' '}&{' '}</span><span>{t('welcomeTitle2')}</span></span>
+              <span className="block">{t('welcomeTitle3')}</span>
+            </motion.h1>
             {/* Paragraph */}
-            <p className="text-white text-[0.9rem] sm:text-[0.85rem] w-[90%] sm:w-[75%] mx-auto xl:mx-0 mb-8 xl:mb-14 text-center xl:text-justify leading-relaxed">
+            <motion.p initial={{opacity:0, scale:0.7}} animate={{opacity:1, scale:1}} transition={{duration:0.6, delay:0.5}} viewport={{once:true}}
+              className="text-white/85 text-[0.8rem] sm:text-[0.90rem] w-[90%] sm:w-[90%] mx-auto xl:mx-0 mb-8 xl:mb-12 text-center leading-relaxed">
               {t('heroParagraph')}
-            </p>
-
+            </motion.p>
             {/* Button */}
-            <div className="flex justify-center xl:justify-start">
-              <button className="flex items-center gap-2 text-white font-semibold text-[0.8rem] sm:text-[0.85rem] bg-[#ec1c24] px-5 py-2 rounded-sm hover:bg-[#c71a20] transition-colors duration-200" onClick={() => { const service = document.getElementById('services'); if (service) { service.scrollIntoView({ behavior: 'smooth' }) } }}>
+            <motion.div initial={{opacity:0, scale:0.7}} animate={{opacity:1, scale:1}} transition={{duration:0.6, delay:1}} viewport={{once:true}} 
+              className="flex justify-center xl:justify-start">
+              <button className="flex items-center gap-2 text-white font-semibold text-[0.8rem] sm:text-[0.85rem] bg-[#ec1c24] px-5 py-2 rounded-sm hover:bg-[#c71a20] cursor-pointer transition-colors duration-200" onClick={() => { const service = document.getElementById('services'); if (service) { service.scrollIntoView({ behavior: 'smooth' }) } }}>
                 <FaArrowRight /> {t('heroButton')}
               </button>
-            </div>
+            </motion.div>
 
           </div>
         </div>
@@ -91,8 +92,10 @@ function Home() {
             <span className='uppercase font-poppins text-[#ec1c24] tracking-wider font-medium'>{t('servicesUpTitle')} </span>
             <h2 className="font-Stock_No_Bills text-[2.2rem] sm:text-[2.6rem] font-bold">{t('servicesTitle')}</h2>
           </div>
-          <ServicesCard img={roundedPlasticEngineering} title={t('plasticTitle')} description={t('plasticDescription')} list={t('plasticList')} link='/plasticEngineering' buttonText={t('plasticButton')} />
-          <ServicesCard img={roundedCNCParts} title={t('cncTitle')} description={t('cncDescription')} list={t('cncList')} link='/cncParts' buttonText={t('plasticButton')} />
+          <div className='flex flex-col xl:flex-row xl:gap-15 2xl:gap-20'>
+          <ServicesCard info='Plastics available' img={roundedPlasticEngineering} title={t('plasticTitle')} list={['PP','PEHD','PE300','PE500','PE1000', 'PA6', 'POM-C', 'PTFE', 'PEEK']} description={t('plasticDescription')} link='/plasticEngineering' buttonText={t('plasticButton')} />
+          <ServicesCard info='Specialized Products' img={roundedCNCParts} title={t('cncTitle')} list={['Timing Screw', 'Feed screw', 'Rings', 'Guides', 'Flanges', 'Sliders', 'Pulleys', 'Housing', 'Rollers']} description={t('cncDescription')}  link='/cncParts' buttonText={t('plasticButton')} />
+          </div>
         </div>
       </section>
 
@@ -178,11 +181,11 @@ function Home() {
       </section>
 
       {/* Industrie Section */}
-      <section className='w-full bg-[#0f181f] py-12'>
+      <section className='w-full bg-white py-12'>
         <div className="container mx-auto px-6 md:px-10 xl:px-30 2xl:px-50">
           <div className="text-center mb-20 flex flex-col">
             <span className='uppercase font-poppins text-[#ec1c24] tracking-wider font-medium'>{t('industriesUpTitle')} </span>
-            <h2 className="font-Stock_No_Bills text-[2.6rem] font-semibold text-white inline-block relative">{t('industriesTitle')}
+            <h2 className="font-Stock_No_Bills text-[2.6rem] font-semibold text-black inline-block relative">{t('industriesTitle')}
             </h2>
           </div>
           <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-5 xl:gap-y-9 xl:gap-x-9 gap-y-5 items-stretch mb-10'>
@@ -197,7 +200,7 @@ function Home() {
         </div>
       </section>
 
-      {/* Feedback Section */}
+      {/* Feedback Section
       <section className='w-full bg-[#ffffff] py-12'>
         <div className="container mx-auto px-6 md:px-10 xl:px-30 2xl:px-50">
           <div className='flex flex-col items-center gap-12'>
@@ -228,7 +231,7 @@ function Home() {
 
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

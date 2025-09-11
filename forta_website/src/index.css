@@ -36,7 +36,7 @@
 }
 
 .infinite-scroll {
-  animation: infinite-scroll 60s linear infinite;
+  animation: infinite-scroll 120s linear infinite;
 }
 
 /* Scrolling Left to Right Animation  */
@@ -50,5 +50,5 @@
 }
 
 .infinite-scroll-reverse {
-  animation: infinite-scroll-reverse 60s linear infinite;
+  animation: infinite-scroll-reverse 120s linear infinite;
 }

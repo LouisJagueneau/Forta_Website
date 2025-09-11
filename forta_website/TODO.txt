@@ -1,14 +1,21 @@
 // Ajouter les mots à  la traduction
-- Refaire le design des titres de sections
+// Elever le hover moche sur le boutton
+// Mettre cursor Pointer sur le call to action sur le home
+/ Refonte total du la section de bienvenue -> Si valider, mettre à jours les traductions du h1 et paragraphe
+//Changement des couleurs des sections
+/ Ajout des animations
+/ Que faire des dedux bouton contact us
+
+// Refaire le design des titres de sections
 - Mettre les images des outils de Karlo
 - Mettre le bon texte dans les carrousels
 - Mettre un pop-up quand on clique sur un plastic
 - Revoir le About us
-- Faire le responsive de la page nous contacter 
+// Faire le responsive de la page nous contacter 
 - Revoir le design de la page pour faire un feedback
 
 // Revoir le resposnsive de la page d'accueil quand petit
 
-- Trouver une autre image pour la page d'accueil
-- Dans le header, enlever le hover moche
-- Dans la page d'accueil, mettre le même design dans nos services
+// Trouver une autre image pour la page d'accueil
+//Dans le header, enlever le hover moche
+// Dans la page d'accueil, mettre le même design dans nos services
