@@ -2,13 +2,12 @@ import { Link } from "react-router-dom";
 
 //icons
 import { FaArrowRight } from "react-icons/fa6";
-import { IoLayersOutline } from "react-icons/io5";
 
-function ServicesCard({ img, title, description, list = [], link, buttonText, info }) {
+function ServicesCard({ img, title, description, list = [], link, buttonText, info, Icon }) {
   return (
     <div className="bg-black/3 border border-gray-200 rounded-lg shadow-sm p-8 mb-10">
       <div className="flex flex-col gap-4 sm:gap-10">
-        <IoLayersOutline className="text-2xl text-[#f7f7f7] bg-[#ec1c24] w-10 h-10 p-2 rounded-md shadow-sm" />
+        <Icon className="text-2xl text-[#f7f7f7] bg-[#ec1c24] w-10 h-10 p-2 rounded-md shadow-sm" />
         <div className="">
           <h3 className="font-semibold text-[1.5rem] mb-6">{title}</h3>
           <p className="text-[#777777] text-sm mb-6 text-justify leading-6">

@@ -18,38 +18,7 @@ import { useTranslation } from 'react-i18next';
 function CncParts() {
     const { t } = useTranslation();
 
-    const slides = [
-        {
-            item: t('cnc_turning_item'),
-            image: CNCTurningImage,
-            description: t('cnc_turning_description')
-        },
-        {
-            item: t('cnc_milling_item'),
-            image: CNCMillingImage,
-            description: t('cnc_milling_description')
-        },
-        {
-            item: t('cnc_five_axis_machining_item'),
-            image: CNC5AxesImage,
-            description: t('cnc_five_axis_machining_description')
-        },
-        {
-            item: t('cnc_laser_cutting_item'),
-            image: CNC5AxesImage, // Reusing image, consider a specific one if available
-            description: t('cnc_laser_cutting_description')
-        },
-        {
-            item: t('cnc_welding_item'),
-            image: CNC5AxesImage, // Reusing image, consider a specific one if available
-            description: t('cnc_welding_description')
-        },
-        {
-            item: t('cnc_bending_item'),
-            image: CNC5AxesImage, // Reusing image, consider a specific one if available
-            description: t('cnc_bending_description')
-        },
-    ]
+
 
     const parts = [ // Renamed from 'plastics' to 'parts' for clarity
         {
@@ -133,14 +102,17 @@ function CncParts() {
                             </h2>
                         </div>
                         {/* Slider */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 40 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, ease: "easeOut" }}
-                            viewport={{ once: true }}
-                            className="w-full">
-                            <Slider slides={slides} />
-                        </motion.div>
+                       {/* Slider */}
+                        <div className="grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-8 xl:gap-10 2xl:gap-12">
+                            <Slider image={CNCTurningImage} title={t('cnc_turning_item')} description={t('cnc_turning_description')} info={['Thickness: 5–100 mm', 'Colors: White, Black, Blue, Red', 'Cut-to-size on request']}/>
+                            <Slider image={CNCMillingImage} title={t('cnc_milling_item')} description={t('cnc_milling_description')} info={['Thickness: 5–100 mm', 'Colors: White, Black, Blue, Red', 'Cut-to-size on request']}/>
+                            <Slider image={CNC5AxesImage} title={t('cnc_five_axis_machining_item')} description={t('cnc_five_axis_machining_description')} info={['Thickness: 5–100 mm', 'Colors: White, Black, Blue, Red', 'Cut-to-size on request']}/>
+
+                            <Slider image={CNC5AxesImage} title={t('cnc_laser_cutting_item')} description={t('cnc_laser_cutting_description')} info={['Thickness: 5–100 mm', 'Colors: White, Black, Blue, Red', 'Cut-to-size on request']}/>
+                            <Slider image={CNC5AxesImage} title={t('cnc_welding_item')} description={t('cnc_welding_description')} info={['Thickness: 5–100 mm', 'Colors: White, Black, Blue, Red', 'Cut-to-size on request']}/>
+                            <Slider image={CNC5AxesImage} title={t('cnc_bending_item')} description={t('cnc_bending_description')} info={['Thickness: 5–100 mm', 'Colors: White, Black, Blue, Red', 'Cut-to-size on request']}/>
+
+                        </div>
                     </div>
                 </section>
             </div>

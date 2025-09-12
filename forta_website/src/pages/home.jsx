@@ -21,6 +21,8 @@ import { SlEnergy } from "react-icons/sl";
 import { CiBoxes } from "react-icons/ci";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { IoSettingsOutline } from "react-icons/io5";
+import { IoLayersOutline } from "react-icons/io5";
+import { GiMetalBar } from "react-icons/gi";
 
 //components
 import IndustrieCard from '../components/industrieCard';
@@ -93,12 +95,11 @@ function Home() {
             <h2 className="font-Stock_No_Bills text-[2.2rem] sm:text-[2.6rem] font-bold">{t('servicesTitle')}</h2>
           </div>
           <div className='flex flex-col xl:flex-row xl:gap-15 2xl:gap-20'>
-          <ServicesCard info='Plastics available' img={roundedPlasticEngineering} title={t('plasticTitle')} list={['PP','PEHD','PE300','PE500','PE1000', 'PA6', 'POM-C', 'PTFE', 'PEEK']} description={t('plasticDescription')} link='/plasticEngineering' buttonText={t('plasticButton')} />
-          <ServicesCard info='Specialized Products' img={roundedCNCParts} title={t('cncTitle')} list={['Timing Screw', 'Feed screw', 'Rings', 'Guides', 'Flanges', 'Sliders', 'Pulleys', 'Housing', 'Rollers']} description={t('cncDescription')}  link='/cncParts' buttonText={t('plasticButton')} />
+          <ServicesCard Icon={IoLayersOutline} info='Plastics available' img={roundedPlasticEngineering} title={t('plasticTitle')} list={['PP','PEHD','PE300','PE500','PE1000', 'PA6', 'POM-C', 'PTFE', 'PEEK']} description={t('plasticDescription')} link='/plasticEngineering' buttonText={t('plasticButton')} />
+          <ServicesCard Icon={GiMetalBar} info='Specialized Products' img={roundedCNCParts} title={t('cncTitle')} list={['Timing Screw', 'Feed screw', 'Rings', 'Guides', 'Flanges', 'Sliders', 'Pulleys', 'Housing', 'Rollers']} description={t('cncDescription')}  link='/cncParts' buttonText={t('plasticButton')} />
           </div>
         </div>
       </section>
-
 
       {/* About Section */}
       <section className="w-full bg-[#e91b23] py-12">
