@@ -11,6 +11,9 @@
 - Mettre le bon texte dans les carrousels
 - Mettre un pop-up quand on clique sur un plastic
 - Revoir le About us
+- Faire un guide pour faire les changements sur le site
+// Mettre le htpps
+- Revoir les pages de service
 // Faire le responsive de la page nous contacter 
 - Revoir le design de la page pour faire un feedback
 

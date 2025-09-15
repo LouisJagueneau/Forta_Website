@@ -5,7 +5,7 @@ const Footer = () => {
   const { t } = useTranslation(); // Initialize useTranslation hook
 
   return (
-    <footer className="bg-[#0e171e] border-t border-[#ffffff27] font-poppins">
+    <footer className="bg-gradient-to-br from-black  via-black/90 to-black border-t border-[#ffffff27] font-poppins">
       <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-5 gap-8 text-sm text-white">
         {/* LOGO */}
         <div className="col-span-2 md:col-span-1 flex flex-col gap-2 items-start">

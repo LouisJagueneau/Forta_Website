@@ -6,9 +6,6 @@ import { useEffect, useRef, useState } from 'react';
 import { motion } from "motion/react"
 //image
 import aboutImage from '../assets/About imag.png'
-import backgroundImage from '../assets/backgroundImage.png';
-import backgroundImageV2 from '../assets/backgroundImageV2.jpg';
-import backgroundImageV3 from '../assets/backgroundImageV3.jpg';
 import backgroundImageV4 from '../assets/backgroundImageV4.jpg';
 import roundedPlasticEngineering from '../assets/EngineeringPlastic.jpg';
 import roundedCNCParts from '../assets/Rounded CNC Parts.png';
@@ -33,7 +30,7 @@ function Home() {
 
   const { t } = useTranslation()
 
-  const [feedbacks, setFeedbacks] = useState([])
+  // const [feedbacks, setFeedbacks] = useState([])
 
   const { ref: countRef, inView: countInView } = useInView({
     triggerOnce: true,
@@ -47,44 +44,102 @@ function Home() {
       .catch((error) => console.log('Error during fetch:', error))
   }, [])
 
-  const firstLine = feedbacks.slice(0, Math.ceil(feedbacks.length / 2));
-  const secondLine = feedbacks.slice(Math.ceil(feedbacks.length / 2))
+  // const firstLine = feedbacks.slice(0, Math.ceil(feedbacks.length / 2));
+  // const secondLine = feedbacks.slice(Math.ceil(feedbacks.length / 2))
 
   return (
     <div className="font-poppins">
 
-      <section
-        className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${backgroundImageV4})` }}
-      >
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black opacity-60 z-0"></div>
+      <section className="relative w-full min-h-screen overflow-hidden">
+            {/* Background with overlay */}
+            <div 
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                style={{ backgroundImage: `url(${backgroundImageV4})` }}
+            >
+                <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/60 to-black/80"></div>
+            </div>
 
-        <div className="relative z-10 flex justify-center pt-[10rem] min-h-screen">
-          <div className="container mx-auto px-6 sm:px-10 md:px-14 lg:px-22 xl:px-30 2xl:px-50 text-center  flex flex-col items-center">
+            <div className="relative z-10 flex items-center justify-center min-h-screen pt-20">
+                <div className="container mx-auto px-6 sm:px-10 md:px-14 lg:px-22 xl:px-30 2xl:px-50 text-center">
+                    
+                    {/* Subtitle with line */}
+                    <motion.div 
+                        initial={{opacity:0, y:30}} 
+                        animate={{opacity:1, y:0}} 
+                        transition={{duration:0.8}}
+                        className="flex items-center justify-center gap-4 mb-6"
+                    >
+                        <div className="w-12 h-[2px] bg-[#ec1c24]"></div>
+                        <span className="uppercase font-poppins text-[#ec1c24] tracking-wider font-semibold text-sm">
+                            Forta
+                        </span>
+                        <div className="w-12 h-[2px] bg-[#ec1c24]"></div>
+                    </motion.div>
 
-            {/* Title */}
-            <motion.h1 initial={{opacity:0, scale:0.7}} animate={{opacity:1, scale:1}} transition={{duration:0.6}} viewport={{once:true}}
-              className="text-white font-Stock_No_Bills text-[2.5rem] sm:text-[3.5rem] md:text-[4.2rem] xl:text-[5rem] leading-tight sm:leading-[4rem] md:leading-[4.7rem] xl:leading-[6rem] mb-10">
-              <span className="block ">{t('welcomeTitle1')}<span className="text-[#ec1c24]">{' '}&{' '}</span><span>{t('welcomeTitle2')}</span></span>
-              <span className="block">{t('welcomeTitle3')}</span>
-            </motion.h1>
-            {/* Paragraph */}
-            <motion.p initial={{opacity:0, scale:0.7}} animate={{opacity:1, scale:1}} transition={{duration:0.6, delay:0.5}} viewport={{once:true}}
-              className="text-white/85 text-[0.8rem] sm:text-[0.90rem] w-[90%] sm:w-[90%] mx-auto xl:mx-0 mb-8 xl:mb-12 text-center leading-relaxed">
-              {t('heroParagraph')}
-            </motion.p>
-            {/* Button */}
-            <motion.div initial={{opacity:0, scale:0.7}} animate={{opacity:1, scale:1}} transition={{duration:0.6, delay:1}} viewport={{once:true}} 
-              className="flex justify-center xl:justify-start">
-              <button className="flex items-center gap-2 text-white font-semibold text-[0.8rem] sm:text-[0.85rem] bg-[#ec1c24] px-5 py-2 rounded-sm hover:bg-[#c71a20] cursor-pointer transition-colors duration-200" onClick={() => { const service = document.getElementById('services'); if (service) { service.scrollIntoView({ behavior: 'smooth' }) } }}>
-                <FaArrowRight /> {t('heroButton')}
-              </button>
+                    {/* Main Title */}
+                    <motion.h1 
+                        initial={{opacity:0, scale:0.8}} 
+                        animate={{opacity:1, scale:1}} 
+                        transition={{duration:0.8, delay:0.2}}
+                        className="text-white font-Stock_No_Bills text-[2.5rem] sm:text-[3.5rem] md:text-[4.2rem] xl:text-[5rem] leading-tight sm:leading-[3.8rem] md:leading-[4.5rem] xl:leading-[5.5rem] mb-8"
+                    >
+                        <span className="block">
+                            {t('welcomeTitle1')}
+                            <span className="text-[#ec1c24] mx-2"> & </span>
+                            <span>{t('welcomeTitle2')}</span>
+                        </span>
+                        <span className="block mt-2 text-white">
+                            {t('welcomeTitle3')}
+                        </span>
+                    </motion.h1>
+
+                    {/* Description */}
+                    <motion.p 
+                        initial={{opacity:0, y:30}} 
+                        animate={{opacity:1, y:0}} 
+                        transition={{duration:0.8, delay:0.4}}
+                        className="text-gray-300 text-base max-w-3xl mx-auto mb-10 leading-relaxed text-[0.9rem]"
+                    >
+                        {t('heroParagraph')}
+                    </motion.p>
+
+                    {/* CTA Button */}
+                    <motion.div 
+                        initial={{opacity:0, y:30}} 
+                        animate={{opacity:1, y:0}} 
+                        transition={{duration:0.8, delay:0.6}}
+                        className="mb-16"
+                    >
+                        <button 
+                            className="group bg-[#ec1c24] hover:bg-[#c71a20] text-white font-semibold text-base px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center justify-center gap-3 mx-auto"
+                            onClick={() => { 
+                                const service = document.getElementById('services'); 
+                                if (service) { service.scrollIntoView({ behavior: 'smooth' }) } 
+                            }}
+                        >
+                            <FaArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                            <span className='text-[0.9rem]'>{t('heroButton')}</span>
+                        </button>
+                    </motion.div>
+
+                    
+                </div>
+            </div>
+
+            {/* Scroll indicator */}
+            <motion.div
+                initial={{opacity:0}}
+                animate={{opacity:1}}
+                transition={{duration:1, delay:1.2}}
+                className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+            >
+                <div className="flex flex-col items-center text-white/60 animate-bounce">
+                    <span className="text-xs mb-2 font-poppins">Découvrir</span>
+                    <div className="w-px h-4 bg-white/40"></div>
+                    <div className="w-1 h-1 bg-white/60 rounded-full mt-1"></div>
+                </div>
             </motion.div>
-
-          </div>
-        </div>
-      </section>
+        </section>
 
 
       {/* Services Section */}
@@ -102,7 +157,7 @@ function Home() {
       </section>
 
       {/* About Section */}
-      <section className="w-full bg-[#e91b23] py-12">
+      <section className="w-full bg-gradient-to-r from-[#ec1c24] via-red-500 to-[#ec1c24]  py-12">
         <div className="container mx-auto px-6 md:px-10 xl:px-30 2xl:px-50">
           <div className="bg-white rounded-lg p-8">
             <h2 className="font-Stock_No_Bills text-3xl md:text-4xl text-center md:text-left font-semibold mb-10">

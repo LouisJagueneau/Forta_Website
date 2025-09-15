@@ -30,7 +30,7 @@ function ContactUs() {
                         <div className="flex flex-col-reverse gap-10 
                                         lg:flex-row">
                             <section className="
-                             lg:w-1/2">
+                             lg:w-3/5">
                                 <div className=" bg-[#f7f7f7] px-10 py-6 rounded-sm">
                                     <h2 className="text-black font-light font-poppins text-[2.0rem] lg:text-[2.4rem] xl:text-[2.8rem] mb-8">Contact us</h2>
                                     <form method='POST' action="/react/contact.php" className="text-black placeholder-black/20 font-poppins font-light flex flex-col gap-y-5">
@@ -42,7 +42,7 @@ function ContactUs() {
                                     </form>
                                 </div>
                             </section>
-                            <section className=" lg:w-1/2 lg:flex lg:items-center lg:justify-center">
+                            <section className=" lg:w-2/5 lg:flex lg:items-center lg:justify-center">
                                 <div>
                                     {contacts.map((contact) => (
                                         <div key={contact.name} className="flex items-stretch gap-5 mb-8 lg:mb-16">
