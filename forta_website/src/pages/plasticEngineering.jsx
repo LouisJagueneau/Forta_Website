@@ -160,7 +160,7 @@ function PlasticEngineering() {
                         </div>
 
                         {/* Right Visual */}
-                        <div className="h-full flex lg:col-span-2 ">
+                        <div className="h-full hidden lg:flex lg:col-span-2 ">
                             <motion.div
                                 initial={{opacity:0, x:50, scale:0.8}}
                                 animate={{opacity:1, x:0, scale:1}}
@@ -258,12 +258,12 @@ function PlasticEngineering() {
                             >
                                 {products.map((product, index) => (
                                     <div key={index} className="w-full flex-shrink-0 px-4">
-                                        <div className="bg-gradient-to-br from-black/30 to-black/50 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden h-96">
-                                            <div className="grid lg:grid-cols-2 h-full">
-                                                <div className="aspect-video lg:aspect-auto bg-gradient-to-br from-slate-700 to-slate-800 relative overflow-hidden">
+                                        <div className="bg-gradient-to-br from-black/30 to-black/50 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden h-auto lg:h-96 ">
+                                            <div className="grid grid-cols-1 lg:grid-cols-2 h-full">
+                                                <div className="h-64 lg:h-auto lg:aspect-auto bg-gradient-to-br from-slate-700 to-slate-800 relative overflow-hidden">
                                                     <div className="absolute inset-0 bg-gradient-to-br from-red-500/20 to-transparent"></div>
                                                     <div className="flex items-center justify-center h-full">
-                                                        <img src={product.img} alt={product.img} className='flex h-full w-full' />
+                                                        <img src={product.img} alt={product.img} className='flex h-full w-full object-cover' />
                                                     </div>
                                                     <div className="absolute top-4 left-4">
                                                         <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-medium">
