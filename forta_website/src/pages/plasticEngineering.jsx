@@ -183,14 +183,14 @@ function PlasticEngineering() {
 
             {/* Section Matériaux avec design hexagonal */}
             <div className="relative py-20 bg-gradient-to-b from-gray-50 to-gray-100 ">
-                <div className="container mx-auto px-6 lg:px-20">
+                <div className="container mx-auto px-6 md:px-10 xl:px-30 2xl:px-50">
                     <div className="text-center mb-16">
                         <div className="flex items-center justify-center gap-3 mb-4">
                             <div className="w-12 h-0.5 bg-[#ec1c24] rounded-full"></div>
                             <span className="text-[#ec1c24] uppercase tracking-wider text-sm font-medium">Matériaux Experts</span>
                             <div className="w-12 h-0.5 bg-[#ec1c24] rounded-full"></div>
                         </div>
-                        <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+                        <h2 className="text-4xl lg:text-5xl font-poppins font-bold mb-6">
                             <span className="bg-gradient-to-r from-black to-gray-700 bg-clip-text text-transparent">
                                 Technologies Avancées
                             </span>
@@ -236,7 +236,7 @@ function PlasticEngineering() {
 
             {/* Section Produits avec slider interactif */}
             <div className="relative py-20 bg-gradient-to-br from-black via-black/85 to-black">
-                <div className="container mx-auto px-6 lg:px-20">
+                <div className="container mx-auto px-6 md:px-10 xl:px-30 2xl:px-50">
                     <div className="text-center mb-16">
                         <div className="flex items-center justify-center gap-3 mb-4">
                             <div className="w-12 h-0.5 bg-red-500"></div>

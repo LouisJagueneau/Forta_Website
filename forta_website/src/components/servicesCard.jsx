@@ -15,7 +15,7 @@ function ServicesCard({ img, title, description, list = [], link, buttonText, in
           </p>
 
           <div className="flex gap-4 mb-12 flex-col">
-            <span className="underline">{info}:</span>
+            <span className="underline">{info}</span>
             <div className="font-poppins text-[#777777] flex flex-wrap gap-3">
               {list.map((element, index) => {
                 return (

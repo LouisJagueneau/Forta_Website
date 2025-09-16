@@ -1,155 +1,421 @@
-import { FaArrowRight } from "react-icons/fa6";
-import { Link } from "react-router-dom";
-import Slider from '../components/slider'
-import CNC5AxesImage from '../assets/CNC5AxesImage.png'
-import CNCMillingImage from '../assets/CNCMillingImage.png'
-import CNCPartsImage from '../assets/CNCPartsImage.png'
-import CNCTurningImage from '../assets/CNCTurningImage.png'
-import FeedScrew from '../assets/FeedScrew.png'
-import Flanges from '../assets/Flanges.png'
-import GuidesImages from '../assets/GuidesImages.png'
-import RingsImage from '../assets/RingsImage.png'
-import SlidersImage from '../assets/SlidersImage.png'
-import TimingScrew from '../assets/TimingScrew.png'
-import { motion } from "framer-motion"
-import { useTranslation } from 'react-i18next';
+import React, { useState } from 'react';
+import { FaArrowRight, FaChevronLeft, FaChevronRight } from "react-icons/fa6";
+import { Settings, Cog, Wrench, Zap, Shield, Target, ArrowRight, Play } from 'lucide-react';
+import { motion } from 'framer-motion';
 
+// Import des images (simulées pour l'exemple)
+const CNCPartsImage = '/api/placeholder/600/400';
+const CNCTurningImage = '/api/placeholder/400/300';
+const CNCMillingImage = '/api/placeholder/400/300';
+const CNC5AxesImage = '/api/placeholder/400/300';
+const FeedScrew = '/api/placeholder/300/200';
+const Flanges = '/api/placeholder/300/200';
+const GuidesImages = '/api/placeholder/300/200';
+const RingsImage = '/api/placeholder/300/200';
+const SlidersImage = '/api/placeholder/300/200';
+const TimingScrew = '/api/placeholder/300/200';
 
 function CncParts() {
-    const { t } = useTranslation();
+    const [activeSlide, setActiveSlide] = useState(0);
 
+    // Services CNC
+    const cncServices = [
+        {
+            title: 'Tournage CNC',
+            description: 'Usinage de précision pour pièces cylindriques et complexes',
+            icon: <Cog className="w-6 h-6" />,
+            image: CNCTurningImage,
+            specs: ['Précision: ±0.01mm', 'Diamètre max: 500mm', 'Matériaux variés']
+        },
+        {
+            title: 'Fraisage CNC',
+            description: 'Fabrication de pièces complexes avec finition haute qualité',
+            icon: <Settings className="w-6 h-6" />,
+            image: CNCMillingImage,
+            specs: ['Multi-axes', 'Surfaces complexes', 'Finition miroir']
+        },
+        {
+            title: 'Usinage 5 Axes',
+            description: 'Technologie avancée pour géométries les plus complexes',
+            icon: <Target className="w-6 h-6" />,
+            image: CNC5AxesImage,
+            specs: ['5 axes simultanés', 'Géométries complexes', 'Une seule prise']
+        },
+        {
+            title: 'Découpe Laser',
+            description: 'Découpe haute précision pour tous types de matériaux',
+            icon: <Zap className="w-6 h-6" />,
+            image: CNC5AxesImage,
+            specs: ['Épaisseur: 0.5-50mm', 'Découpe fine', 'Contours précis']
+        },
+        {
+            title: 'Soudage Spécialisé',
+            description: 'Assemblage professionnel avec contrôle qualité',
+            icon: <Shield className="w-6 h-6" />,
+            image: CNC5AxesImage,
+            specs: ['Soudage TIG/MIG', 'Contrôle qualité', 'Finition soignée']
+        },
+        {
+            title: 'Pliage & Formage',
+            description: 'Mise en forme précise de tôles et profilés',
+            icon: <Wrench className="w-6 h-6" />,
+            image: CNC5AxesImage,
+            specs: ['Angles précis', 'Rayons maîtrisés', 'Dimensions stables']
+        }
+    ];
 
+    // Types de pièces
+    const parts = [
+        {
+            name: 'Vis d\'alimentation',
+            img: FeedScrew,
+            category: 'Transmission'
+        },
+        {
+            name: 'Brides & Raccords',
+            img: Flanges,
+            category: 'Assemblage'
+        },
+        {
+            name: 'Guides Linéaires',
+            img: GuidesImages,
+            category: 'Guidage'
+        },
+        {
+            name: 'Anneaux & Joints',
+            img: RingsImage,
+            category: 'Étanchéité'
+        },
+        {
+            name: 'Coulisseaux',
+            img: SlidersImage,
+            category: 'Mouvement'
+        },
+        {
+            name: 'Vis de Réglage',
+            img: TimingScrew,
+            category: 'Réglage'
+        }
+    ];
 
-    const parts = [ // Renamed from 'plastics' to 'parts' for clarity
-        {
-            name: t('cnc_feed_screw_name'),
-            img: <img src={FeedScrew} alt="FeedScrew" />
-        },
-        {
-            name: t('cnc_flanges_name'),
-            img: <img src={Flanges} alt="Flanges" />
-        },
-        {
-            name: t('cnc_guides_name'),
-            img: <img src={GuidesImages} alt="GuidesImages" />
-        },
-        {
-            name: t('cnc_rings_name'),
-            img: <img src={RingsImage} alt="RingsImage" />
-        },
-        {
-            name: t('cnc_sliders_name'),
-            img: <img src={SlidersImage} alt="SlidersImage" />
-        },
-        {
-            name: t('cnc_timing_screw_name'),
-            img: <img src={TimingScrew} alt="TimingScrew" />
-        },
-    ]
+    const nextSlide = () => {
+        setActiveSlide((prev) => (prev + 1) % Math.ceil(cncServices.length / 3));
+    };
+
+    const prevSlide = () => {
+        setActiveSlide((prev) => (prev - 1 + Math.ceil(cncServices.length / 3)) % Math.ceil(cncServices.length / 3));
+    };
 
     return (
         <>
-            {/* Title Section */}
-            <div className='bg-[#0f0f0f] min-h-screen flex items-center pt-[80px] md:pt-0'>
-                <section className="container mx-auto px-10 md:px-14 lg:px-22 xl:px-30 2xl:px-50">
-                    <div className="text-white flex flex-col-reverse items-center gap-y-12 lg:flex-row lg:gap-x-24 2xl:gap-x-34 lg:items-center">
-                        {/* LEFT SIDE */}
-                        <motion.div
-                            initial={{ opacity: 0, x: -40 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.8, ease: "easeOut" }}
-                            viewport={{ once: true }}
-                            className="flex flex-col items-start lg:flex-2"
-                        >
-                            <div>
-                                <h1 className="font-Stock_No_Bills text-[1.6rem] sm:text-[2.4rem] font-semibold text-start relative inline-block mb-10 leading-12 lg:text-[2.5rem] 2xl:text-[3.2rem] text-transparent bg-clip-text bg-gradient-to-r from-white to-[#d6d6d6]">
-                                    {t('cnc_machining_title')}
-                                    <span className="absolute left-0 bottom-[-15px] h-[2px] bg-[#ec1c24] w-full rounded-full"></span>
-                                </h1>
-                                <p className="font-poppins mb-10 text-[0.90rem] sm:text-[1.0rem] xl:text-[1.1rem] xl:leading-8 text-justify">
-                                    {t('cnc_machining_paragraph')}
-                                </p>
-                            </div>
-                            <div>
-                                <button className="flex items-center gap-3 bg-[#ec1c24] px-4 py-2 rounded-sm font-semibold cursor-pointer transition duration-300 hover:bg-[#b8141a]">
-                                    <FaArrowRight /> {t('cnc_contact_us_button')}
-                                </button>
-                            </div>
-                        </motion.div>
+            {/* Hero Section */}
+            <section className="relative w-full min-h-screen bg-gradient-to-br from-black via-black/85 to-black overflow-hidden">
+                {/* Geometric background pattern */}
+                <div className="absolute inset-0">
+                    <div className="absolute top-20 left-20 w-32 h-32 border-2 border-[#ec1c24]/20 rotate-45"></div>
+                    <div className="absolute top-40 right-32 w-24 h-24 bg-[#ec1c24]/10 rotate-12"></div>
+                    <div className="absolute bottom-32 left-1/4 w-16 h-16 border border-white/10 rotate-45"></div>
+                    <div className="absolute bottom-20 right-20 w-20 h-20 bg-gradient-to-br from-[#ec1c24]/20 to-transparent rotate-45"></div>
 
-                        {/* RIGHT SIDE */}
-                        <motion.div
-                            initial={{ opacity: 0, x: 40 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.8, ease: "easeOut" }}
-                            viewport={{ once: true }}
-                            className="h-auto w-[200px] lg:flex-1 lg:w-full lg:flex lg:items-center"
-                        >
-                            <img className="w-full h-auto" src={CNCPartsImage} alt="CNC Parts Image" />
-                        </motion.div>
-                    </div>
-                </section>
-            </div>
-
-            {/* Slider Section */}
-            <div className="flex items-center justify-center">
-                <section className="container mx-auto lg:mx-0 px-10 md:px-14 lg:px-22 xl:px-30  2xl:px-50 my-15">
-                    <div className="bg-white flex flex-col items-center justify-center ">
-                        {/* Section Title */}
+                    {/* Floating particles */}
+                    {[...Array(15)].map((_, i) => (
                         <div
-                            className="mb-15">
-                            <h2 className="font-Stock_No_Bills text-[2.4rem] xl:text-[2.8rem] font-semibold relative inline-block">{t('cnc_what_we_offer_title')}<span className="bg-[#ec1c24] xl:h-[4px] h-[2px] left-0 bottom-[-10px] absolute w-full rounded-full"></span>
-                            </h2>
+                            key={i}
+                            className="absolute animate-pulse"
+                            style={{
+                                left: `${Math.random() * 100}%`,
+                                top: `${Math.random() * 100}%`,
+                                animationDelay: `${Math.random() * 3}s`,
+                                animationDuration: `${2 + Math.random() * 2}s`
+                            }}
+                        >
+                            <div className="w-1 h-1 bg-[#ec1c24]/40 rounded-full"></div>
                         </div>
-                        {/* Slider */}
-                       {/* Slider */}
-                        <div className="grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-8 xl:gap-10 2xl:gap-12">
-                            <Slider image={CNCTurningImage} title={t('cnc_turning_item')} description={t('cnc_turning_description')} info={['Thickness: 5–100 mm', 'Colors: White, Black, Blue, Red', 'Cut-to-size on request']}/>
-                            <Slider image={CNCMillingImage} title={t('cnc_milling_item')} description={t('cnc_milling_description')} info={['Thickness: 5–100 mm', 'Colors: White, Black, Blue, Red', 'Cut-to-size on request']}/>
-                            <Slider image={CNC5AxesImage} title={t('cnc_five_axis_machining_item')} description={t('cnc_five_axis_machining_description')} info={['Thickness: 5–100 mm', 'Colors: White, Black, Blue, Red', 'Cut-to-size on request']}/>
+                    ))}
+                </div>
 
-                            <Slider image={CNC5AxesImage} title={t('cnc_laser_cutting_item')} description={t('cnc_laser_cutting_description')} info={['Thickness: 5–100 mm', 'Colors: White, Black, Blue, Red', 'Cut-to-size on request']}/>
-                            <Slider image={CNC5AxesImage} title={t('cnc_welding_item')} description={t('cnc_welding_description')} info={['Thickness: 5–100 mm', 'Colors: White, Black, Blue, Red', 'Cut-to-size on request']}/>
-                            <Slider image={CNC5AxesImage} title={t('cnc_bending_item')} description={t('cnc_bending_description')} info={['Thickness: 5–100 mm', 'Colors: White, Black, Blue, Red', 'Cut-to-size on request']}/>
+                <div className="relative z-10 container mx-auto px-6 md:px-10 xl:px-30 2xl:px-50 min-h-[80vh] flex items-center mt-15">
+                    <div className="grid lg:grid-cols-5 gap-16 items-stretch w-full">
 
+                        {/* Left Content */}
+                        <div className="space-y-8 lg:col-span-3">
+                            <motion.div
+                                initial={{ opacity: 0, x: -50 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.8 }}
+                            >
+                                <div className="flex items-center gap-4 mb-6">
+                                    <div className="w-16 h-[2px] bg-[#ec1c24]"></div>
+                                    <span className="uppercase font-poppins text-[#ec1c24] tracking-wider font-semibold text-sm">
+                                        Usinage CNC
+                                    </span>
+                                </div>
+
+                                <h1 className="font-Stock_No_Bills text-[2.8rem] md:text-[4rem] lg:text-[4.5rem] xl:text-[5.5rem] leading-[0.9] text-white mb-6">
+                                    <span className="block">Usinage</span>
+                                    <span className="block text-[#ec1c24]">CNC</span>
+                                    <span className="block text-2xl md:text-3xl lg:text-4xl text-gray-400 mt-2">
+                                        Haute Précision
+                                    </span>
+                                </h1>
+
+                                <p className="text-gray-300 text-lg md:text-xl leading-relaxed max-w-2xl mb-8">
+                                    Excellence technique et précision millimétrique pour tous vos projets d'usinage.
+                                    <span className="text-white font-medium"> Technologie de pointe</span> au service
+                                    de vos ambitions industrielles.
+                                </p>
+
+                                <div className="flex flex-col sm:flex-row gap-4">
+                                    <button
+                                        className="group bg-[#ec1c24] hover:bg-[#c71a20] text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center justify-center gap-3"
+                                        onClick={() => { const services = document.getElementById('services'); if (services) { services.scrollIntoView({ behavior: 'smooth' }) } }}
+                                    >
+                                        <span>Découvrir nos services</span>
+                                        <FaArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                                    </button>
+                                    <button className="group border-2 border-gray-400 hover:border-[#ec1c24] text-gray-400 hover:text-[#ec1c24] px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-3">
+                                        <span>Demander un devis</span>
+                                    </button>
+                                </div>
+                            </motion.div>
+                        </div>
+
+                        {/* Right Visual */}
+                        <div className="h-full hidden lg:flex lg:col-span-2">
+                            <motion.div
+                                initial={{ opacity: 0, x: 50, scale: 0.8 }}
+                                animate={{ opacity: 1, x: 0, scale: 1 }}
+                                transition={{ duration: 1, delay: 0.3 }}
+                                className="relative w-full h-full"
+                            >
+                                {/* Main Card */}
+                                <div className="bg-gradient-to-br h-full from-white/10 to-white/5 backdrop-blur-sm border border-white/20 rounded-md p-4 transform hover:scale-105 transition-all duration-300">
+                                    <img className='rounded-md h-full w-full object-cover' src={CNCPartsImage} alt="CNC Parts" />
+                                </div>
+                            </motion.div>
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
+
+            {/* Services Section - Light Theme Slider */}
+            <div id="services" className="relative py-20 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
+
+                <div className="relative container mx-auto px-6 md:px-10 xl:px-30 2xl:px-50">
+                    <div className="text-center mb-16">
+                        <div className="flex items-center justify-center gap-3 mb-4">
+                            <div className="w-12 h-0.5 bg-red-500"></div>
+                            <span className="text-red-600 uppercase tracking-wider text-sm font-medium">Nos Services</span>
+                            <div className="w-12 h-0.5 bg-red-500"></div>
+                        </div>
+                        <h2 className="text-4xl lg:text-5xl font-poppins font-bold mb-6">
+                            <span className="bg-gradient-to-r from-black to-gray-700 bg-clip-text text-transparent">
+                                Technologies CNC
+                            </span>
+                            
+                        </h2>
+                        <p className="text-lg text-gray-600 font-poppins max-w-3xl mx-auto">
+                            Une gamme complète de services d'usinage pour répondre à tous vos besoins industriels
+                        </p>
+                    </div>
+
+                    {/* Slider Container - Fixed */}
+                    <div className="relative mx-auto">
+                        <div className="overflow-hidden">
+                            <div
+                                className="flex transition-transform duration-300 ease-in-out"
+                                style={{ transform: `translateX(-${activeSlide * 100}%)` }}
+                            >
+                                {Array.from({ length: Math.ceil(cncServices.length / 3) }, (_, slideIndex) => (
+                                    <div key={slideIndex} className="min-w-full">
+                                        <div className="p-4">
+                                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                                {cncServices.slice(slideIndex * 3, slideIndex * 3 + 3).map((service, index) => (
+                                                    <motion.div
+                                                        key={index}
+                                                        initial={{ opacity: 0, scale: 0.9 }}
+                                                        whileInView={{ opacity: 1, scale: 1 }}
+                                                        viewport={{ once: true }}
+                                                        transition={{ duration: 0.4, delay: index * 0.1 }}
+                                                        className="group relative bg-white border border-gray-200 hover:border-red-300 rounded-2xl overflow-hidden shadow-lg hover:shadow-sm transition-all duration-300 hover:transform hover:scale-[103%] h-full"
+                                                    >
+                                                        {/* Glow Effect */}
+                                                        <div className="absolute inset-0 bg-gradient-to-br from-red-500/0 via-red-500/2 to-red-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                                                        {/* Image Container with Overlay */}
+                                                        <div className="relative h-56 overflow-hidden">
+                                                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent z-10"></div>
+                                                            <img
+                                                                src={service.image}
+                                                                alt={service.title}
+                                                                className="w-full h-full object-cover group-hover:scale-[103%] transition-transform duration-300"
+                                                            />
+
+                                                            {/* Floating Icon */}
+                                                            <div className="absolute top-4 right-4 z-20">
+                                                                <div className="w-10 h-10 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center text-white shadow-md group-hover:rotate-90 transition-transform duration-300">
+                                                                    {service.icon}
+                                                                </div>
+                                                            </div>
+
+                                                            {/* Animated Border */}
+                                                            <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-red-500 to-red-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
+                                                        </div>
+
+                                                        {/* Content */}
+                                                        <div className="relative z-10 p-6 text-gray-800">
+                                                            <h3 className="text-xl font-semibold font-poppins mb-3">
+                                                                {service.title}
+                                                            </h3>
+                                                            <p className="text-gray-600 font-poppins text-[0.9rem] mb-6 leading-relaxed">
+                                                                {service.description}
+                                                            </p>
+
+                                                            {/* Specs with Icons */}
+                                                            <div className="space-y-3 mb-6">
+                                                                {service.specs.map((spec, idx) => (
+                                                                    <div key={idx} className="flex items-center gap-3 group/spec">
+                                                                        <div className="w-6 h-6 rounded-full border border-red-500/30 flex items-center justify-center group-hover/spec:bg-red-500/10 transition-colors duration-300">
+                                                                            <div className="w-2 h-2 bg-red-500 rounded-full group-hover/spec:scale-125 transition-transform duration-300"></div>
+                                                                        </div>
+                                                                        <span className="text-sm text-gray-500 group-hover/spec:text-gray-700 transition-colors duration-300">
+                                                                            {spec}
+                                                                        </span>
+                                                                    </div>
+                                                                ))}
+                                                            </div>
+
+                                                        </div>
+
+                                                        {/* Decorative Elements */}
+                                                        <div className="absolute top-2 left-2 w-4 h-4 border-l-2 border-t-2 border-red-500/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                                        <div className="absolute bottom-2 right-2 w-4 h-4 border-r-2 border-b-2 border-red-500/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                                    </motion.div>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Navigation Controls */}
+                        <div className="flex items-center justify-center mt-12 gap-6">
+                            <button
+                                onClick={prevSlide}
+                                className="group p-4 bg-white hover:bg-red-600 border border-gray-200 hover:border-red-500 rounded-full transition-all duration-300 shadow-md hover:shadow-lg"
+                            >
+                                <FaChevronLeft className="w-5 h-5 text-gray-600 group-hover:text-white group-hover:scale-110 transition-all duration-300" />
+                            </button>
+
+                            <div className="flex gap-3">
+                                {Array.from({ length: Math.ceil(cncServices.length / 3) }, (_, index) => (
+                                    <button
+                                        key={index}
+                                        onClick={() => setActiveSlide(index)}
+                                        className={`transition-all duration-300 rounded-full ${index === activeSlide
+                                                ? "w-12 h-3 bg-red-500"
+                                                : "w-3 h-3 bg-gray-300 hover:bg-gray-400"
+                                            }`}
+                                    />
+                                ))}
+                            </div>
+
+                            <button
+                                onClick={nextSlide}
+                                className="group p-4 bg-white hover:bg-red-600 border border-gray-200 hover:border-red-500 rounded-full transition-all duration-300 shadow-md hover:shadow-lg"
+                            >
+                                <FaChevronRight className="w-5 h-5 text-gray-600 group-hover:text-white group-hover:scale-110 transition-all duration-300" />
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
-            {/* Types of Parts Section */}
-            <div className="flex items-center justify-center bg-[#ec1c24] ">
-                <section className="container mx-auto lg:mx-0 px-10 md:px-14 lg:px-22 xl:px-30  2xl:px-50 py-20 ">
-                    <div className="bg-white p-8 lg:px-12 xl:px-20 xl:pb-16 xl:pt-12 rounded-sm flex items-center justify-center flex-col gap-8 xl:gap-12">
-                        <div className="">
-                            <h2 className="inline font-Stock_No_Bills text-[2.0rem] lg:text-[2.4rem] xl:text-[2.8rem] font-semibold">
-                                {t('cnc_types_of_parts_title').split(' ').slice(0, 4).join(' ')}{" "}
-                                <span className="relative inline-block">
-                                    {t('cnc_types_of_parts_title').split(' ')[4]}
-                                    <span className="absolute h-[2px] xl:h-[4px] bg-[#ec1c24] w-full left-0 bottom-[-6px]"></span>
-                                </span>
-                            </h2>
+            {/* Types de Pièces Section */}
+            <div className="relative py-20 bg-gradient-to-br from-black via-black/85 to-black">
+                <div className="container mx-auto px-6 md:px-10 xl:px-30 2xl:px-50">
+                    <div className="text-center mb-16">
+                        <div className="flex items-center justify-center gap-3 mb-4">
+                            <div className="w-12 h-0.5 bg-red-500"></div>
+                            <span className="text-red-400 uppercase tracking-wider text-sm font-medium">Notre Production</span>
+                            <div className="w-12 h-0.5 bg-red-500"></div>
                         </div>
-                        <div className="grid grid-cols-1 gap-y-5 sm:gap-y-6 lg:gap-y-8 sm:grid-cols-2 sm:gap-x-5 lg:grid-cols-3 2xl:grid-cols-3">
-                            {parts.map((part, index) => (
-                                <motion.div
-                                    initial={{ opacity: 0, y: 0 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
-                                    transition={{ duration: 0.8, delay: index * 0.15, ease: [0.25, 0.8, 0.25, 1], }}
-                                    key={part.name}
-                                    className="bg-[#f6f6f7] rounded-xl shadow-sm p-4 xl:px-6 xl:py-4 flex flex-col gap-4 transition-transform duration-300 hover:scale-[1.03] hover:shadow-lg"
-                                >
-                                    <div className="w-fit rounded-md">{part.img}</div>
-                                    <h4 className="font-poppins text-[#1e1e1e] text-[1rem] tracking-wide">{part.name}</h4>
-                                </motion.div>
-                            ))}
-                        </div>
+                        <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+                            <span className="bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
+                                Types de Pièces Usinées
+                            </span>
+                        </h2>
+                        <p className="text-lg text-gray-300 font-poppins max-w-3xl mx-auto">
+                            Fabrication sur mesure de pièces techniques de haute précision
+                        </p>
                     </div>
-                </section>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {parts.map((part, index) => (
+                            <motion.div
+                                key={index}
+                                initial={{ opacity: 0, y: 50 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.8, delay: index * 0.1 }}
+                                className="group relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden hover:border-red-500/50 transition-all duration-300 hover:transform hover:scale-105 cursor-pointer"
+                            >
+                                <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                                <div className="h-48 bg-gradient-to-br from-slate-700 to-slate-800 relative overflow-hidden">
+                                    <img src={part.img} alt={part.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
+                                    <div className="absolute top-4 right-4">
+                                        <span className="bg-red-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                                            {part.category}
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div className="relative z-10 p-6">
+                                    <h3 className="text-xl font-bold text-white mb-2">
+                                        {part.name}
+                                    </h3>
+                                    <p className="text-gray-300 text-sm mb-4">
+                                        Pièce technique usinée selon vos spécifications
+                                    </p>
+                                    <button className="group text-red-400 hover:text-red-300 font-medium flex items-center gap-2 transition-colors">
+                                        <span>Voir détails</span>
+                                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                    </button>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+            {/* CTA Section */}
+            <div className="relative py-20 bg-white">
+                <div className="absolute inset-0 bg-gradient-to-r from-red-500/10 to-blue-500/10"></div>
+                <div className="relative container mx-auto px-6 lg:px-20 text-center">
+                    <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+                        <span className="bg-gradient-to-r from-black to-gray-700 bg-clip-text text-transparent">
+                            Prêt à concrétiser ?
+                        </span>
+                    </h2>
+                    <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                        Contactez nos experts en usinage CNC pour discuter de votre projet et obtenir un devis personnalisé
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button className="group bg-gradient-to-r text-white from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center justify-center gap-3">
+                            <span>Demander un devis</span>
+                            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                        </button>
+                        <button className="group border-2 border-gray-400 hover:border-red-600 text-gray-600 hover:text-red-600 px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-3">
+                            <span>Nous Contacter</span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </>
-    )
+    );
 }
 
 export default CncParts;
