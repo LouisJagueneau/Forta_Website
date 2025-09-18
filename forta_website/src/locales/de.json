@@ -1,94 +1,66 @@
 {
-  "welcomeTitle1": "Präzisions-CNC-Teile",
-  "welcomeTitle2": "Kunststofftechnik",
-  "heroParagraph": "Wir verpflichten uns, außergewöhnliche Qualität, Präzision und Zuverlässigkeit in jedem von uns gefertigten Teil zu liefern. Unsere Expertise, kombiniert mit unserem umfassenden Serviceangebot, macht uns zu Ihrem idealen Partner für kundenspezifische CNC-Lösungen.",
+  "welcomeTitle1": "Individuelle CNC",
+  "welcomeTitle2": "Kunststoff",
+  "welcomeTitle3": "Lösungen für Ihre Branche",
+  "heroParagraph": "Forta fertigt individuelle CNC-Teile und technische Kunststoffkomponenten. Mit über 30 Jahren Erfahrung begleiten wir den gesamten Prozess von der Konstruktion bis zur Produktion und bieten Lösungen für Ihre CNC- und Kunststoffprojekte.",
   "heroButton": "UNSERE DIENSTLEISTUNGEN",
-  "servicesTitle": "Unsere Dienstleistungen",
-  "servicesUpTitle": "Industrielle Lösungen",
+  "discoverText": "Entdecken",
+  "servicesTitle": "Industrielle Lösungen",
+  "servicesUpTitle": "Unsere Dienstleistungen",
   "plasticTitle": "Kunststofftechnik",
-  "plasticDescription": "Wir liefern hochleistungsfähige Kunststoffkomponenten aus Industriematerialien. Unsere Kunststoffe bieten hervorragende mechanische, thermische und chemische Eigenschaften, was sie ideal für anspruchsvolle Umgebungen in verschiedenen Branchen macht.",
-  "plasticList": "Dienstleistungen: PP ; PEHD, PE300, PE500, PE1000, PA6, POM-C, PTFE, PEEK.",
+  "plasticDescription": "Wir liefern Kunststoffkomponenten aus industriellen Werkstoffen. Unsere Kunststoffe bieten hervorragende mechanische, thermische und chemische Eigenschaften und sind ideal für anspruchsvolle Umgebungen in vielen Branchen.",
+  "PlasticsAvailable": "Verfügbare Kunststoffe:",
   "plasticButton": "Mehr erfahren",
   "cncTitle": "CNC-Teile",
-  "cncDescription": "Wir bieten hochpräzise CNC-Bearbeitungsdienstleistungen, die auf die Bedürfnisse anspruchsvoller Industrieanwendungen zugeschnitten sind. Ob Sie einzelne Prototypen oder vollständige Produktionsläufe benötigen, unsere Expertise gewährleistet stets zuverlässige, genaue und wiederholbare Teile.",
+  "cncDescription": "Wir bieten hochpräzise CNC-Bearbeitung, maßgeschneidert für anspruchsvolle industrielle Anwendungen. Ob Einzelprototypen oder Serienfertigung – unsere Expertise garantiert stets zuverlässige, präzise und wiederholbare Teile.",
   "cncList": "Dienstleistungen: CNC-Drehen ; CNC-Fräsen ; 5-Achsen-Bearbeitung ; Laserschneiden ...",
+  "cncProduct": "Spezialprodukt:",
   "cncButton": "Mehr erfahren",
+  "cncProduct1": "Taktschnecke",
+  "cncProduct2": "Transportschnecke",
+  "cncProduct3": "Ringe",
+  "cncProduct4": "Führungen",
+  "cncProduct5": "Flansche",
+  "cncProduct6": "Gleiter",
+  "cncProduct7": "Riemenscheiben",
+  "cncProduct8": "Gehäuse",
+  "cncProduct9": "Rollen",
   "aboutTitle": "Wir bauen Ihre Lösungen, Stück für Stück.",
-  "aboutSubtitle": "Über Forta Ltd ?",
-  "aboutDescription": "Mit über 30 Jahren Erfahrung entwirft und fertigt Forta Ltd. hochwertige mechanische Teile nach Maß. Wir sind spezialisiert auf CNC-Bearbeitung und technische Kunststoffe und bedienen Branchen wie Lebensmittel, Chemie, Automobil und Automatisierung. Vom Design bis zur Wartung liefern wir komplette technische Lösungen mit Präzision und Zuverlässigkeit.",
+  "aboutSubtitle": "Über Forta Ltd?",
+  "aboutDescription": "Mit über 30 Jahren Erfahrung entwickelt und fertigt Forta Ltd. hochwertige, maßgeschneiderte mechanische Teile. Wir sind spezialisiert auf CNC-Bearbeitung und technische Kunststoffe und bedienen Branchen wie Lebensmittel, Chemie, Automobil und Automatisierung. Von der Konstruktion bis zur Wartung liefern wir komplette technische Lösungen mit Präzision und Zuverlässigkeit.",
   "aboutButton": "Mehr erfahren",
   "countYears": "Jahre\nErfahrung",
   "countClients": "Kunden in\nEuropa",
   "countProjects": "Projekte\nrealisiert",
-  "countPartners": "vertrauenswürdige\nPartnerunternehmen",
+  "countPartners": "Vertrauenspartner\nUnternehmen",
   "industriesTitle": "Bediente Branchen",
-  "industriesUpTitle":"Unsere Branchen",
+  "industriesUpTitle": "Branchen",
   "industryFood": "Lebensmittel & Getränke",
-  "industryFoodDesc": "Wir liefern lebensmittelechte Kunststoff- und Präzisions-CNC-Teile für den hygienischen und langlebigen Einsatz in Lebensmittelverarbeitungs- und Abfüllanlagen.",
-  "industryPharma": "Pharmazeutika",
-  "industryPharmaDesc": "Unsere korrosionsbeständigen Komponenten sind ideal für den Einsatz in Chemietanks, Laborgeräten und pharmazeutischen Verpackungssystemen.",
+  "industryFoodDesc": "Wir liefern lebensmittelechte Kunststoffe und präzise CNC-Teile für hygienische und langlebige Anwendungen in Lebensmittelverarbeitung und Abfüllanlagen.",
+  "industryPharma": "Pharmazeutik",
+  "industryPharmaDesc": "Unsere korrosionsbeständigen Komponenten sind ideal für Chemietanks, Laborausrüstung und pharmazeutische Verpackungssysteme.",
   "industryAutomation": "Automatisierung",
-  "industryAutomationDesc": "Wir fertigen Taktschnecken, Führungen und CNC-Komponenten, die den reibungslosen und effizienten Betrieb automatischer Abfüll- und Verpackungslinien gewährleisten.",
-  "industryAuto": "Automobil",
-  "industryAutoDesc": "Forta liefert robuste und präzise Kunststoff- und CNC-Teile, die in Test-, Montage- und Prototypenphasen der Automobilherstellung verwendet werden.",
+  "industryAutomationDesc": "Wir fertigen Taktschnecken, Führungen und CNC-Komponenten, die automatisierte Abfüll- und Verpackungslinien effizient und reibungslos laufen lassen.",
+  "industryFilt": "Filtration & Separation",
+  "industryFiltDesc": "Wir fertigen Kunststoff- und Metallkomponenten für Fest-Flüssig-Trennanlagen, einschließlich Filterpressen.",
   "industryEnergy": "Energie & Versorgung",
-  "industryEnergyDesc": "Unsere technischen Kunststoffe sind für extreme Bedingungen in Energiesystemen, industriellen Versorgungsunternehmen und Anlagen für saubere Energie ausgelegt.",
+  "industryEnergyDesc": "Unsere technischen Kunststoffe sind für extreme Bedingungen in Energiesystemen, industriellen Versorgungsunternehmen und Anlagen für erneuerbare Energien ausgelegt.",
   "industryMachinery": "Industriemaschinen",
-  "industryMachineryDesc": "Wir entwickeln und bearbeiten Teile, die die Betriebsstabilität und Langlebigkeit in komplexen Industrieanlagen und Produktionssystemen gewährleisten.",
-  "feebackTitle": "Kundenstimmen",
-  "feebackUpTitle": "Rückmeldung",
-  "plasticEngineeringTitle": "Hochleistungs-Konstruktionskunststoffe für industrielle Anwendungen",
-  "plasticEngineeringParagraph": "Wir liefern und bearbeiten technische Kunststoffe in Platten, Stäben und kundenspezifischen Teilen. Unsere Lösungen sind auf die hohen Standards industrieller Leistung und Langlebigkeit zugeschnitten.",
-  "contactUsButton": "Kontaktieren Sie uns",
-  "whatWeOfferTitle": "Was bieten wir an?",
-  "sheetsItem": "Platten",
-  "sheetsDescription": "Flache Kunststoffplatten in verschiedenen Dicken zur Bearbeitung oder direkten Verwendung.",
-  "rodsItem": "Stäbe",
-  "rodsDescription": "Runde Kunststoffstäbe, ideal zum Drehen und zur Herstellung zylindrischer Komponenten.",
-  "cutToSizePartsItem": "Zuschnitte",
-  "cutToSizePartsDescription": "Kundenspezifische Kunststoffkomponenten, präzise zugeschnitten und bearbeitet nach Ihren genauen Spezifikationen.",
-  "plasticWeWorkWithTitle": "Kunststoffe, mit denen wir arbeiten",
-  "ppName": "PP (Polypropylen)",
-  "ppDescription": "Es ist leicht, chemikalienbeständig und ideal für Lebensmittel- und Chemieanwendungen.",
-  "pehdName": "PEHD",
-  "pehdDescription": "Hohe Schlagzähigkeit, geringe Feuchtigkeitsaufnahme, hervorragend für Rohrleitungen.",
-  "pe300_500_1000Name": "PE300/500/1000",
-  "pe300_500_1000Description": "UHMW-Qualitäten, reibungsarm und abriebfest für den mechanischen Einsatz.",
-  "pa6Name": "PA6 (Polyamid 6)",
-  "pa6Description": "Stark und zäh, weit verbreitet im Maschinenbau.",
-  "pomcName": "POM-C",
-  "pomcDescription": "(Polyoxymethylen Copo). Hohe Steifigkeit und Dimensionsstabilität, perfekt für Präzisionsteile.",
-  "ptfeName": "PTFE",
-  "ptfeDescription": "(Polytetrafluorethylen / Teflon®). Hervorragende chemische Beständigkeit, antihaftbeschichtet, wird in rauen Umgebungen verwendet.",
-  "cnc_machining_title": "Hochpräzise CNC-Bearbeitung für industrielle Anwendungen",
-  "cnc_machining_paragraph": "Wir liefern kundenspezifische CNC-Teile, die auf Langlebigkeit, Genauigkeit und Leistung ausgelegt sind.",
-  "cnc_contact_us_button": "Kontaktieren Sie uns",
-  "cnc_what_we_offer_title": "Was bieten wir an?",
-  "cnc_turning_item": "CNC-Drehen",
-  "cnc_turning_description": "Hochpräzises Drehen für zylindrische Teile mit glatten Oberflächen und engen Toleranzen.",
-  "cnc_milling_item": "CNC-Fräsen",
-  "cnc_milling_description": "Präzises Fräsen von flachen und komplexen Oberflächen für kundenspezifische mechanische Komponenten.",
-  "cnc_five_axis_machining_item": "5-Achsen-Bearbeitung",
-  "cnc_five_axis_machining_description": "Fortschrittliche 5-Achsen-Bearbeitung für detaillierte, mehrflächige Teile in einem Durchgang.",
-  "cnc_laser_cutting_item": "Laserschneiden",
-  "cnc_laser_cutting_description": "Präzises Laserschneiden für komplexe Designs und verschiedene Materialstärken.",
-  "cnc_welding_item": "Schweißen",
-  "cnc_welding_description": "Professionelle Schweißdienstleistungen für eine starke und dauerhafte Montage von Metallkomponenten.",
-  "cnc_bending_item": "Biegen",
-  "cnc_bending_description": "Präzises Metallbiegen für kundenspezifische Formen und Strukturkomponenten.",
-  "cnc_types_of_parts_title": "Arten von Teilen, die wir herstellen",
-  "cnc_feed_screw_name": "Transportschnecke",
-  "cnc_flanges_name": "Flansche",
-  "cnc_guides_name": "Führungen",
-  "cnc_rings_name": "Ringe",
-  "cnc_sliders_name": "Gleiter",
-  "cnc_timing_screw_name": "Taktschnecke",
+  "industryMachineryDesc": "Wir entwickeln und fertigen Teile, die die Betriebsstabilität und Langlebigkeit komplexer Industrieanlagen und Produktionssysteme sichern.",
+  "about_us_upperTitle": "Unsere Geschichte",
+  "about_us_heroTitle1": "Über",
+  "about_us_heroTitle2": "Forta",
+  "about_us_heroDescription": "Ihr zuverlässiger Partner für Kunststoff- & CNC-Technik seit über drei Jahrzehnten",
   "about_us_title": "Über uns",
-  "about_us_paragraph_1": "Mit über 30 Jahren Erfahrung in CNC-Bearbeitung, Design und Produktion ist Forta Ltd. Ihr Partner für hochwertige kundenspezifische mechanische Teile. Wir bieten personalisierten Service und spezialisierte Lösungen für eine Vielzahl von Branchen, darunter Lebensmittel- und Getränkeindustrie, Chemie, Papier, Automobil, Gesundheitswesen, Energie, Prozessautomatisierung, Fördertechnik und andere.",
-  "about_us_paragraph_2": "Wir zeichnen uns durch die präzise Herstellung von Teilen aus technischen Kunststoffen (PP, HDPE, POM, PA, PTFE usw.) aus. Unser Engagement für den technologischen Fortschritt stellt sicher, dass wir unsere Fähigkeiten kontinuierlich erweitern, um die präzisesten und komplexesten Maschinenkomponenten zu liefern.",
+  "about_us_h2Title1": "Unsere",
+  "about_us_h2Title2": "Expertise",
+  "about_us_missionTitle1": "Was uns",
+  "about_us_missionTitle2": "antreibt",
+  "about_us_paragraph_1": "Mit über 30 Jahren Erfahrung in CNC-Bearbeitung, Konstruktion und Produktion sind wir Ihr Partner für hochwertige, maßgeschneiderte mechanische Teile. Wir bieten persönlichen Service und spezialisierte Lösungen für zahlreiche Branchen, darunter Lebensmittel, Chemie, Papier, Automobil, Gesundheit, Energie, Prozessautomatisierung, Fördertechnik und mehr.",
+  "about_us_paragraph_2": "Wir sind spezialisiert auf die Herstellung von Teilen aus technischen Kunststoffen (PP, HDPE, POM, PA, PTFE usw.). Unser Engagement für technologischen Fortschritt sorgt dafür, dass wir unsere Fähigkeiten ständig weiterentwickeln, um komplexe Maschinenkomponenten zu liefern.",
   "our_mission_title": "Unsere Mission",
-  "our_mission_paragraph": "Bei Forta Ltd. ist unsere Mission einfach. Wir liefern zuverlässige, hochpräzise mechanische Teile und Kunststoffkomponenten, die die Leistung unserer Kunden steigern. Wir kombinieren jahrzehntelange Erfahrung mit kontinuierlicher Innovation, um kundenspezifische Lösungen zu liefern, die den höchsten Industriestandards entsprechen, vom Design bis zur Lieferung.",
-  "about_quote_text": "Wir steigern die industrielle Leistung durch Präzision, Innovation und Zuverlässigkeit.",
+  "our_mission_paragraph": "Bei Forta Ltd. ist unsere Mission einfach: Wir liefern zuverlässige, hochpräzise mechanische Teile und Kunststoffkomponenten, die die Leistung unserer Kunden steigern. Wir verbinden jahrzehntelange Erfahrung mit kontinuierlicher Innovation, um maßgeschneiderte Lösungen zu bieten, die höchsten Industriestandards entsprechen – von der Konstruktion bis zur Lieferung.",
+  "about_quote_text": "Wir stärken industrielle Leistung durch Präzision, Innovation und Zuverlässigkeit.",
   "years_experience_value": "+30",
   "years_experience_label": "Jahre Erfahrung",
   "clients_europe_value": "+200",
@@ -97,6 +69,15 @@
   "projects_realized_label": "Projekte realisiert",
   "trusted_companies_value": "+25",
   "trusted_companies_label": "Vertrauensvolle Unternehmen",
+  "valor_upperTitle": "Unsere Werte",
+  "valor_Title1": "Was uns",
+  "valor_Title2": "leitet",
+  "valor_value1": "Exzellenz",
+  "valor_description1": "Wir streben in jedem Projekt nach Perfektion und garantieren höchste Qualität für unsere Kunden.",
+  "valor_value2": "Innovation",
+  "valor_description2": "Wir investieren kontinuierlich in neue Technologien, um an der Spitze zu bleiben.",
+  "valor_value3": "Partnerschaft",
+  "valor_description3": "Wir bauen dauerhafte Beziehungen auf, die auf Vertrauen und Zusammenarbeit basieren.",
   "nav_home": "Startseite",
   "nav_services": "Dienstleistungen",
   "nav_plastic_engineering": "Kunststofftechnik",
@@ -112,54 +93,54 @@
   "footer_company_title": "UNTERNEHMEN",
   "footer_about_us_link": "Über uns",
   "footer_services_title": "DIENSTLEISTUNGEN",
-  "footer_engineering_plastic_link": "Kunststofftechnik",
+  "footer_engineering_plastic_link": "Technische Kunststoffe",
   "footer_cnc_parts_link": "CNC-Teile",
   "footer_legal_title": "RECHTLICHES",
-  "footer_confidentiality_policy_link": "Datenschutzerklärung",
+  "footer_confidentiality_policy_link": "Datenschutzrichtlinie",
   "footer_legal_notice_link": "Impressum",
   "footer_contact_title": "KONTAKT",
   "footer_phone_number": "+33 06 01 01 01 01",
   "footer_email": "support@forta.com",
-  "footer_copyright_text": "Copyright © Forta Ltd. alle Rechte vorbehalten",
+  "footer_copyright_text": "Copyright © Forta ltd alle Rechte vorbehalten",
   "legal_notice_company_info_title": "Unternehmensinformationen",
   "legal_notice_company_name_label": "Firmenname:",
-  "legal_notice_company_name_value": "Forta Ltd.",
-  "legal_notice_registered_office_label": "Eingetragener Sitz:",
-  "legal_notice_registered_office_value": "[ Vollständige Adresse eingeben ]",
+  "legal_notice_company_name_value": "Forta ltd",
+  "legal_notice_registered_office_label": "Firmensitz:",
+  "legal_notice_registered_office_value": "[ Vollständige Adresse einfügen ]",
   "legal_notice_registration_number_label": "Handelsregisternummer:",
-  "legal_notice_registration_number_value": "[OIB oder Firmen-ID eingeben]",
-  "legal_notice_court_of_registration_label": "Gerichtsstand:",
-  "legal_notice_court_of_registration_value": "[ Gerichtsstand eingeben ]",
+  "legal_notice_registration_number_value": "[OIB oder Firmen-ID einfügen]",
+  "legal_notice_court_of_registration_label": "Registergericht:",
+  "legal_notice_court_of_registration_value": "[ Registergericht einfügen ]",
   "legal_notice_vat_number_label": "USt-IdNr.:",
   "legal_notice_vat_number_value": "[Ihre USt-IdNr.]",
   "legal_notice_legal_representative_label": "Gesetzlicher Vertreter:",
   "legal_notice_legal_representative_value": "[Name des Geschäftsführers oder CEO]",
-  "legal_notice_hosting_provider_title": "Informationen zur Webseite",
+  "legal_notice_hosting_provider_title": "Website-Informationen",
   "legal_notice_publication_manager_label": "Verantwortlicher für die Veröffentlichung:",
   "legal_notice_publication_manager_value": "[ Einfügen ]",
   "legal_notice_website_creator_label": "Webseiten-Ersteller:",
   "legal_notice_website_creator_name": "Louis Jagueneau",
-  "legal_notice_intellectual_property_label": "Geistiges Eigentum :",
-  "legal_notice_intellectual_property_text": "Alle Inhalte dieser Webseite, einschließlich Texte, Bilder, Grafiken, Logos und Designelemente, sind geistiges Eigentum von Forta Ltd. oder ihren Partnern und dürfen ohne schriftliche Genehmigung nicht kopiert, geändert oder wiederverwendet werden.",
-  "legal_notice_limitation_of_liability_label": "Haftungsbeschränkung :",
-  "legal_notice_limitation_of_liability_text": "Forta Ltd. bemüht sich, alle Inhalte der Webseite aktuell und korrekt zu halten, kann jedoch nicht für Fehler, Auslassungen oder Folgen, die sich aus der Nutzung dieser Webseite ergeben, haftbar gemacht werden.",
-  "legal_notice_contact_inquiry_text": "Bei Fragen zu diesem Impressum oder zur Nutzung der Webseite können Sie uns kontaktieren unter:",
+  "legal_notice_intellectual_property_label": "Geistiges Eigentum:",
+  "legal_notice_intellectual_property_text": "Alle Inhalte dieser Website, einschließlich Texte, Bilder, Grafiken, Logos und Designelemente, sind geistiges Eigentum von Forta Ltd. oder deren Partnern und dürfen ohne schriftliche Genehmigung nicht kopiert, verändert oder wiederverwendet werden.",
+  "legal_notice_limitation_of_liability_label": "Haftungsbeschränkung:",
+  "legal_notice_limitation_of_liability_text": "Forta Ltd. bemüht sich, alle Inhalte der Website korrekt und aktuell zu halten, übernimmt jedoch keine Haftung für Fehler, Auslassungen oder Folgen, die sich aus der Nutzung dieser Website ergeben.",
+  "legal_notice_contact_inquiry_text": "Bei Fragen zu diesem Impressum oder zur Nutzung der Website können Sie uns kontaktieren unter:",
   "legal_notice_email_label": "E-Mail:",
   "legal_notice_email_value": "[info@forta.hr]",
   "legal_notice_phone_label": "Telefon:",
   "legal_notice_phone_value": "[+385 xx xxx xxxx]",
   "conf_policy_data_title": "Daten",
-  "conf_policy_data_intro": "Forta Ltd. verpflichtet sich, Ihre Privatsphäre zu schützen. Dieser Abschnitt erläutert, wie wir Ihre persönlichen Daten sammeln, verwenden und schützen.",
-  "conf_policy_data_collection": "Wir sammeln personenbezogene Daten, die Sie uns freiwillig zur Verfügung stellen, wenn Sie unsere Webseite nutzen, uns kontaktieren oder unsere Dienstleistungen in Anspruch nehmen. Dies kann Ihren Namen, Ihre E-Mail-Adresse, Telefonnummer, Firmennamen und alle anderen Informationen umfassen, die Sie uns mitteilen möchten.",
-  "conf_policy_data_use": "Ihre Daten werden verwendet, um unsere Dienstleistungen bereitzustellen und zu verbessern, auf Ihre Anfragen zu antworten, Ihnen relevante Mitteilungen zu senden und für interne Analysezwecke. Wir verkaufen oder vermieten Ihre persönlichen Daten nicht an Dritte.",
-  "conf_policy_data_security": "Wir implementieren geeignete technische und organisatorische Maßnahmen, um Ihre persönlichen Daten vor unbefugtem Zugriff, Änderung, Offenlegung oder Zerstörung zu schützen.",
+  "conf_policy_data_intro": "Forta Ltd. verpflichtet sich, Ihre Privatsphäre zu schützen. Dieser Abschnitt erklärt, wie wir Ihre persönlichen Daten erfassen, verwenden und schützen.",
+  "conf_policy_data_collection": "Wir erfassen personenbezogene Daten, die Sie uns freiwillig zur Verfügung stellen, wenn Sie unsere Website nutzen, uns kontaktieren oder unsere Dienstleistungen in Anspruch nehmen. Dazu gehören Name, E-Mail-Adresse, Telefonnummer, Firmenname und alle weiteren Informationen, die Sie angeben.",
+  "conf_policy_data_use": "Ihre Daten werden verwendet, um unsere Dienstleistungen bereitzustellen und zu verbessern, auf Ihre Anfragen zu reagieren, Ihnen relevante Mitteilungen zu senden und für interne Analysezwecke. Wir verkaufen oder vermieten Ihre personenbezogenen Daten nicht an Dritte.",
+  "conf_policy_data_security": "Wir setzen geeignete technische und organisatorische Maßnahmen ein, um Ihre personenbezogenen Daten vor unbefugtem Zugriff, Änderung, Offenlegung oder Zerstörung zu schützen.",
   "conf_policy_cookies_title": "Cookies",
-  "conf_policy_cookies_intro": "Unsere Webseite verwendet Cookies, um Ihr Surferlebnis zu verbessern. Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden.",
-  "conf_policy_cookies_types": "Wir verwenden essentielle Cookies für die Funktionalität der Webseite und analytische Cookies, um zu verstehen, wie unsere Webseite genutzt wird und um ihre Leistung zu verbessern. Sie können Ihre Cookie-Einstellungen über Ihren Browser verwalten.",
-  "conf_policy_hypertext_link_title": "Hypertext-Link",
-  "conf_policy_hypertext_link_text": "Unsere Webseite kann Links zu externen Webseiten enthalten, die nicht von uns betrieben werden. Wir haben keine Kontrolle über den Inhalt und die Praktiken dieser Seiten und können keine Verantwortung oder Haftung für deren jeweilige Datenschutzrichtlinien übernehmen. Wir empfehlen Ihnen, die Datenschutzrichtlinien aller Drittanbieterseiten, die Sie besuchen, zu überprüfen.",
+  "conf_policy_cookies_intro": "Unsere Website verwendet Cookies, um Ihr Surferlebnis zu verbessern. Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden.",
+  "conf_policy_cookies_types": "Wir verwenden essentielle Cookies für die Funktionalität der Website und analytische Cookies, um zu verstehen, wie unsere Website genutzt wird und um deren Leistung zu verbessern. Sie können Ihre Cookie-Einstellungen über Ihren Browser verwalten.",
+  "conf_policy_hypertext_link_title": "Hyperlink",
+  "conf_policy_hypertext_link_text": "Unsere Website kann Links zu externen Websites enthalten, die nicht von uns betrieben werden. Wir haben keine Kontrolle über deren Inhalte und Praktiken und übernehmen keine Verantwortung für deren Datenschutzrichtlinien. Wir empfehlen Ihnen, die Datenschutzrichtlinien aller Drittanbieter-Websites, die Sie besuchen, zu prüfen.",
   "conf_policy_contact_title": "Kontakt",
-  "conf_policy_contact_text": "Wenn Sie Fragen oder Bedenken bezüglich dieser Datenschutzerklärung oder Ihrer persönlichen Daten haben, kontaktieren Sie uns bitte unter:",
+  "conf_policy_contact_text": "Wenn Sie Fragen oder Bedenken bezüglich dieser Datenschutzrichtlinie oder Ihrer personenbezogenen Daten haben, kontaktieren Sie uns bitte unter:",
   "conf_policy_contact_email_label": "E-Mail:",
   "conf_policy_contact_email_value": "[info@forta.hr]",
   "conf_policy_contact_phone_label": "Telefon:",
@@ -168,8 +149,271 @@
   "feedback_form_name": "Name",
   "feedback_form_name_placeholder": "Ihr Name",
   "feedback_form_rating": "Bewerten Sie Ihre Erfahrung",
-  "feedback_form_message": "Ihr feedback",
-  "feedback_form_placeholder": "Schreiben Sie hier Ihr Feedback...",
-  "feedback_form_button": "Schicken",
-  "feedback_see_more_button": "Mehr lesen"
+  "feedback_form_message": "Ihr Feedback",
+  "feedback_form_placeholder": "Schreiben Sie Ihr Feedback hier...",
+  "feedback_form_button": "Senden",
+  "feedback_see_more_button": "Mehr anzeigen",
+  "product1_title": "Technische Platten",
+  "product1_description": "Hochleistungsfähige, maßgeschneiderte Platten für alle Ihre industriellen Anforderungen",
+  "product1_spec1": "Dicke: 5–100 mm",
+  "product1_spec2": "Farben: Weiß, Schwarz, Blau, Rot",
+  "product1_spec3": "Individuelle Zuschnitte",
+  "product1_category": "Platten",
+  "product2_title": "Stäbe & Profile",
+  "product2_description": "Hochwertige Rundstäbe und technische Profile",
+  "product2_spec1": "Durchmesser: 10–200 mm",
+  "product2_spec2": "Standardlängen",
+  "product2_spec3": "Präzisionsbearbeitung",
+  "product2_category": "Stäbe",
+  "product3_title": "Individuelle Teile",
+  "product3_description": "Konstruktion und Fertigung individueller technischer Teile",
+  "product3_spec1": "Schnelles Prototyping",
+  "product3_spec2": "Industrielle Serien",
+  "product3_spec3": "Qualitätskontrolle",
+  "product3_category": "Individuell",
+  "hero_section": {
+    "badge": "Kunststofftechnik",
+    "h1_line1": "Kunststoff",
+    "h1_line2": "Materialien",
+    "h1_line3": "Individuell",
+    "paragraph": "Verwandeln Sie Ihre industriellen Herausforderungen in Erfolge mit unseren Kunststofftechnik-Lösungen. Über 30 Jahre Innovation für technische Präzision.",
+    "button_explore": "Unsere Materialien entdecken",
+    "button_contact": "Kontaktieren Sie uns"
+  },
+  "materials_section": {
+    "badge": "Expertenmaterialien",
+    "title": "Fortschrittliche Technologien",
+    "description": "Eine sorgfältig ausgewählte Palette leistungsstarker Materialien für die anspruchsvollsten Herausforderungen"
+  },
+  "plastics": {
+    "PP": {
+      "name": "Polypropylen (PP)",
+      "description": "Vielseitiges Material mit ausgezeichneter chemischer Beständigkeit und guten mechanischen Eigenschaften",
+      "properties": [
+        "Chemikalienbeständig",
+        "Leicht",
+        "Recycelbar"
+      ]
+    },
+    "PEHD": {
+      "name": "Polyethylen hoher Dichte (PEHD)",
+      "description": "Hohe Dichte, ideal für anspruchsvolle industrielle Anwendungen",
+      "properties": [
+        "Hohe Dichte",
+        "UV-beständig",
+        "Ungiftig"
+      ]
+    },
+    "PE": {
+      "name": "PE 300/500/1000",
+      "description": "Ultrahochleistungsbereich für kritische Anwendungen",
+      "properties": [
+        "Ultrahochfest",
+        "Selbstschmierend",
+        "Langlebig"
+      ]
+    },
+    "PA6": {
+      "name": "Polyamid 6 (PA6)",
+      "description": "Hervorragende mechanische Festigkeit und Abriebfestigkeit",
+      "properties": [
+        "Hohe Festigkeit",
+        "Abriebfest",
+        "Präzise"
+      ]
+    },
+    "POMC": {
+      "name": "POM-C (Acetal)",
+      "description": "Außergewöhnliche Maßhaltigkeit und Stabilität",
+      "properties": [
+        "Präzise",
+        "Stabil",
+        "Bearbeitbar"
+      ]
+    },
+    "PTFE": {
+      "name": "PTFE (Teflon)",
+      "description": "Unübertroffene Antihaft-Eigenschaften und Temperaturbeständigkeit",
+      "properties": [
+        "Antihaftend",
+        "Hitzebeständig",
+        "Inert"
+      ]
+    }
+  },
+  "products_section": {
+    "badge": "Unser Sortiment",
+    "title": "Technische Lösungen",
+    "products": {
+      "plaques": {
+        "title": "Technische Platten",
+        "description": "Hochleistungsfähige, maßgeschneiderte Platten für alle Ihre industriellen Anforderungen",
+        "specs": [
+          "Dicke: 5–100 mm",
+          "Farben: Weiß, Schwarz, Blau, Rot",
+          "Individuelle Zuschnitte"
+        ],
+        "category": "Platten"
+      },
+      "barres": {
+        "title": "Stäbe & Profile",
+        "description": "Hochwertige Rundstäbe und technische Profile",
+        "specs": [
+          "Durchmesser: 10–200 mm",
+          "Standardlängen",
+          "Präzisionsbearbeitung"
+        ],
+        "category": "Stäbe"
+      },
+      "sur_mesure": {
+        "title": "Individuelle Teile",
+        "description": "Konstruktion und Fertigung individueller technischer Teile",
+        "specs": [
+          "Schnelles Prototyping",
+          "Industrielle Serien",
+          "Qualitätskontrolle"
+        ],
+        "category": "Individuell"
+      }
+    },
+    "button_more": "Mehr erfahren"
+  },
+  "cta_section": {
+    "title": "Bereit für Innovation?",
+    "description": "Kontaktieren Sie unsere Experten, um Ihr Projekt zu besprechen und unsere individuellen Lösungen zu entdecken",
+    "button_quote": "Angebot anfordern"
+  },
+  "cncPage": {
+    "hero": {
+      "tagline": "CNC-Bearbeitung",
+      "titleLine1": "CNC",
+      "titleLine2": "Bearbeitung",
+      "subtitle": "Höchste Präzision",
+      "description": "Technische Exzellenz und Millimeterpräzision für all Ihre Bearbeitungsprojekte. Spitzentechnologie für Ihre industriellen Ziele.",
+      "buttonDiscover": "Unsere Dienstleistungen entdecken",
+      "buttonQuote": "Angebot anfordern"
+    },
+    "services": {
+      "sectionTitle": "Unsere Dienstleistungen",
+      "title": "CNC-Technologien",
+      "description": "Ein komplettes Angebot an Bearbeitungsdienstleistungen für alle Ihre industriellen Anforderungen",
+      "items": {
+        "turning": {
+          "title": "CNC-Drehen",
+          "description": "Präzisionsbearbeitung für zylindrische und komplexe Teile",
+          "spec1": "Präzision: ±0,01mm",
+          "spec2": "Max. Durchmesser: 500mm",
+          "spec3": "Verschiedene Materialien"
+        },
+        "milling": {
+          "title": "CNC-Fräsen",
+          "description": "Fertigung komplexer Teile mit hochwertiger Oberfläche",
+          "spec1": "Mehr-Achsen",
+          "spec2": "Komplexe Oberflächen",
+          "spec3": "Spiegelglanz-Finish"
+        },
+        "5axes": {
+          "title": "5-Achsen-Bearbeitung",
+          "description": "Fortschrittliche Technologie für die komplexesten Geometrien",
+          "spec1": "5 simultane Achsen",
+          "spec2": "Komplexe Geometrien",
+          "spec3": "Einzelaufspannung"
+        },
+        "laser": {
+          "title": "Laserschneiden",
+          "description": "Hochpräzises Schneiden für alle Materialarten",
+          "spec1": "Dicke: 0,5–50mm",
+          "spec2": "Feinschnitt",
+          "spec3": "Präzise Konturen"
+        },
+        "welding": {
+          "title": "Spezialschweißen",
+          "description": "Professionelle Montage mit Qualitätskontrolle",
+          "spec1": "TIG/MIG-Schweißen",
+          "spec2": "Qualitätskontrolle",
+          "spec3": "Saubere Ausführung"
+        },
+        "bending": {
+          "title": "Biegen & Umformen",
+          "description": "Präzises Formen von Platten und Profilen",
+          "spec1": "Präzise Winkel",
+          "spec2": "Kontrollierte Radien",
+          "spec3": "Stabile Maße"
+        }
+      }
+    },
+    "parts": {
+      "sectionTitle": "Unsere Produktion",
+      "title": "Arten von bearbeiteten Teilen",
+      "description": "Maßgeschneiderte Fertigung hochpräziser technischer Teile",
+      "items": {
+        "feedScrew": {
+          "name": "Transportschnecken",
+          "category": "Antrieb",
+          "shortDescription": "Technisches Teil nach Ihren Vorgaben gefertigt",
+          "button": "Details anzeigen"
+        },
+        "flanges": {
+          "name": "Flansche & Fittings",
+          "category": "Montage",
+          "shortDescription": "Technisches Teil nach Ihren Vorgaben gefertigt",
+          "button": "Details anzeigen"
+        },
+        "guides": {
+          "name": "Linearschienen",
+          "category": "Führung",
+          "shortDescription": "Technisches Teil nach Ihren Vorgaben gefertigt",
+          "button": "Details anzeigen"
+        },
+        "rings": {
+          "name": "Ringe & Dichtungen",
+          "category": "Dichtung",
+          "shortDescription": "Technisches Teil nach Ihren Vorgaben gefertigt",
+          "button": "Details anzeigen"
+        },
+        "sliders": {
+          "name": "Gleiter",
+          "category": "Bewegung",
+          "shortDescription": "Technisches Teil nach Ihren Vorgaben gefertigt",
+          "button": "Details anzeigen"
+        },
+        "timingScrew": {
+          "name": "Taktschnecken",
+          "category": "Einstellung",
+          "shortDescription": "Technisches Teil nach Ihren Vorgaben gefertigt",
+          "button": "Details anzeigen"
+        }
+      }
+    },
+    "cta": {
+      "title": "Bereit loszulegen?",
+      "description": "Kontaktieren Sie unsere CNC-Bearbeitungsexperten, um Ihr Projekt zu besprechen und ein individuelles Angebot zu erhalten",
+      "buttonQuote": "Angebot anfordern",
+      "buttonContact": "Kontaktieren Sie uns"
+    }
+  },
+  "contactPage": {
+    "heroTitle": "Kontaktieren Sie uns",
+    "form": {
+      "namePlaceholder": "Name",
+      "emailPlaceholder": "E-Mail",
+      "subjectPlaceholder": "Betreff",
+      "messagePlaceholder": "Geben Sie hier Ihre Nachricht ein ...",
+      "submitButton": "Senden"
+    },
+    "contacts": {
+      "phone": {
+        "label": "Telefon",
+        "value": "+385 98 679 664"
+      },
+      "address": {
+        "label": "Adresse",
+        "value": "Dubrova 105, 52220 Labin, Kroatien"
+      },
+      "email": {
+        "label": "E-Mail",
+        "value": "info@forta.hr"
+      }
+    }
+  }
 }

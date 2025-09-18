@@ -16,7 +16,7 @@ import { FaArrowRight, FaUpLong } from "react-icons/fa6";
 import { CiMedicalCross } from "react-icons/ci";
 import { SlEnergy } from "react-icons/sl";
 import { CiBoxes } from "react-icons/ci";
-import { CiDeliveryTruck } from "react-icons/ci";
+import { CiFilter } from "react-icons/ci"
 import { IoSettingsOutline } from "react-icons/io5";
 import { IoLayersOutline } from "react-icons/io5";
 import { GiMetalBar } from "react-icons/gi";
@@ -233,10 +233,10 @@ function Home() {
             </h2>
           </div>
           <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-5 xl:gap-y-9 xl:gap-x-9 gap-y-5 items-stretch mb-10'>
+            <IndustrieCard title={t('industryFilt')} description={t('industryFiltDesc')} Icon={CiFilter} />
             <IndustrieCard title={t('industryFood')} description={t('industryFoodDesc')} Icon={CiForkAndKnife} />
             <IndustrieCard title={t('industryPharma')} description={t('industryPharmaDesc')} Icon={CiMedicalCross} />
             <IndustrieCard title={t('industryAutomation')} description={t('industryAutomationDesc')} Icon={CiBoxes} />
-            <IndustrieCard title={t('industryAuto')} description={t('industryAutoDesc')} Icon={CiDeliveryTruck} />
             <IndustrieCard title={t('industryEnergy')} description={t('industryEnergyDesc')} Icon={SlEnergy} />
             <IndustrieCard title={t('industryMachinery')} description={t('industryMachineryDesc')} Icon={IoSettingsOutline} />
           </div>

@@ -5,74 +5,111 @@ import { motion } from 'framer-motion';
 import PlasticEngineeringImage from '../assets/PlasticEngineeringImage.png'
 import PlasticRods from '../assets/PlasticRods.png'
 import PlasticSheetSlider from '../assets/PlasticSheetSlider.png'
-
+import {useTranslation} from 'react-i18next';
 
 
 function PlasticEngineering() {
+
+    const {t} = useTranslation()
+
     const [activeSlide, setActiveSlide] = useState(0);
-    
+
     const plastics = [
         {
-            name: 'Polypropylène (PP)',
-            description: 'Matériau versatile avec excellente résistance chimique et propriétés mécaniques',
+            name: t("plastics.PP.name"),
+            description: t("plastics.PP.description"),
             icon: <FlaskRound className="w-6 h-6" />,
-            properties: ['Résistant chimique', 'Léger', 'Recyclable']
+            properties: [
+                t("plastics.PP.properties.0"),
+                t("plastics.PP.properties.1"),
+                t("plastics.PP.properties.2"),
+            ]
         },
         {
-            name: 'Polyéthylène HD (PEHD)',
-            description: 'Haute densité, parfait pour les applications industrielles exigeantes',
+            name: t("plastics.PEHD.name"),
+            description: t("plastics.PEHD.description"),
             icon: <Droplet className="w-6 h-6" />,
-            properties: ['Haute densité', 'Résistant UV', 'Non-toxique']
+            properties: [
+                t("plastics.PEHD.properties.0"),
+                t("plastics.PEHD.properties.1"),
+                t("plastics.PEHD.properties.2"),
+            ]
         },
         {
-            name: 'PE 300/500/1000',
-            description: 'Gamme ultra haute performance pour applications critiques',
+            name: t("plastics.PE.name"),
+            description: t("plastics.PE.description"),
             icon: <Recycle className="w-6 h-6" />,
-            properties: ['Ultra résistant', 'Auto-lubrifiant', 'Longue durée']
+            properties: [
+                t("plastics.PE.properties.0"),
+                t("plastics.PE.properties.1"),
+                t("plastics.PE.properties.2"),
+            ]
         },
         {
-            name: 'Polyamide 6 (PA6)',
-            description: 'Excellente résistance mécanique et à l\'abrasion',
+            name: t("plastics.PA6.name"),
+            description: t("plastics.PA6.description"),
             icon: <Wrench className="w-6 h-6" />,
-            properties: ['Haute résistance', 'Anti-abrasion', 'Précis']
+            properties: [
+                t("plastics.PA6.properties.0"),
+                t("plastics.PA6.properties.1"),
+                t("plastics.PA6.properties.2"),
+            ]
         },
         {
-            name: 'POM-C (Acetal)',
-            description: 'Précision dimensionnelle et stabilité exceptionnelles',
+            name: t("plastics.POMC.name"),
+            description: t("plastics.POMC.description"),
             icon: <Settings className="w-6 h-6" />,
-            properties: ['Précis', 'Stable', 'Usinable']
+            properties: [
+                t("plastics.POMC.properties.0"),
+                t("plastics.POMC.properties.1"),
+                t("plastics.POMC.properties.2"),
+            ]
         },
         {
-            name: 'PTFE (Téflon)',
-            description: 'Propriétés antiadhésives et résistance thermique incomparables',
+            name: t("plastics.PTFE.name"),
+            description: t("plastics.PTFE.description"),
             icon: <Thermometer className="w-6 h-6" />,
-            properties: ['Antiadhésif', 'Haute température', 'Inerte']
+            properties: [
+                t("plastics.PTFE.properties.0"),
+                t("plastics.PTFE.properties.1"),
+                t("plastics.PTFE.properties.2"),
+            ]
         }
     ];
 
+    // === Produits ===
     const products = [
         {
-            title: 'Plaques Techniques',
-            description: 'Plaques haute performance sur mesure pour tous vos besoins industriels',
-            image: '/api/placeholder/400/300',
-            specs: ['Épaisseur: 5–100 mm', 'Couleurs: Blanc, Noir, Bleu, Rouge', 'Découpe sur mesure'],
-            category: 'Plaques',
+            title: t("products_section.products.plaques.title"),
+            description: t("products_section.products.plaques.description"),
+            specs: [
+                t("products_section.products.plaques.specs.0"),
+                t("products_section.products.plaques.specs.1"),
+                t("products_section.products.plaques.specs.2"),
+            ],
+            category: t("products_section.products.plaques.category"),
             img: PlasticSheetSlider
         },
         {
-            title: 'Barres & Profilés',
-            description: 'Barres rondes et profilés techniques de haute qualité',
-            image: '/api/placeholder/400/300',
-            specs: ['Diamètre: 10–200 mm', 'Longueurs standards', 'Usinage de précision'],
-            category: 'Barres',
+            title: t("products_section.products.barres.title"),
+            description: t("products_section.products.barres.description"),
+            specs: [
+                t("products_section.products.barres.specs.0"),
+                t("products_section.products.barres.specs.1"),
+                t("products_section.products.barres.specs.2"),
+            ],
+            category: t("products_section.products.barres.category"),
             img: PlasticRods
         },
         {
-            title: 'Pièces Sur Mesure',
-            description: 'Conception et fabrication de pièces techniques personnalisées',
-            image: '/api/placeholder/400/300',
-            specs: ['Prototypage rapide', 'Série industrielle', 'Contrôle qualité'],
-            category: 'Sur mesure',
+            title: t("products_section.products.sur_mesure.title"),
+            description: t("products_section.products.sur_mesure.description"),
+            specs: [
+                t("products_section.products.sur_mesure.specs.0"),
+                t("products_section.products.sur_mesure.specs.1"),
+                t("products_section.products.sur_mesure.specs.2"),
+            ],
+            category: t("products_section.products.sur_mesure.category"),
             img: PlasticSheetSlider
         }
     ];
@@ -87,7 +124,7 @@ function PlasticEngineering() {
 
     return (
         <>
-        {/* Hero Section */}
+            {/* Hero Section */}
             <section className="relative w-full min-h-screen bg-gradient-to-br from-black via-black/85 to-black overflow-hidden">
                 {/* Geometric background pattern */}
                 <div className="absolute inset-0 ">
@@ -95,7 +132,7 @@ function PlasticEngineering() {
                     <div className="absolute top-40 right-32 w-24 h-24 bg-[#ec1c24]/10 rotate-12"></div>
                     <div className="absolute bottom-32 left-1/4 w-16 h-16 border border-white/10 rotate-45"></div>
                     <div className="absolute bottom-20 right-20 w-20 h-20 bg-gradient-to-br from-[#ec1c24]/20 to-transparent rotate-45"></div>
-                    
+
                     {/* Floating particles */}
                     {[...Array(15)].map((_, i) => (
                         <div
@@ -115,45 +152,45 @@ function PlasticEngineering() {
 
                 <div className="relative z-10 container mx-auto px-6 md:px-10 xl:px-30 2xl:px-50 min-h-[80vh] flex items-center mt-15">
                     <div className="grid lg:grid-cols-5 gap-16 items-strecth w-full">
-                        
+
                         {/* Left Content */}
                         <div className="space-y-8 lg:col-span-3">
-                            <motion.div 
-                                initial={{opacity:0, x:-50}} 
-                                animate={{opacity:1, x:0}} 
-                                transition={{duration:0.8}}
+                            <motion.div
+                                initial={{ opacity: 0, x: -50 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.8 }}
                             >
                                 <div className="flex items-center gap-4 mb-6">
                                     <div className="w-16 h-[2px] bg-[#ec1c24]"></div>
                                     <span className="uppercase font-poppins text-[#ec1c24] tracking-wider font-semibold text-sm">
-                                        Ingénieurie Plastique
+                                        {t('hero_section.badge')}
                                     </span>
                                 </div>
-                                
+
                                 <h1 className="font-Stock_No_Bills text-[2.8rem] md:text-[4rem] lg:text-[4.5rem] xl:text-[5.5rem] leading-[0.9] text-white mb-6">
-                                    <span className="block">Matériaux</span>
-                                    <span className="block text-[#ec1c24]">Plastiques</span>
+                                    <span className="block">{t('hero_section.h1_line1')}</span>
+                                    <span className="block text-[#ec1c24]">{t('hero_section.h1_line2')}</span>
                                     <span className="block text-2xl md:text-3xl lg:text-4xl text-gray-400 mt-2">
-                                        Sur Mesure 
+                                        {t('hero_section.h1_line3')}
                                     </span>
                                 </h1>
-                                
+
                                 <p className="text-gray-300 text-lg md:text-xl leading-relaxed max-w-2xl mb-8">
-                                    Transformez vos défis industriels en succès avec nos solutions d'ingénierie plastique. 
-                                    <span className="text-white font-medium"> Plus de 30 ans d'innovation</span> au service 
-                                    de la précision technique.
+                                    {t('hero_section.paragraph')}
+                                    {/* <span className="text-white font-medium"> Plus de 30 ans d'innovation</span> au service
+                                    de la précision technique. */}
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row gap-4">
-                                    <button 
+                                    <button
                                         className="group bg-[#ec1c24] hover:bg-[#c71a20] text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center justify-center gap-3"
                                         onClick={() => { const materials = document.getElementById('materials'); if (materials) { materials.scrollIntoView({ behavior: 'smooth' }) } }}
                                     >
-                                        <span>Explorer nos matériaux</span>
+                                        <span>{t('hero_section.button_explore')}</span>
                                         <FaArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                     </button>
                                     <button className="group border-2 border-gray-400 hover:border-[#ec1c24] text-gray-400 hover:text-[#ec1c24] px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-3">
-                                        <span>Nous Contacter</span>
+                                        <span>{t('hero_section.button_contact')}</span>
                                     </button>
                                 </div>
                             </motion.div>
@@ -162,16 +199,16 @@ function PlasticEngineering() {
                         {/* Right Visual */}
                         <div className="h-full hidden lg:flex lg:col-span-2 ">
                             <motion.div
-                                initial={{opacity:0, x:50, scale:0.8}}
-                                animate={{opacity:1, x:0, scale:1}}
-                                transition={{duration:1, delay:0.3}}
+                                initial={{ opacity: 0, x: 50, scale: 0.8 }}
+                                animate={{ opacity: 1, x: 0, scale: 1 }}
+                                transition={{ duration: 1, delay: 0.3 }}
                                 className="relative"
                             >
                                 {/* Main Card */}
                                 <div className="bg-gradient-to-br h-full from-white/10 to-white/5 backdrop-blur-sm border border-white/20 rounded-md p-4 transform hover:scale-105 transition-all duration-300">
-                                <img className='rounded-md h-full w-full object-cover' src={PlasticEngineeringImage} alt="" />
+                                    <img className='rounded-md h-full w-full object-cover' src={PlasticEngineeringImage} alt="" />
                                 </div>
-                                    
+
 
                                 {/* Floating Elements */}
                             </motion.div>
@@ -187,16 +224,16 @@ function PlasticEngineering() {
                     <div className="text-center mb-16">
                         <div className="flex items-center justify-center gap-3 mb-4">
                             <div className="w-12 h-0.5 bg-[#ec1c24] rounded-full"></div>
-                            <span className="text-[#ec1c24] uppercase tracking-wider text-sm font-medium">Matériaux Experts</span>
+                            <span className="text-[#ec1c24] uppercase tracking-wider text-sm font-medium">{t('materials_section.badge')}</span>
                             <div className="w-12 h-0.5 bg-[#ec1c24] rounded-full"></div>
                         </div>
                         <h2 className="text-4xl lg:text-5xl font-poppins font-bold mb-6">
                             <span className="bg-gradient-to-r from-black to-gray-700 bg-clip-text text-transparent">
-                                Technologies Avancées
+                                {t('materials_section.title')}
                             </span>
                         </h2>
                         <p className="text-lg text-gray-600 font-poppins max-w-3xl mx-auto">
-                            Une sélection rigoureuse de matériaux haute performance pour répondre aux défis les plus exigeants
+                            {t('materials_section.description')}
                         </p>
                     </div>
 
@@ -219,7 +256,7 @@ function PlasticEngineering() {
                                     <p className="text-gray-600 mb-6 leading-relaxed">
                                         {plastic.description}
                                     </p>
-                                    <div className="space-y-2"> 
+                                    <div className="space-y-2">
                                         {plastic.properties.map((prop, idx) => (
                                             <div key={idx} className="flex items-center gap-2">
                                                 <div className="w-1.5 h-1.5 bg-red-500 rounded-full"></div>
@@ -240,19 +277,19 @@ function PlasticEngineering() {
                     <div className="text-center mb-16">
                         <div className="flex items-center justify-center gap-3 mb-4">
                             <div className="w-12 h-0.5 bg-red-500"></div>
-                            <span className="text-red-400 uppercase tracking-wider text-sm font-medium">Notre Gamme</span>
+                            <span className="text-red-400 uppercase tracking-wider text-sm font-medium">{t('products_section.badge')}</span>
                             <div className="w-12 h-0.5 bg-red-500"></div>
                         </div>
                         <h2 className="text-4xl lg:text-5xl font-bold mb-6">
                             <span className="bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
-                                Solutions Techniques
+                                S{t('products_section.title')}
                             </span>
                         </h2>
                     </div>
 
                     <div className="relative">
                         <div className="overflow-hidden rounded-3xl">
-                            <div 
+                            <div
                                 className="flex transition-transform duration-700 ease-in-out"
                                 style={{ transform: `translateX(-${activeSlide * 100}%)` }}
                             >
@@ -287,7 +324,7 @@ function PlasticEngineering() {
                                                         ))}
                                                     </div>
                                                     <button className="group text-white  bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 px-5 py-2.5 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 w-fit text-sm">
-                                                        <span>En savoir plus</span>
+                                                        <span>{t('products_section.button_more')}</span>
                                                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                                     </button>
                                                 </div>
@@ -306,19 +343,18 @@ function PlasticEngineering() {
                             >
                                 <FaChevronLeft className="w-4 h-4" />
                             </button>
-                            
+
                             <div className="flex gap-2">
                                 {products.map((_, index) => (
                                     <button
                                         key={index}
                                         onClick={() => setActiveSlide(index)}
-                                        className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                                            index === activeSlide ? 'bg-red-500 w-8' : 'bg-white/20 hover:bg-slate-500'
-                                        }`}
+                                        className={`w-3 h-3 rounded-full transition-all duration-300 ${index === activeSlide ? 'bg-red-500 w-8' : 'bg-white/20 hover:bg-slate-500'
+                                            }`}
                                     />
                                 ))}
                             </div>
-                            
+
                             <button
                                 onClick={nextSlide}
                                 className="p-3 bg-black/50 text-white hover:bg-red-600 border border-white/40 hover:border-red-500 rounded-full transition-all duration-300"
@@ -336,18 +372,18 @@ function PlasticEngineering() {
                 <div className="relative container mx-auto px-6 lg:px-20 text-center">
                     <h2 className="text-4xl lg:text-5xl font-bold mb-6">
                         <span className="bg-gradient-to-r from-black to-gray-700 bg-clip-text text-transparent">
-                            Prêt à innover ?
+                            {t('cta_section.title')}
                         </span>
                     </h2>
                     <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-                        Contactez nos experts pour discuter de votre projet et découvrir nos solutions sur mesure
+                         {t('cta_section.description')}
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <button className="group bg-gradient-to-r text-white from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center justify-center gap-3">
-                            <span>Demander un devis</span>
+                            <span> {t('cta_section.button_quote')}</span>
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </button>
-                        
+
                     </div>
                 </div>
             </div>

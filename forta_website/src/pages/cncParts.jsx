@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { FaArrowRight, FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import { Settings, Cog, Wrench, Zap, Shield, Target, ArrowRight, Play } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+
 
 // Import des images (simulées pour l'exemple)
 const CNCPartsImage = '/api/placeholder/600/400';
@@ -17,86 +19,129 @@ const TimingScrew = '/api/placeholder/300/200';
 
 function CncParts() {
     const [activeSlide, setActiveSlide] = useState(0);
-
+    const { t } = useTranslation()
     // Services CNC
     const cncServices = [
         {
-            title: 'Tournage CNC',
-            description: 'Usinage de précision pour pièces cylindriques et complexes',
+            title: t("cncPage.services.items.turning.title"),
+            description: t("cncPage.services.items.turning.description"),
             icon: <Cog className="w-6 h-6" />,
             image: CNCTurningImage,
-            specs: ['Précision: ±0.01mm', 'Diamètre max: 500mm', 'Matériaux variés']
+            specs: [
+                t("cncPage.services.items.turning.spec1"),
+                t("cncPage.services.items.turning.spec2"),
+                t("cncPage.services.items.turning.spec3")
+            ]
         },
         {
-            title: 'Fraisage CNC',
-            description: 'Fabrication de pièces complexes avec finition haute qualité',
+            title: t("cncPage.services.items.milling.title"),
+            description: t("cncPage.services.items.milling.description"),
             icon: <Settings className="w-6 h-6" />,
             image: CNCMillingImage,
-            specs: ['Multi-axes', 'Surfaces complexes', 'Finition miroir']
+            specs: [
+                t("cncPage.services.items.milling.spec1"),
+                t("cncPage.services.items.milling.spec2"),
+                t("cncPage.services.items.milling.spec3")
+            ]
         },
         {
-            title: 'Usinage 5 Axes',
-            description: 'Technologie avancée pour géométries les plus complexes',
+            title: t("cncPage.services.items.5axes.title"),
+            description: t("cncPage.services.items.5axes.description"),
             icon: <Target className="w-6 h-6" />,
             image: CNC5AxesImage,
-            specs: ['5 axes simultanés', 'Géométries complexes', 'Une seule prise']
+            specs: [
+                t("cncPage.services.items.5axes.spec1"),
+                t("cncPage.services.items.5axes.spec2"),
+                t("cncPage.services.items.5axes.spec3")
+            ]
         },
         {
-            title: 'Découpe Laser',
-            description: 'Découpe haute précision pour tous types de matériaux',
+            title: t("cncPage.services.items.laser.title"),
+            description: t("cncPage.services.items.laser.description"),
             icon: <Zap className="w-6 h-6" />,
             image: CNC5AxesImage,
-            specs: ['Épaisseur: 0.5-50mm', 'Découpe fine', 'Contours précis']
+            specs: [
+                t("cncPage.services.items.laser.spec1"),
+                t("cncPage.services.items.laser.spec2"),
+                t("cncPage.services.items.laser.spec3")
+            ]
         },
         {
-            title: 'Soudage Spécialisé',
-            description: 'Assemblage professionnel avec contrôle qualité',
+            title: t("cncPage.services.items.welding.title"),
+            description: t("cncPage.services.items.welding.description"),
             icon: <Shield className="w-6 h-6" />,
             image: CNC5AxesImage,
-            specs: ['Soudage TIG/MIG', 'Contrôle qualité', 'Finition soignée']
+            specs: [
+                t("cncPage.services.items.welding.spec1"),
+                t("cncPage.services.items.welding.spec2"),
+                t("cncPage.services.items.welding.spec3")
+            ]
         },
         {
-            title: 'Pliage & Formage',
-            description: 'Mise en forme précise de tôles et profilés',
+            title: t("cncPage.services.items.bending.title"),
+            description: t("cncPage.services.items.bending.description"),
             icon: <Wrench className="w-6 h-6" />,
             image: CNC5AxesImage,
-            specs: ['Angles précis', 'Rayons maîtrisés', 'Dimensions stables']
+            specs: [
+                t("cncPage.services.items.bending.spec1"),
+                t("cncPage.services.items.bending.spec2"),
+                t("cncPage.services.items.bending.spec3")
+            ]
         }
     ];
 
     // Types de pièces
     const parts = [
         {
-            name: 'Vis d\'alimentation',
+            name: t("cncPage.parts.items.feedScrew.name"),
             img: FeedScrew,
-            category: 'Transmission'
+            category: t("cncPage.parts.items.feedScrew.category"),
+            shortDescription: t("cncPage.parts.items.feedScrew.shortDescription"),
+            button : t("cncPage.parts.items.feedScrew.button"),
+
         },
         {
-            name: 'Brides & Raccords',
+            name: t("cncPage.parts.items.flanges.name"),
             img: Flanges,
-            category: 'Assemblage'
+            category: t("cncPage.parts.items.flanges.category"),
+            shortDescription: t("cncPage.parts.items.flanges.shortDescription"),
+            button : t("cncPage.parts.items.flanges.button"),
+
         },
         {
-            name: 'Guides Linéaires',
+            name: t("cncPage.parts.items.guides.name"),
             img: GuidesImages,
-            category: 'Guidage'
+            category: t("cncPage.parts.items.guides.category"),
+            shortDescription: t("cncPage.parts.items.guides.shortDescription"),
+            button : t("cncPage.parts.items.guides.button"),
+
         },
         {
-            name: 'Anneaux & Joints',
+            name: t("cncPage.parts.items.rings.name"),
             img: RingsImage,
-            category: 'Étanchéité'
+            category: t("cncPage.parts.items.rings.category"),
+            shortDescription: t("cncPage.parts.items.rings.shortDescription"),
+            button : t("cncPage.parts.items.rings.button"),
+
         },
         {
-            name: 'Coulisseaux',
+            name: t("cncPage.parts.items.sliders.name"),
             img: SlidersImage,
-            category: 'Mouvement'
+            category: t("cncPage.parts.items.sliders.category"),
+            shortDescription: t("cncPage.parts.items.sliders.shortDescription"),
+            button : t("cncPage.parts.items.sliders.button"),
+
         },
         {
-            name: 'Vis de Réglage',
+            name: t("cncPage.parts.items.timingScrew.name"),
             img: TimingScrew,
-            category: 'Réglage'
+            category: t("cncPage.parts.items.timingScrew.category"),
+            shortDescription: t("cncPage.parts.items.timingScrew.shortDescription"),
+            button : t("cncPage.parts.items.timingScrew.button"),
+
         }
     ];
+
 
     const nextSlide = () => {
         setActiveSlide((prev) => (prev + 1) % Math.ceil(cncServices.length / 3));
@@ -147,34 +192,37 @@ function CncParts() {
                                 <div className="flex items-center gap-4 mb-6">
                                     <div className="w-16 h-[2px] bg-[#ec1c24]"></div>
                                     <span className="uppercase font-poppins text-[#ec1c24] tracking-wider font-semibold text-sm">
-                                        Usinage CNC
+                                        {t('cncPage.hero.tagline')}
                                     </span>
                                 </div>
 
                                 <h1 className="font-Stock_No_Bills text-[2.8rem] md:text-[4rem] lg:text-[4.5rem] xl:text-[5.5rem] leading-[0.9] text-white mb-6">
-                                    <span className="block">Usinage</span>
-                                    <span className="block text-[#ec1c24]">CNC</span>
+                                    <span className="block">{t('cncPage.hero.titleLine1')}</span>
+                                    <span className="block text-[#ec1c24]">{t('cncPage.hero.titleLine2')}</span>
                                     <span className="block text-2xl md:text-3xl lg:text-4xl text-gray-400 mt-2">
-                                        Haute Précision
+                                        {t('cncPage.hero.subtitle')}
                                     </span>
                                 </h1>
 
                                 <p className="text-gray-300 text-lg md:text-xl leading-relaxed max-w-2xl mb-8">
-                                    Excellence technique et précision millimétrique pour tous vos projets d'usinage.
-                                    <span className="text-white font-medium"> Technologie de pointe</span> au service
-                                    de vos ambitions industrielles.
+                                    {t('cncPage.hero.description')}
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row gap-4">
                                     <button
                                         className="group bg-[#ec1c24] hover:bg-[#c71a20] text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center justify-center gap-3"
-                                        onClick={() => { const services = document.getElementById('services'); if (services) { services.scrollIntoView({ behavior: 'smooth' }) } }}
+                                        onClick={() => {
+                                            const services = document.getElementById('services');
+                                            if (services) {
+                                                services.scrollIntoView({ behavior: 'smooth' });
+                                            }
+                                        }}
                                     >
-                                        <span>Découvrir nos services</span>
+                                        <span>{t('cncPage.hero.buttonDiscover')}</span>
                                         <FaArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                     </button>
                                     <button className="group border-2 border-gray-400 hover:border-[#ec1c24] text-gray-400 hover:text-[#ec1c24] px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-3">
-                                        <span>Demander un devis</span>
+                                        <span>{t('cncPage.hero.buttonQuote')}</span>
                                     </button>
                                 </div>
                             </motion.div>
@@ -205,17 +253,17 @@ function CncParts() {
                     <div className="text-center mb-16">
                         <div className="flex items-center justify-center gap-3 mb-4">
                             <div className="w-12 h-0.5 bg-red-500"></div>
-                            <span className="text-red-600 uppercase tracking-wider text-sm font-medium">Nos Services</span>
+                            <span className="text-red-600 uppercase tracking-wider text-sm font-medium">{t('cncPage.services.sectionTitle')}</span>
                             <div className="w-12 h-0.5 bg-red-500"></div>
                         </div>
                         <h2 className="text-4xl lg:text-5xl font-poppins font-bold mb-6">
                             <span className="bg-gradient-to-r from-black to-gray-700 bg-clip-text text-transparent">
-                                Technologies CNC
+                                {t('cncPage.services.title')}
                             </span>
-                            
+
                         </h2>
                         <p className="text-lg text-gray-600 font-poppins max-w-3xl mx-auto">
-                            Une gamme complète de services d'usinage pour répondre à tous vos besoins industriels
+                            {t('cncPage.services.description')}
                         </p>
                     </div>
 
@@ -314,8 +362,8 @@ function CncParts() {
                                         key={index}
                                         onClick={() => setActiveSlide(index)}
                                         className={`transition-all duration-300 rounded-full ${index === activeSlide
-                                                ? "w-12 h-3 bg-red-500"
-                                                : "w-3 h-3 bg-gray-300 hover:bg-gray-400"
+                                            ? "w-12 h-3 bg-red-500"
+                                            : "w-3 h-3 bg-gray-300 hover:bg-gray-400"
                                             }`}
                                     />
                                 ))}
@@ -339,16 +387,16 @@ function CncParts() {
                     <div className="text-center mb-16">
                         <div className="flex items-center justify-center gap-3 mb-4">
                             <div className="w-12 h-0.5 bg-red-500"></div>
-                            <span className="text-red-400 uppercase tracking-wider text-sm font-medium">Notre Production</span>
+                            <span className="text-red-400 uppercase tracking-wider text-sm font-medium">{t('cncPage.parts.sectionTitle')}</span>
                             <div className="w-12 h-0.5 bg-red-500"></div>
                         </div>
                         <h2 className="text-4xl lg:text-5xl font-bold mb-6">
                             <span className="bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
-                                Types de Pièces Usinées
+                                {t('cncPage.parts.title')}
                             </span>
                         </h2>
                         <p className="text-lg text-gray-300 font-poppins max-w-3xl mx-auto">
-                            Fabrication sur mesure de pièces techniques de haute précision
+                            {t('cncPage.parts.description')}
                         </p>
                     </div>
 
@@ -378,10 +426,10 @@ function CncParts() {
                                         {part.name}
                                     </h3>
                                     <p className="text-gray-300 text-sm mb-4">
-                                        Pièce technique usinée selon vos spécifications
+                                        {part.shortDescription}
                                     </p>
                                     <button className="group text-red-400 hover:text-red-300 font-medium flex items-center gap-2 transition-colors">
-                                        <span>Voir détails</span>
+                                        <span>{part.button}</span>
                                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                     </button>
                                 </div>
@@ -397,19 +445,19 @@ function CncParts() {
                 <div className="relative container mx-auto px-6 lg:px-20 text-center">
                     <h2 className="text-4xl lg:text-5xl font-bold mb-6">
                         <span className="bg-gradient-to-r from-black to-gray-700 bg-clip-text text-transparent">
-                            Prêt à concrétiser ?
+                            {t('cncPage.cta.title')}
                         </span>
                     </h2>
                     <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-                        Contactez nos experts en usinage CNC pour discuter de votre projet et obtenir un devis personnalisé
+                        {t('cncPage.cta.description')}
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <button className="group bg-gradient-to-r text-white from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center justify-center gap-3">
-                            <span>Demander un devis</span>
+                            <span>{t('cncPage.cta.buttonQuote')}</span>
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </button>
                         <button className="group border-2 border-gray-400 hover:border-red-600 text-gray-600 hover:text-red-600 px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-3">
-                            <span>Nous Contacter</span>
+                            <span>{t('cncPage.cta.buttonContact')}</span>
                         </button>
                     </div>
                 </div>

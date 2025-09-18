@@ -1,102 +1,83 @@
 {
-  "welcomeTitle1": "Precizni CNC dijelovi",
-  "welcomeTitle2": "inženjerska plastika",
-  "heroParagraph": "Posvećeni smo isporuci iznimne kvalitete, preciznosti i pouzdanosti u svakom dijelu koji proizvodimo. Naša stručnost, u kombinaciji s našom sveobuhvatnom ponudom usluga, čini nas vašim idealnim partnerom za prilagođena CNC rješenja.",
+  "welcomeTitle1": "Prilagođeni CNC",
+  "welcomeTitle2": "Plastika",
+  "welcomeTitle3": "Rješenja za vašu industriju",
+  "heroParagraph": "Forta proizvodi prilagođene CNC dijelove i komponente od inženjerske plastike. S više od 30 godina iskustva, upravljamo cijelim procesom od dizajna do proizvodnje, nudeći rješenja za vaše CNC i plastične projekte.",
   "heroButton": "NAŠE USLUGE",
+  "discoverText": "Otkrijte",
   "servicesTitle": "Industrijska rješenja",
   "servicesUpTitle": "Naše usluge",
   "plasticTitle": "Inženjerska plastika",
-  "plasticDescription": "Isporučujemo visokoučinkovite plastične komponente izrađene od industrijskih materijala. Naša plastika nudi izvrsna mehanička, toplinska i kemijska svojstva, što je čini idealnom za zahtjevna okruženja u raznim industrijama.",
-  "plasticList": "Usluge: PP ; PEHD, PE300, PE500, PE1000, PA6, POM-C, PTFE, PEEK.",
+  "plasticDescription": "Isporučujemo plastične komponente izrađene od industrijskih materijala. Naša plastika nudi izvrsna mehanička, toplinska i kemijska svojstva, što je čini idealnom za zahtjevna okruženja u raznim industrijama.",
+  "PlasticsAvailable": "Dostupne plastike:",
   "plasticButton": "Saznaj više",
   "cncTitle": "CNC dijelovi",
-  "cncDescription": "Nudimo usluge visoko precizne CNC obrade prilagođene potrebama zahtjevnih industrijskih primjena. Bilo da trebate pojedinačne prototipove ili punu serijsku proizvodnju, naša stručnost osigurava pouzdane, točne i ponovljive dijelove svaki put.",
+  "cncDescription": "Nudimo visokoprecizne CNC usluge prilagođene potrebama zahtjevnih industrijskih primjena. Bilo da trebate pojedinačne prototipove ili serijsku proizvodnju, naša stručnost jamči pouzdane, točne i ponovljive dijelove svaki put.",
   "cncList": "Usluge: CNC tokarenje ; CNC glodanje ; 5-osna obrada ; Lasersko rezanje ...",
+  "cncProduct": "Specijalizirani proizvod:",
   "cncButton": "Saznaj više",
+  "cncProduct1": "Sinkronizacijski vijak",
+  "cncProduct2": "Pužni transporter",
+  "cncProduct3": "Prstenovi",
+  "cncProduct4": "Vodilice",
+  "cncProduct5": "Prirubnice",
+  "cncProduct6": "Klizači",
+  "cncProduct7": "Remenice",
+  "cncProduct8": "Kućište",
+  "cncProduct9": "Valjci",
   "aboutTitle": "Gradimo vaša rješenja, dio po dio.",
-  "aboutSubtitle": "O Forta Ltd ?",
-  "aboutDescription": "S više od 30 godina iskustva, Forta Ltd. projektira i proizvodi visokokvalitetne prilagođene mehaničke dijelove. Specijalizirani smo za CNC obradu i inženjersku plastiku, služeći industrijama poput prehrambene, kemijske, automobilske i automatizacije. Od dizajna do održavanja, isporučujemo cjelovita tehnička rješenja s preciznošću i pouzdanošću.",
+  "aboutSubtitle": "O Forta Ltd?",
+  "aboutDescription": "S više od 30 godina iskustva, Forta Ltd. projektira i proizvodi visokokvalitetne prilagođene mehaničke dijelove. Specijalizirani smo za CNC obradu i inženjersku plastiku, opslužujući industrije poput prehrambene, kemijske, automobilske i automatizacije. Od dizajna do održavanja, isporučujemo potpuna tehnička rješenja s preciznošću i pouzdanošću.",
   "aboutButton": "Saznaj više",
   "countYears": "godina\niskustva",
   "countClients": "klijenata u\nEuropi",
   "countProjects": "projekata\nrealiziranih",
-  "countPartners": "povjerenih\npartnerskih tvrtki",
+  "countPartners": "pouzdane partnerske\ntvrtke",
   "industriesTitle": "Industrije koje opslužujemo",
-  "industriesUpTitle":"Naši sektori",
-  "industryFood": "Hrana i piće",
-  "industryFoodDesc": "Isporučujemo plastiku prehrambene kvalitete i precizne CNC dijelove za higijensku i trajnu upotrebu u linijama za preradu hrane i punjenje boca.",
+  "industriesUpTitle": "Sektori",
+  "industryFood": "Prehrana i piće",
+  "industryFoodDesc": "Isporučujemo plastiku prehrambene kvalitete i precizne CNC dijelove za higijensku i dugotrajnu upotrebu u linijama za preradu hrane i punjenje boca.",
   "industryPharma": "Farmaceutska industrija",
-  "industryPharmaDesc": "Naše komponente otporne na koroziju idealne su za upotrebu u kemijskim spremnicima, laboratorijskoj opremi i farmaceutskim sustavima pakiranja.",
+  "industryPharmaDesc": "Naše komponente otporne na koroziju idealne su za kemijske spremnike, laboratorijsku opremu i farmaceutske sustave pakiranja.",
   "industryAutomation": "Automatizacija",
-  "industryAutomationDesc": "Proizvodimo pužne transportere, vodilice i CNC komponente koje osiguravaju nesmetan i učinkovit rad automatiziranih linija za punjenje i pakiranje.",
-  "industryAuto": "Automobilska industrija",
-  "industryAutoDesc": "Forta isporučuje robusne i precizne plastične i CNC dijelove koji se koriste u fazama testiranja, montaže i prototipiranja u automobilskoj proizvodnji.",
+  "industryAutomationDesc": "Proizvodimo sinkronizacijske vijke, vodilice i CNC komponente koje omogućuju nesmetan i učinkovit rad automatiziranih linija za punjenje i pakiranje.",
+  "industryFilt": "Filtracija i separacija",
+  "industryFiltDesc": "Proizvodimo plastične i metalne komponente za opremu za odvajanje krutina i tekućina, uključujući filter preše.",
   "industryEnergy": "Energija i komunalne usluge",
-  "industryEnergyDesc": "Naša inženjerska plastika izrađena je da izdrži ekstremne uvjete u energetskim sustavima, industrijskim komunalnim uslugama i instalacijama čiste energije.",
+  "industryEnergyDesc": "Naša inženjerska plastika izrađena je da izdrži ekstremne uvjete u energetskim sustavima, industrijskim komunalnim uslugama i postrojenjima za čistu energiju.",
   "industryMachinery": "Industrijski strojevi",
-  "industryMachineryDesc": "Projektiramo i obrađujemo dijelove koji osiguravaju operativnu stabilnost i trajnost u složenoj industrijskoj opremi i proizvodnim sustavima.",
-  "feebackTitle": "Kundenstimmen",
-  "feebackUpTitle": "povratne informacije",
-  "plasticEngineeringTitle": "Visokoučinkovita inženjerska plastika za industrijske primjene",
-  "plasticEngineeringParagraph": "Isporučujemo i obrađujemo tehničku plastiku u pločama, šipkama i prilagođenim dijelovima. Naša rješenja prilagođena su visokim standardima industrijskih performansi i trajnosti.",
-  "contactUsButton": "Kontaktirajte nas",
-  "whatWeOfferTitle": "Što nudimo?",
-  "sheetsItem": "Ploče",
-  "sheetsDescription": "Ravne plastične ploče dostupne u raznim debljinama za obradu ili izravnu upotrebu.",
-  "rodsItem": "Šipke",
-  "rodsDescription": "Okrugle plastične šipke, idealne za tokarenje i izradu cilindričnih komponenti.",
-  "cutToSizePartsItem": "Dijelovi rezani po mjeri",
-  "cutToSizePartsDescription": "Prilagođene plastične komponente precizno izrezane i obrađene prema vašim točnim specifikacijama.",
-  "plasticWeWorkWithTitle": "Plastika s kojom radimo",
-  "ppName": "PP (Polipropilen)",
-  "ppDescription": "Lagana je, otporna na kemikalije, idealna za primjene u hrani i kemikalijama.",
-  "pehdName": "PEHD",
-  "pehdDescription": "Visoka otpornost na udarce, niska apsorpcija vlage, izvrsna za cjevovode.",
-  "pe300_500_1000Name": "PE300/500/1000",
-  "pe300_500_1000Description": "UHMW klase, nisko trenje i otporne na habanje za mehaničku upotrebu.",
-  "pa6Name": "PA6 (Poliamid 6)",
-  "pa6Description": "Snažan i žilav, široko korišten u strojarstvu.",
-  "pomcName": "POM-C",
-  "pomcDescription": "(Polioksimetilenski kopolimer). Visoka krutost i dimenzijska stabilnost, savršen za precizne dijelove.",
-  "ptfeName": "PTFE",
-  "ptfeDescription": "(Politetrafluoroetilen / Teflon®). Izvrsna kemijska otpornost, neprijanjajuća, koristi se u teškim uvjetima.",
-  "cnc_machining_title": "Visoko precizna CNC obrada za industrijske primjene",
-  "cnc_machining_paragraph": "Isporučujemo prilagođene CNC dijelove projektirane za trajnost, točnost i performanse.",
-  "cnc_contact_us_button": "Kontaktirajte nas",
-  "cnc_what_we_offer_title": "Što nudimo?",
-  "cnc_turning_item": "CNC tokarenje",
-  "cnc_turning_description": "Visoko precizno tokarenje za cilindrične dijelove s glatkim završnim obradama i uskim tolerancijama.",
-  "cnc_milling_item": "CNC glodanje",
-  "cnc_milling_description": "Precizno glodanje ravnih i složenih površina za prilagođene mehaničke komponente.",
-  "cnc_five_axis_machining_item": "5-osna obrada",
-  "cnc_five_axis_machining_description": "Napredna 5-osna obrada za detaljne, višeslojne dijelove u jednom prolazu.",
-  "cnc_laser_cutting_item": "Lasersko rezanje",
-  "cnc_laser_cutting_description": "Precizno lasersko rezanje za zamršene dizajne i razne debljine materijala.",
-  "cnc_welding_item": "Zavarivanje",
-  "cnc_welding_description": "Stručne usluge zavarivanja za snažno i trajno sastavljanje metalnih komponenti.",
-  "cnc_bending_item": "Savijanje",
-  "cnc_bending_description": "Precizno savijanje metala za prilagođene oblike i strukturne komponente.",
-  "cnc_types_of_parts_title": "Vrste dijelova koje proizvodimo",
-  "cnc_feed_screw_name": "Pužni transporter",
-  "cnc_flanges_name": "Prirubnice",
-  "cnc_guides_name": "Vodilice",
-  "cnc_rings_name": "Prstenovi",
-  "cnc_sliders_name": "Klizači",
-  "cnc_timing_screw_name": "Sinkronizacijski vijak",
+  "industryMachineryDesc": "Projektiramo i obrađujemo dijelove koji osiguravaju stabilnost i trajnost u složenoj industrijskoj opremi i proizvodnim sustavima.",
+  "about_us_upperTitle": "Naša povijest",
+  "about_us_heroTitle1": "O",
+  "about_us_heroTitle2": "Forta",
+  "about_us_heroDescription": "Vaš pouzdani partner za inženjersku plastiku i CNC više od tri desetljeća",
   "about_us_title": "O nama",
-  "about_us_paragraph_1": "S više od 30 godina iskustva u CNC obradi, dizajnu i proizvodnji, Forta Ltd. je vaš partner za visokokvalitetne prilagođene mehaničke dijelove. Nudimo personaliziranu uslugu i specijalizirana rješenja za širok raspon industrija, uključujući prehrambenu industriju, kemijsku industriju, papirnu industriju, automobilsku industriju, zdravstvo, energetiku, automatizaciju procesa, transportnu tehnologiju i druge.",
-  "about_us_paragraph_2": "Ističemo se u preciznoj proizvodnji dijelova od inženjerske plastike (PP, HDPE, POM, PA, PTFE, itd.). Naša posvećenost tehnološkom napretku osigurava da kontinuirano unaprjeđujemo svoje sposobnosti za isporuku najpreciznijih i najsloženijih komponenti strojeva.",
+  "about_us_h2Title1": "Naša",
+  "about_us_h2Title2": "Ekspertiza",
+  "about_us_missionTitle1": "Što nas",
+  "about_us_missionTitle2": "pokreće",
+  "about_us_paragraph_1": "S više od 30 godina iskustva u CNC obradi, dizajnu i proizvodnji, vaš smo partner za visokokvalitetne prilagođene mehaničke dijelove. Nudimo personaliziranu uslugu i specijalizirana rješenja za širok raspon industrija, uključujući prehrambenu, kemijsku, papirnu, automobilsku, zdravstvenu, energetsku, automatizaciju procesa, transportnu tehnologiju i druge.",
+  "about_us_paragraph_2": "Izvrsni smo u proizvodnji dijelova od inženjerske plastike (PP, HDPE, POM, PA, PTFE, itd.). Naša predanost tehnološkom napretku osigurava da stalno unapređujemo svoje mogućnosti za isporuku složenih strojnih komponenti.",
   "our_mission_title": "Naša misija",
-  "our_mission_paragraph": "U Forti Ltd., naša misija je jednostavna. Isporučujemo pouzdane, visoko precizne mehaničke dijelove i plastične komponente koje osnažuju performanse naših klijenata. Kombiniramo desetljeća stručnosti s kontinuiranom inovacijom kako bismo pružili prilagođena rješenja koja zadovoljavaju najviše industrijske standarde, od dizajna do isporuke.",
+  "our_mission_paragraph": "U Forta Ltd., naša je misija jednostavna. Isporučujemo pouzdane, visokoprecizne mehaničke dijelove i plastične komponente koje poboljšavaju performanse naših klijenata. Kombiniramo desetljeća stručnosti s kontinuiranom inovacijom kako bismo pružili prilagođena rješenja koja zadovoljavaju najviše industrijske standarde, od dizajna do isporuke.",
   "about_quote_text": "Osnažujemo industrijske performanse kroz preciznost, inovaciju i pouzdanost.",
   "years_experience_value": "+30",
-  "years_experience_label": "Godine iskustva",
+  "years_experience_label": "Godina iskustva",
   "clients_europe_value": "+200",
   "clients_europe_label": "Klijenata u Europi",
   "projects_realized_value": "+10k",
   "projects_realized_label": "Realiziranih projekata",
   "trusted_companies_value": "+25",
   "trusted_companies_label": "Pouzdane tvrtke",
+  "valor_upperTitle": "Naše vrijednosti",
+  "valor_Title1": "Što nas",
+  "valor_Title2": "vodi",
+  "valor_value1": "Izvrsnost",
+  "valor_description1": "Težimo savršenstvu u svakom projektu, jamčeći najvišu kvalitetu za naše klijente.",
+  "valor_value2": "Inovacija",
+  "valor_description2": "Neprestano ulažemo u nove tehnologije kako bismo ostali na vrhu.",
+  "valor_value3": "Partnerstvo",
+  "valor_description3": "Gradimo trajne odnose temeljene na povjerenju i suradnji.",
   "nav_home": "Naslovnica",
   "nav_services": "Usluge",
   "nav_plastic_engineering": "Inženjerska plastika",
@@ -114,7 +95,7 @@
   "footer_services_title": "USLUGE",
   "footer_engineering_plastic_link": "Inženjerska plastika",
   "footer_cnc_parts_link": "CNC dijelovi",
-  "footer_legal_title": "PRAVNE NAPOMENE",
+  "footer_legal_title": "PRAVNO",
   "footer_confidentiality_policy_link": "Politika privatnosti",
   "footer_legal_notice_link": "Pravne napomene",
   "footer_contact_title": "KONTAKT",
@@ -123,10 +104,10 @@
   "footer_copyright_text": "Autorska prava © Forta ltd sva prava pridržana",
   "legal_notice_company_info_title": "Podaci o tvrtki",
   "legal_notice_company_name_label": "Naziv tvrtke:",
-  "legal_notice_company_name_value": "Forta Ltd.",
+  "legal_notice_company_name_value": "Forta ltd",
   "legal_notice_registered_office_label": "Sjedište:",
   "legal_notice_registered_office_value": "[ Unesite punu adresu ]",
-  "legal_notice_registration_number_label": "Broj registracije tvrtke:",
+  "legal_notice_registration_number_label": "Matični broj tvrtke:",
   "legal_notice_registration_number_value": "[Unesite OIB ili ID tvrtke]",
   "legal_notice_court_of_registration_label": "Sud registra:",
   "legal_notice_court_of_registration_value": "[ Unesite sud registra ]",
@@ -139,9 +120,9 @@
   "legal_notice_publication_manager_value": "[ Unesite ]",
   "legal_notice_website_creator_label": "Kreator web stranice:",
   "legal_notice_website_creator_name": "Louis Jagueneau",
-  "legal_notice_intellectual_property_label": "Intelektualno vlasništvo :",
-  "legal_notice_intellectual_property_text": "Sav sadržaj na ovoj web stranici, uključujući tekstove, slike, grafike, logotipe i elemente dizajna, intelektualno je vlasništvo tvrtke Forta Ltd. ili njezinih partnera, i ne smije se kopirati, mijenjati ili ponovno koristiti bez pismene dozvole.",
-  "legal_notice_limitation_of_liability_label": "Ograničenje odgovornosti :",
+  "legal_notice_intellectual_property_label": "Intelektualno vlasništvo:",
+  "legal_notice_intellectual_property_text": "Sav sadržaj na ovoj web stranici, uključujući tekstove, slike, grafike, logotipe i elemente dizajna, intelektualno je vlasništvo tvrtke Forta Ltd. ili njezinih partnera i ne smije se kopirati, mijenjati ili ponovno koristiti bez pismene dozvole.",
+  "legal_notice_limitation_of_liability_label": "Ograničenje odgovornosti:",
   "legal_notice_limitation_of_liability_text": "Forta Ltd. nastoji održavati sav sadržaj web stranice točnim i ažuriranim, ali ne može biti odgovorna za bilo kakve pogreške, propuste ili posljedice koje proizlaze iz korištenja ove web stranice.",
   "legal_notice_contact_inquiry_text": "Za sva pitanja u vezi s ovim pravnim napomenama ili korištenjem web stranice, možete nas kontaktirati na:",
   "legal_notice_email_label": "E-pošta:",
@@ -155,11 +136,11 @@
   "conf_policy_data_security": "Primjenjujemo odgovarajuće tehničke i organizacijske mjere za zaštitu vaših osobnih podataka od neovlaštenog pristupa, izmjene, otkrivanja ili uništenja.",
   "conf_policy_cookies_title": "Kolačići",
   "conf_policy_cookies_intro": "Naša web stranica koristi kolačiće za poboljšanje vašeg iskustva pregledavanja. Kolačići su male tekstualne datoteke pohranjene na vašem uređaju.",
-  "conf_policy_cookies_types": "Koristimo bitne kolačiće za funkcionalnost web stranice i analitičke kolačiće kako bismo razumjeli kako se naša web stranica koristi i poboljšali njezine performanse. Možete upravljati svojim postavkama kolačića putem postavki preglednika.",
+  "conf_policy_cookies_types": "Koristimo osnovne kolačiće za funkcionalnost web stranice i analitičke kolačiće kako bismo razumjeli kako se naša web stranica koristi i poboljšali njezine performanse. Svojim postavkama kolačića možete upravljati putem postavki preglednika.",
   "conf_policy_hypertext_link_title": "Hipertekstualni link",
   "conf_policy_hypertext_link_text": "Naša web stranica može sadržavati poveznice na vanjske web stranice kojima ne upravljamo. Nemamo kontrolu nad sadržajem i praksama tih web stranica i ne možemo preuzeti odgovornost za njihove politike privatnosti. Preporučujemo vam da pregledate politike privatnosti svih web stranica trećih strana koje posjetite.",
   "conf_policy_contact_title": "Kontakt",
-  "conf_policy_contact_text": "Ako imate pitanja ili nedoumica u vezi s ovom Politikom privatnosti ili vašim osobnim podacima, molimo kontaktirajte nas na:",
+  "conf_policy_contact_text": "Ako imate pitanja ili nedoumica u vezi s ovom Politikom privatnosti ili vašim osobnim podacima, kontaktirajte nas na:",
   "conf_policy_contact_email_label": "E-pošta:",
   "conf_policy_contact_email_value": "[info@forta.hr]",
   "conf_policy_contact_phone_label": "Telefon:",
@@ -170,7 +151,269 @@
   "feedback_form_rating": "Ocijenite svoje iskustvo",
   "feedback_form_message": "Vaše povratne informacije",
   "feedback_form_placeholder": "Napišite svoje povratne informacije ovdje...",
-  "feedback_form_button": "Poslati",
-  "feedback_see_more_button": "Pročitaj više"
-
+  "feedback_form_button": "Pošalji",
+  "feedback_see_more_button": "Prikaži više",
+  "product1_title": "Tehničke ploče",
+  "product1_description": "Visokoučinkovite prilagođene ploče za sve vaše industrijske potrebe",
+  "product1_spec1": "Debljina: 5–100 mm",
+  "product1_spec2": "Boje: bijela, crna, plava, crvena",
+  "product1_spec3": "Rezanje po mjeri",
+  "product1_category": "Ploče",
+  "product2_title": "Šipke i profili",
+  "product2_description": "Visokokvalitetne okrugle šipke i tehnički profili",
+  "product2_spec1": "Promjer: 10–200 mm",
+  "product2_spec2": "Standardne duljine",
+  "product2_spec3": "Precizna obrada",
+  "product2_category": "Šipke",
+  "product3_title": "Dijelovi po mjeri",
+  "product3_description": "Dizajn i proizvodnja prilagođenih tehničkih dijelova",
+  "product3_spec1": "Brzi prototipovi",
+  "product3_spec2": "Industrijske serije",
+  "product3_spec3": "Kontrola kvalitete",
+  "product3_category": "Po mjeri",
+  "hero_section": {
+    "badge": "Inženjerska plastika",
+    "h1_line1": "Plastika",
+    "h1_line2": "Materijali",
+    "h1_line3": "Po mjeri",
+    "paragraph": "Pretvorite svoje industrijske izazove u uspjeh uz naša rješenja iz inženjerske plastike. Više od 30 godina inovacija posvećenih tehničkoj preciznosti.",
+    "button_explore": "Istražite naše materijale",
+    "button_contact": "Kontaktirajte nas"
+  },
+  "materials_section": {
+    "badge": "Stručni materijali",
+    "title": "Napredne tehnologije",
+    "description": "Pažljivo odabran asortiman visokoučinkovitih materijala za najzahtjevnije izazove"
+  },
+  "plastics": {
+    "PP": {
+      "name": "Polipropilen (PP)",
+      "description": "Svestran materijal s izvrsnom kemijskom otpornošću i mehaničkim svojstvima",
+      "properties": [
+        "Otporan na kemikalije",
+        "Lagan",
+        "Reciklabilan"
+      ]
+    },
+    "PEHD": {
+      "name": "Polietilen visoke gustoće (PEHD)",
+      "description": "Visoka gustoća, idealan za zahtjevne industrijske primjene",
+      "properties": [
+        "Visoka gustoća",
+        "Otporan na UV",
+        "Netoksičan"
+      ]
+    },
+    "PE": {
+      "name": "PE 300/500/1000",
+      "description": "Ultra visokoučinkoviti materijali za kritične primjene",
+      "properties": [
+        "Izuzetno otporan",
+        "Samopodmazujući",
+        "Dugotrajan"
+      ]
+    },
+    "PA6": {
+      "name": "Poliamid 6 (PA6)",
+      "description": "Izvrsna mehanička čvrstoća i otpornost na habanje",
+      "properties": [
+        "Visoka čvrstoća",
+        "Otporan na habanje",
+        "Precizan"
+      ]
+    },
+    "POMC": {
+      "name": "POM-C (Acetal)",
+      "description": "Izuzetna dimenzijska točnost i stabilnost",
+      "properties": [
+        "Precizan",
+        "Stabilan",
+        "Obradiv"
+      ]
+    },
+    "PTFE": {
+      "name": "PTFE (Teflon)",
+      "description": "Nenadmašna neprijanjajuća svojstva i toplinska otpornost",
+      "properties": [
+        "Neprijanjajuć",
+        "Visoka temperatura",
+        "Inertan"
+      ]
+    }
+  },
+  "products_section": {
+    "badge": "Naš asortiman",
+    "title": "Tehnička rješenja",
+    "products": {
+      "plaques": {
+        "title": "Tehničke ploče",
+        "description": "Visokoučinkovite prilagođene ploče za sve vaše industrijske potrebe",
+        "specs": [
+          "Debljina: 5–100 mm",
+          "Boje: bijela, crna, plava, crvena",
+          "Rezanje po mjeri"
+        ],
+        "category": "Ploče"
+      },
+      "barres": {
+        "title": "Šipke i profili",
+        "description": "Visokokvalitetne okrugle šipke i tehnički profili",
+        "specs": [
+          "Promjer: 10–200 mm",
+          "Standardne duljine",
+          "Precizna obrada"
+        ],
+        "category": "Šipke"
+      },
+      "sur_mesure": {
+        "title": "Dijelovi po mjeri",
+        "description": "Dizajn i proizvodnja prilagođenih tehničkih dijelova",
+        "specs": [
+          "Brzi prototipovi",
+          "Industrijske serije",
+          "Kontrola kvalitete"
+        ],
+        "category": "Po mjeri"
+      }
+    },
+    "button_more": "Saznaj više"
+  },
+  "cta_section": {
+    "title": "Spremni za inovacije?",
+    "description": "Kontaktirajte naše stručnjake kako biste razgovarali o svom projektu i otkrili naša prilagođena rješenja",
+    "button_quote": "Zatražite ponudu"
+  },
+  "cncPage": {
+    "hero": {
+      "tagline": "CNC obrada",
+      "titleLine1": "CNC",
+      "titleLine2": "Obrada",
+      "subtitle": "Visoka preciznost",
+      "description": "Tehnička izvrsnost i milimetarska preciznost za sve vaše projekte obrade. Najsuvremenija tehnologija za vaše industrijske ambicije.",
+      "buttonDiscover": "Otkrijte naše usluge",
+      "buttonQuote": "Zatražite ponudu"
+    },
+    "services": {
+      "sectionTitle": "Naše usluge",
+      "title": "CNC tehnologije",
+      "description": "Kompletan raspon usluga obrade za sve vaše industrijske potrebe",
+      "items": {
+        "turning": {
+          "title": "CNC tokarenje",
+          "description": "Precizna obrada za cilindrične i složene dijelove",
+          "spec1": "Preciznost: ±0,01mm",
+          "spec2": "Maks. promjer: 500mm",
+          "spec3": "Razni materijali"
+        },
+        "milling": {
+          "title": "CNC glodanje",
+          "description": "Izrada složenih dijelova s visokokvalitetnom završnom obradom",
+          "spec1": "Više osi",
+          "spec2": "Složene površine",
+          "spec3": "Zrcalna završna obrada"
+        },
+        "5axes": {
+          "title": "5-osna obrada",
+          "description": "Napredna tehnologija za najsloženije geometrije",
+          "spec1": "5 istovremenih osi",
+          "spec2": "Složene geometrije",
+          "spec3": "Jedno stezanje"
+        },
+        "laser": {
+          "title": "Lasersko rezanje",
+          "description": "Visokoprecizno rezanje za sve vrste materijala",
+          "spec1": "Debljina: 0,5–50mm",
+          "spec2": "Fino rezanje",
+          "spec3": "Precizni obrisi"
+        },
+        "welding": {
+          "title": "Specijalizirano zavarivanje",
+          "description": "Profesionalna montaža s kontrolom kvalitete",
+          "spec1": "TIG/MIG zavarivanje",
+          "spec2": "Kontrola kvalitete",
+          "spec3": "Čista završna obrada"
+        },
+        "bending": {
+          "title": "Savijanje i oblikovanje",
+          "description": "Precizno oblikovanje ploča i profila",
+          "spec1": "Precizni kutovi",
+          "spec2": "Kontrolirani radijusi",
+          "spec3": "Stabilne dimenzije"
+        }
+      }
+    },
+    "parts": {
+      "sectionTitle": "Naša proizvodnja",
+      "title": "Vrste obrađenih dijelova",
+      "description": "Prilagođena izrada visokopreciznih tehničkih dijelova",
+      "items": {
+        "feedScrew": {
+          "name": "Pužni transporteri",
+          "category": "Prijenos",
+          "shortDescription": "Tehnički dio izrađen prema vašim specifikacijama",
+          "button": "Pogledaj detalje"
+        },
+        "flanges": {
+          "name": "Prirubnice i spojnice",
+          "category": "Sklapanje",
+          "shortDescription": "Tehnički dio izrađen prema vašim specifikacijama",
+          "button": "Pogledaj detalje"
+        },
+        "guides": {
+          "name": "Linearne vodilice",
+          "category": "Vođenje",
+          "shortDescription": "Tehnički dio izrađen prema vašim specifikacijama",
+          "button": "Pogledaj detalje"
+        },
+        "rings": {
+          "name": "Prstenovi i brtve",
+          "category": "Brtvljenje",
+          "shortDescription": "Tehnički dio izrađen prema vašim specifikacijama",
+          "button": "Pogledaj detalje"
+        },
+        "sliders": {
+          "name": "Klizači",
+          "category": "Kretanje",
+          "shortDescription": "Tehnički dio izrađen prema vašim specifikacijama",
+          "button": "Pogledaj detalje"
+        },
+        "timingScrew": {
+          "name": "Sinkronizacijski vijci",
+          "category": "Podešavanje",
+          "shortDescription": "Tehnički dio izrađen prema vašim specifikacijama",
+          "button": "Pogledaj detalje"
+        }
+      }
+    },
+    "cta": {
+      "title": "Spremni za početak?",
+      "description": "Kontaktirajte naše CNC stručnjake kako biste razgovarali o svom projektu i dobili personaliziranu ponudu",
+      "buttonQuote": "Zatražite ponudu",
+      "buttonContact": "Kontaktirajte nas"
+    }
+  },
+  "contactPage": {
+    "heroTitle": "Kontaktirajte nas",
+    "form": {
+      "namePlaceholder": "Ime",
+      "emailPlaceholder": "E-pošta",
+      "subjectPlaceholder": "Predmet",
+      "messagePlaceholder": "Upišite svoju poruku ovdje ...",
+      "submitButton": "Pošalji"
+    },
+    "contacts": {
+      "phone": {
+        "label": "Telefon",
+        "value": "+385 98 679 664"
+      },
+      "address": {
+        "label": "Adresa",
+        "value": "Dubrova 105, 52220 Labin, Hrvatska"
+      },
+      "email": {
+        "label": "E-pošta",
+        "value": "info@forta.hr"
+      }
+    }
+  }
 }

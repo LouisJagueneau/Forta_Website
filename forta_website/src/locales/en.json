@@ -4,16 +4,13 @@
   "welcomeTitle3": "Solutions for Your Industry",
   "heroParagraph": "Forta produces custom CNC parts and engineering plastic components. With over 30 years of experience, we manage the full process from design to production, providing solutions for your CNC and plastic projects.",
   "heroButton": "OUR SERVICES",
-  
   "discoverText": "Discover",
   "servicesTitle": "Industrial Solutions",
   "servicesUpTitle": "Our services",
-  
   "plasticTitle": "Plastic engineering",
-  "plasticDescription": "We supply high-performance plastic components crafted from industrial-grade materials. Our plastics offer excellent mechanical, thermal, and chemical properties, making them ideal for demanding environments across multiple industries.",
+  "plasticDescription": "We supply plastic components crafted from industrial-grade materials. Our plastics offer excellent mechanical, thermal, and chemical properties, making them ideal for demanding environments across multiple industries.",
   "PlasticsAvailable": "Plastics available:",
   "plasticButton": "See More",
- 
   "cncTitle": "CNC Parts",
   "cncDescription": "We offer high-precision CNC machining services tailored to meet the needs of demanding industrial applications. Whether you require single prototypes or full production runs, our expertise ensures reliable, accurate, and repeatable parts every time.",
   "cncList": "Services: CNC Turning ; CNC Milling ; 5-Axis Machining ; Laser Cutting ...",
@@ -28,7 +25,6 @@
   "cncProduct7": "Pulleys",
   "cncProduct8": "Housing",
   "cncProduct9": "Rollers",
-  
   "aboutTitle": "We build your solutions, piece by piece.",
   "aboutSubtitle": "About Forta Ltd ?",
   "aboutDescription": "With over 30 years of experience, Forta Ltd. designs and manufactures high-quality custom mechanical parts. We specialize in CNC machining and engineering plastics, serving industries such as food, chemical, automotive, and automation. From design to maintenance, we deliver complete technical solutions with precision and reliability.",
@@ -37,8 +33,7 @@
   "countClients": "clients in\nEurope",
   "countProjects": "projects\nrealised",
   "countPartners": "trusted partner\ncompanies",
-  
-  "industriesTitle": "Industrie Served",
+  "industriesTitle": "Industries Served",
   "industriesUpTitle": "Sectors",
   "industryFood": "Food & Beverage",
   "industryFoodDesc": "We supply food-grade plastic and precision CNC parts for hygienic and durable use in food processing and bottling lines.",
@@ -46,16 +41,23 @@
   "industryPharmaDesc": "Our corrosion-resistant components are ideal for use in chemical tanks, lab equipment, and pharmaceutical packaging systems.",
   "industryAutomation": "Automation",
   "industryAutomationDesc": "We produce timing screws, guides, and CNC components that keep automated filling and packaging lines running smoothly and efficiently.",
-  "industryAuto": "Automotive",
-  "industryAutoDesc": "Forta delivers robust and accurate plastic and CNC parts used in testing, assembly, and prototype phases of automotive manufacturing.",
+  "industryFilt": "Filtration & Separation",
+  "industryFiltDesc": "We manufacture plastic and metal components for solid-liquid separation equipment, including filter presses.",
   "industryEnergy": "Energy & Utilities",
   "industryEnergyDesc": "Our engineering plastics are built to withstand extreme conditions in power systems, industrial utilities, and clean energy installations.",
   "industryMachinery": "Industrial Machinery",
   "industryMachineryDesc": "We engineer and machine parts that ensure operational stability and durability in complex industrial equipment and production systems.",
-  
+  "about_us_upperTitle": "Our history",
+  "about_us_heroTitle1": "About",
+  "about_us_heroTitle2": "Forta",
+  "about_us_heroDescription": "Your trusted partner in plastic & CNC engineering for over three decades",
   "about_us_title": "About us",
+  "about_us_h2Title1": "Our",
+  "about_us_h2Title2": "Expertise",
+  "about_us_missionTitle1": "What Drives",
+  "about_us_missionTitle2": "Us",
   "about_us_paragraph_1": "With over 30 years in CNC machining, design, and production, is your partner for high-quality custom mechanical parts. We offer personalized service and specialized solutions for a wide range of industries, including food and beverage, chemical, paper, automotive, healthcare, energy, process automation, conveyor technology and others.",
-  "about_us_paragraph_2": "We excel in the precision production of parts made from engineering plastics (PP, HDPE, POM, PA, PTFE, etc.). Our dedication to technological progress ensures we continually enhance our capabilities to deliver the most precise and complex machine components.",
+  "about_us_paragraph_2": "We excel in the production of parts made from engineering plastics (PP, HDPE, POM, PA, PTFE, etc.). Our dedication to technological progress ensures we continually enhance our capabilities to deliver complex machine components.",
   "our_mission_title": "Our Mission",
   "our_mission_paragraph": "At Forta Ltd., our mission is simple. We deliver reliable, high-precision mechanical parts and plastic components that empower our clients' performance. We combine decades of expertise with continuous innovation to provide custom solutions that meet the highest industrial standards, from design to delivery.",
   "about_quote_text": "We empower industrial performance through precision, innovation, and reliability.",
@@ -67,21 +69,27 @@
   "projects_realized_label": "Project Realised",
   "trusted_companies_value": "+25",
   "trusted_companies_label": "Trusted companies",
-  
+  "valor_upperTitle": "Our Values",
+  "valor_Title1": "What guide",
+  "valor_Title2": "us",
+  "valor_value1": "Excellency",
+  "valor_description1": "We strive for perfection in every project, guaranteeing the highest quality for our customers.",
+  "valor_value2": "Innovation",
+  "valor_description2": "We constantly invest in new technologies to remain at the forefront.",
+  "valor_value3": "Partnership",
+  "valor_description3": "We build lasting relationships based on trust and collaboration.",
   "nav_home": "Home",
   "nav_services": "Services",
   "nav_plastic_engineering": "Plastic Engineering",
   "nav_cnc_parts": "CNC parts",
   "nav_about": "About",
   "nav_contact_us": "Contact us",
-  
   "mobile_nav_home": "Home",
   "mobile_nav_services": "Services",
   "mobile_nav_plastic_engineering": "Plastic Engineering",
   "mobile_nav_cnc_parts": "CNC Parts",
   "mobile_nav_about": "About",
   "mobile_nav_contact_us": "Contact us",
-  
   "footer_company_title": "COMPANY",
   "footer_about_us_link": "About us",
   "footer_services_title": "SERVICES",
@@ -94,7 +102,6 @@
   "footer_phone_number": "+33 06 01 01 01 01",
   "footer_email": "support@forta.com",
   "footer_copyright_text": "Copyright © Forta ltd all rights reserved",
-  
   "legal_notice_company_info_title": "Company information",
   "legal_notice_company_name_label": "Company Name:",
   "legal_notice_company_name_value": "Forta ltd",
@@ -122,7 +129,6 @@
   "legal_notice_email_value": "[info@forta.hr]",
   "legal_notice_phone_label": "Phone:",
   "legal_notice_phone_value": "[+385 xx xxx xxxx]",
-  
   "conf_policy_data_title": "Data",
   "conf_policy_data_intro": "Forta Ltd. is committed to protecting your privacy. This section explains how we collect, use, and safeguard your personal information.",
   "conf_policy_data_collection": "We collect personal data that you voluntarily provide to us when you use our website, contact us, or engage in our services. This may include your name, email address, phone number, company name, and any other information you choose to provide.",
@@ -139,7 +145,6 @@
   "conf_policy_contact_email_value": "[info@forta.hr]",
   "conf_policy_contact_phone_label": "Phone:",
   "conf_policy_contact_phone_value": "[+385 xx xxx xxxx]",
-  
   "feedback_form_title": "Give us your feedback",
   "feedback_form_name": "Name",
   "feedback_form_name_placeholder": "Your name",
@@ -147,5 +152,268 @@
   "feedback_form_message": "Your feedback",
   "feedback_form_placeholder": "Write your feedback here...",
   "feedback_form_button": "Send",
-  "feedback_see_more_button": "See more"
+  "feedback_see_more_button": "See more",
+  "product1_title": "Technical Sheets",
+  "product1_description": "High-performance custom sheets for all your industrial needs",
+  "product1_spec1": "Thickness: 5–100 mm",
+  "product1_spec2": "Colors: White, Black, Blue, Red",
+  "product1_spec3": "Custom cutting",
+  "product1_category": "Sheets",
+  "product2_title": "Rods & Profiles",
+  "product2_description": "High-quality round rods and technical profiles",
+  "product2_spec1": "Diameter: 10–200 mm",
+  "product2_spec2": "Standard lengths",
+  "product2_spec3": "Precision machining",
+  "product2_category": "Rods",
+  "product3_title": "Custom Parts",
+  "product3_description": "Design and manufacturing of customized technical parts",
+  "product3_spec1": "Rapid prototyping",
+  "product3_spec2": "Industrial series",
+  "product3_spec3": "Quality control",
+  "product3_category": "Custom",
+  "hero_section": {
+  "badge": "Plastic Engineering",
+  "h1_line1": "Plastic",
+  "h1_line2": "Materials",
+  "h1_line3": "Custom",
+  "paragraph": "Turn your industrial challenges into success with our plastic engineering solutions. Over 30 years of innovation dedicated to technical precision.",
+  "button_explore": "Explore our materials",
+  "button_contact": "Contact us"
+},
+"materials_section": {
+  "badge": "Expert Materials",
+  "title": "Advanced Technologies",
+  "description": "A carefully selected range of high-performance materials designed to meet the most demanding challenges"
+},
+  "plastics": {
+    "PP": {
+      "name": "Polypropylene (PP)",
+      "description": "Versatile material with excellent chemical resistance and mechanical properties",
+      "properties": [
+        "Chemical resistant",
+        "Lightweight",
+        "Recyclable"
+      ]
+    },
+    "PEHD": {
+      "name": "High-Density Polyethylene (HDPE)",
+      "description": "High density, ideal for demanding industrial applications",
+      "properties": [
+        "High density",
+        "UV resistant",
+        "Non-toxic"
+      ]
+    },
+    "PE": {
+      "name": "PE 300/500/1000",
+      "description": "Ultra high-performance range for critical applications",
+      "properties": [
+        "Ultra resistant",
+        "Self-lubricating",
+        "Long-lasting"
+      ]
+    },
+    "PA6": {
+      "name": "Polyamide 6 (PA6)",
+      "description": "Excellent mechanical strength and abrasion resistance",
+      "properties": [
+        "High strength",
+        "Abrasion resistant",
+        "Precise"
+      ]
+    },
+    "POMC": {
+      "name": "POM-C (Acetal)",
+      "description": "Exceptional dimensional accuracy and stability",
+      "properties": [
+        "Accurate",
+        "Stable",
+        "Machinable"
+      ]
+    },
+    "PTFE": {
+      "name": "PTFE (Teflon)",
+      "description": "Unmatched non-stick properties and thermal resistance",
+      "properties": [
+        "Non-stick",
+        "High temperature",
+        "Inert"
+      ]
+    }
+  },
+  "products_section": {
+    "badge": "Our Range",
+    "title": "Technical Solutions",
+    "products": {
+      "plaques": {
+        "title": "Technical Sheets",
+        "description": "High-performance custom sheets for all your industrial needs",
+        "specs": [
+          "Thickness: 5–100 mm",
+          "Colors: White, Black, Blue, Red",
+          "Custom cutting"
+        ],
+        "category": "Sheets"
+      },
+      "barres": {
+        "title": "Rods & Profiles",
+        "description": "High-quality round rods and technical profiles",
+        "specs": [
+          "Diameter: 10–200 mm",
+          "Standard lengths",
+          "Precision machining"
+        ],
+        "category": "Rods"
+      },
+      "sur_mesure": {
+        "title": "Custom Parts",
+        "description": "Design and manufacturing of customized technical parts",
+        "specs": [
+          "Rapid prototyping",
+          "Industrial series",
+          "Quality control"
+        ],
+        "category": "Custom"
+      }
+    },
+    "button_more": "Learn more"
+  },
+  "cta_section": {
+    "title": "Ready to innovate?",
+    "description": "Contact our experts to discuss your project and discover our custom solutions",
+    "button_quote": "Request a quote"
+  },
+  "cncPage": {
+    "hero": {
+      "tagline": "CNC Machining",
+      "titleLine1": "CNC",
+      "titleLine2": "Machining",
+      "subtitle": "High Precision",
+      "description": "Technical excellence and millimeter accuracy for all your machining projects. Cutting-edge technology driving your industrial ambitions.",
+      "buttonDiscover": "Discover our services",
+      "buttonQuote": "Request a quote"
+    },
+    "services": {
+      "sectionTitle": "Our Services",
+      "title": "CNC Technologies",
+      "description": "A complete range of machining services to meet all your industrial needs",
+      "items": {
+        "turning": {
+          "title": "CNC Turning",
+          "description": "Precision machining for cylindrical and complex parts",
+          "spec1": "Precision: ±0.01mm",
+          "spec2": "Max diameter: 500mm",
+          "spec3": "Various materials"
+        },
+        "milling": {
+          "title": "CNC Milling",
+          "description": "Manufacturing of complex parts with high-quality finishing",
+          "spec1": "Multi-axis",
+          "spec2": "Complex surfaces",
+          "spec3": "Mirror finish"
+        },
+        "5axes": {
+          "title": "5-Axis Machining",
+          "description": "Advanced technology for the most complex geometries",
+          "spec1": "5 simultaneous axes",
+          "spec2": "Complex geometries",
+          "spec3": "Single setup"
+        },
+        "laser": {
+          "title": "Laser Cutting",
+          "description": "High-precision cutting for all types of materials",
+          "spec1": "Thickness: 0.5–50mm",
+          "spec2": "Fine cutting",
+          "spec3": "Precise contours"
+        },
+        "welding": {
+          "title": "Specialized Welding",
+          "description": "Professional assembly with quality control",
+          "spec1": "TIG/MIG welding",
+          "spec2": "Quality control",
+          "spec3": "Clean finish"
+        },
+        "bending": {
+          "title": "Bending & Forming",
+          "description": "Accurate shaping of sheets and profiles",
+          "spec1": "Precise angles",
+          "spec2": "Controlled radii",
+          "spec3": "Stable dimensions"
+        }
+      }
+    },
+    "parts": {
+      "sectionTitle": "Our Production",
+      "title": "Types of Machined Parts",
+      "description": "Custom manufacturing of high-precision technical parts",
+      "items": {
+        "feedScrew": {
+          "name": "Feed Screws",
+          "category": "Transmission",
+          "shortDescription": "Technical part machined according to your specifications",
+          "button": "View details"
+        },
+        "flanges": {
+          "name": "Flanges & Fittings",
+          "category": "Assembly",
+          "shortDescription": "Technical part machined according to your specifications",
+          "button": "View details"
+        },
+        "guides": {
+          "name": "Linear Guides",
+          "category": "Guidance",
+          "shortDescription": "Technical part machined according to your specifications",
+          "button": "View details"
+        },
+        "rings": {
+          "name": "Rings & Seals",
+          "category": "Sealing",
+          "shortDescription": "Technical part machined according to your specifications",
+          "button": "View details"
+        },
+        "sliders": {
+          "name": "Sliders",
+          "category": "Motion",
+          "shortDescription": "Technical part machined according to your specifications",
+          "button": "View details"
+        },
+        "timingScrew": {
+          "name": "Timing Screws",
+          "category": "Adjustment",
+          "shortDescription": "Technical part machined according to your specifications",
+          "button": "View details"
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to get started?",
+      "description": "Contact our CNC machining experts to discuss your project and receive a personalized quote",
+      "buttonQuote": "Request a quote",
+      "buttonContact": "Contact us"
+    }
+  },
+  "contactPage": {
+    "heroTitle": "Contact us",
+    "form": {
+      "namePlaceholder": "Name",
+      "emailPlaceholder": "Email",
+      "subjectPlaceholder": "Subject",
+      "messagePlaceholder": "Type your message here ...",
+      "submitButton": "Send"
+    },
+    "contacts": {
+      "phone": {
+        "label": "Phone",
+        "value": "+385 98 679 664"
+      },
+      "address": {
+        "label": "Address",
+        "value": "Dubrova 105, 52220 Labin, Croatia"
+      },
+      "email": {
+        "label": "Email",
+        "value": "info@forta.hr"
+      }
+    }
+  }
 }
