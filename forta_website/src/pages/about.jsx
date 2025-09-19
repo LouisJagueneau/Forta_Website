@@ -195,12 +195,11 @@ function About() {
                         </motion.div>
 
                         {/* Stats Grid */}
-                        <div ref={countRef} className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                        <div ref={countRef} className="grid grid-cols-2 md:grid-cols-3 gap-8">
                             {[
                                 [30, t('years_experience_label'), '+'],
-                                [200, t('clients_europe_label'), '+'],
-                                [10, t('projects_realized_label'), 'K+'],
-                                [25, t('trusted_companies_label'), '+']
+                                [10, t('clients_europe_label'), '+'],
+                                [100, t('projects_realized_label'), 'K+'],
                             ].map(([value, label, suffix], index) => (
                                 <motion.div 
                                     key={index}

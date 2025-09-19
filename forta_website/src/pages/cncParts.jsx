@@ -5,8 +5,9 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
 
+import CNCPartsImage from "../assets/CNCHeroImg.png"
+
 // Import des images (simulées pour l'exemple)
-const CNCPartsImage = '/api/placeholder/600/400';
 const CNCTurningImage = '/api/placeholder/400/300';
 const CNCMillingImage = '/api/placeholder/400/300';
 const CNC5AxesImage = '/api/placeholder/400/300';

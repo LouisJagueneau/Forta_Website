@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import PlasticEngineeringImage from '../assets/PlasticEngineeringImage.png'
 import PlasticRods from '../assets/PlasticRods.png'
 import PlasticSheetSlider from '../assets/PlasticSheetSlider.png'
+import CustomPartSlider from "../assets/CustomPartSlider.png"
 import {useTranslation} from 'react-i18next';
 
 
@@ -80,6 +81,17 @@ function PlasticEngineering() {
     // === Produits ===
     const products = [
         {
+            title: t("products_section.products.sur_mesure.title"),
+            description: t("products_section.products.sur_mesure.description"),
+            specs: [
+                t("products_section.products.sur_mesure.specs.0"),
+                t("products_section.products.sur_mesure.specs.1"),
+                t("products_section.products.sur_mesure.specs.2"),
+            ],
+            category: t("products_section.products.sur_mesure.category"),
+            img: CustomPartSlider
+        },
+        {
             title: t("products_section.products.plaques.title"),
             description: t("products_section.products.plaques.description"),
             specs: [
@@ -100,18 +112,8 @@ function PlasticEngineering() {
             ],
             category: t("products_section.products.barres.category"),
             img: PlasticRods
-        },
-        {
-            title: t("products_section.products.sur_mesure.title"),
-            description: t("products_section.products.sur_mesure.description"),
-            specs: [
-                t("products_section.products.sur_mesure.specs.0"),
-                t("products_section.products.sur_mesure.specs.1"),
-                t("products_section.products.sur_mesure.specs.2"),
-            ],
-            category: t("products_section.products.sur_mesure.category"),
-            img: PlasticSheetSlider
         }
+        
     ];
 
     const nextSlide = () => {
@@ -282,7 +284,7 @@ function PlasticEngineering() {
                         </div>
                         <h2 className="text-4xl lg:text-5xl font-bold mb-6">
                             <span className="bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
-                                S{t('products_section.title')}
+                                {t('products_section.title')}
                             </span>
                         </h2>
                     </div>
