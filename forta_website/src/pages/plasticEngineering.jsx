@@ -1,19 +1,133 @@
 import React, { useState } from 'react';
 import { FaArrowRight, FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import { Droplet, FlaskRound, Shield, Thermometer, Settings, Recycle, Lightbulb, Wrench, ArrowRight, Play } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import PlasticEngineeringImage from '../assets/PlasticEngineeringImage.png'
 import PlasticRods from '../assets/PlasticRods.png'
 import PlasticSheetSlider from '../assets/PlasticSheetSlider.png'
 import CustomPartSlider from "../assets/CustomPartSlider.png"
-import {useTranslation} from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
+
+function MaterialModal({ material, isOpen, onClose }) {
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const { t } = useTranslation();
+
+    const nextImage = () => {
+        setCurrentImageIndex((prev) =>
+            prev === material?.images?.length - 1 ? 0 : prev + 1
+        );
+    };
+
+    const prevImage = () => {
+        setCurrentImageIndex((prev) =>
+            prev === 0 ? material?.images?.length - 1 : prev - 1
+        );
+    };
+
+    if (!material) return null;
+
+    return (
+        <AnimatePresence>
+            {isOpen && (
+                <>
+                    {/* Background Overlay avec Blur */}
+                    <motion.div
+                        className="fixed inset-0 z-50 backdrop-blur-md bg-black/50"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        onClick={onClose}
+                    />
+
+                    {/* Modal Content */}
+                    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+                        <motion.div
+                            className="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+                            initial={{ scale: 0.8, opacity: 0, y: 50 }}
+                            animate={{ scale: 1, opacity: 1, y: 0 }}
+                            exit={{ scale: 0.8, opacity: 0, y: 50 }}
+                            transition={{ duration: 0.3 }}
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            {/* Header */}
+                            <div className="relative bg-gradient-to-r from-red-500 to-red-600 text-white p-6 rounded-t-2xl">
+                                <button
+                                    onClick={onClose}
+                                    className="absolute top-4 right-4 p-2 hover:bg-white/20 rounded-full transition-colors"
+                                >
+                                    <X className="w-6 h-6" />
+                                </button>
+
+                                <div className="flex items-center gap-4">
+                                    <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center">
+                                        {material.icon}
+                                    </div>
+                                    <div>
+                                        <h2 className="text-3xl font-bold mb-2">{material.name}</h2>
+                                        <p className="text-red-100">{material.description}</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Content */}
+                            <div className="p-6">
+                                <div className="grid lg:grid-cols-2 gap-8">
+
+                                    {/* Section texte à gauche */}
+                                    {/* Applications */}
+                                    <div>
+                                        <h3 className="text-xl font-semibold text-gray-800 mb-3">Description</h3>
+                                        <p className="text-gray-600 leading-relaxed text-justify">
+                                            {material.fullDescription}
+                                        </p>
+                                    </div>
+
+                                    {/* Section images à droite */}
+                                    <div className="space-y-4">
+                                        <h3 className="text-xl font-semibold text-gray-800">Images du matériau</h3>
+
+                                        {/* Placeholder pour les images */}
+                                        <div className="bg-gray-100 rounded-lg h-64 flex items-center justify-center">
+                                            <div className="text-center">
+                                                <div className="text-4xl mb-2">{material.icon}</div>
+                                                <p className="text-gray-500">Images of {material.name}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                               
+                            </div>
+                        </motion.div>
+                    </div>
+                </>
+            )}
+        </AnimatePresence>
+    );
+}
 
 
 function PlasticEngineering() {
 
-    const {t} = useTranslation()
+    const { t } = useTranslation()
 
     const [activeSlide, setActiveSlide] = useState(0);
+
+    const [selectedMaterial, setSelectedMaterial] = useState(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = (material) => {
+        setSelectedMaterial(material);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+        setSelectedMaterial(null);
+    };
 
     const plastics = [
         {
@@ -24,17 +138,8 @@ function PlasticEngineering() {
                 t("plastics.PP.properties.0"),
                 t("plastics.PP.properties.1"),
                 t("plastics.PP.properties.2"),
-            ]
-        },
-        {
-            name: t("plastics.PEHD.name"),
-            description: t("plastics.PEHD.description"),
-            icon: <Droplet className="w-6 h-6" />,
-            properties: [
-                t("plastics.PEHD.properties.0"),
-                t("plastics.PEHD.properties.1"),
-                t("plastics.PEHD.properties.2"),
-            ]
+            ],
+            fullDescription : t("plastics.PP.fullDescription")
         },
         {
             name: t("plastics.PE.name"),
@@ -44,7 +149,9 @@ function PlasticEngineering() {
                 t("plastics.PE.properties.0"),
                 t("plastics.PE.properties.1"),
                 t("plastics.PE.properties.2"),
-            ]
+            ],
+            fullDescription : t("plastics.PE.fullDescription")
+
         },
         {
             name: t("plastics.PA6.name"),
@@ -54,7 +161,8 @@ function PlasticEngineering() {
                 t("plastics.PA6.properties.0"),
                 t("plastics.PA6.properties.1"),
                 t("plastics.PA6.properties.2"),
-            ]
+            ],
+            fullDescription : t("plastics.PA6.fullDescription")
         },
         {
             name: t("plastics.POMC.name"),
@@ -64,7 +172,8 @@ function PlasticEngineering() {
                 t("plastics.POMC.properties.0"),
                 t("plastics.POMC.properties.1"),
                 t("plastics.POMC.properties.2"),
-            ]
+            ],
+            fullDescription : t("plastics.POMC.fullDescription")
         },
         {
             name: t("plastics.PTFE.name"),
@@ -74,7 +183,8 @@ function PlasticEngineering() {
                 t("plastics.PTFE.properties.0"),
                 t("plastics.PTFE.properties.1"),
                 t("plastics.PTFE.properties.2"),
-            ]
+            ],
+            fullDescription : t("plastics.PTFE.fullDescription")
         }
     ];
 
@@ -113,7 +223,7 @@ function PlasticEngineering() {
             category: t("products_section.products.barres.category"),
             img: PlasticRods
         }
-        
+
     ];
 
     const nextSlide = () => {
@@ -191,9 +301,9 @@ function PlasticEngineering() {
                                         <span>{t('hero_section.button_explore')}</span>
                                         <FaArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                     </button>
-                                    <button className="group border-2 border-gray-400 hover:border-[#ec1c24] text-gray-400 hover:text-[#ec1c24] px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-3">
+                                    <Link to="/contactUs" className="group border-2 border-gray-400 hover:border-[#ec1c24] text-gray-400 hover:text-[#ec1c24] px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-3">
                                         <span>{t('hero_section.button_contact')}</span>
-                                    </button>
+                                    </Link>
                                 </div>
                             </motion.div>
                         </div>
@@ -221,7 +331,7 @@ function PlasticEngineering() {
             </section>
 
             {/* Section Matériaux avec design hexagonal */}
-            <div className="relative py-20 bg-gradient-to-b from-gray-50 to-gray-100 ">
+            <div id='materials' className="relative py-20 bg-gradient-to-b from-gray-50 to-gray-100 ">
                 <div className="container mx-auto px-6 md:px-10 xl:px-30 2xl:px-50">
                     <div className="text-center mb-16">
                         <div className="flex items-center justify-center gap-3 mb-4">
@@ -242,6 +352,7 @@ function PlasticEngineering() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {plastics.map((plastic, index) => (
                             <div
+                                onClick={() => openModal(plastic)}
                                 key={index}
                                 className="group relative bg-gradient-to-br from-gray-50/50 to-gray-100/50 backdrop-blur-sm border border-gray-300/50 rounded-2xl p-8 hover:border-red-500/50 transition-all duration-300 hover:transform hover:scale-105 cursor-pointer"
                             >
@@ -325,10 +436,10 @@ function PlasticEngineering() {
                                                             </div>
                                                         ))}
                                                     </div>
-                                                    <button className="group text-white  bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 px-5 py-2.5 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 w-fit text-sm">
+                                                    <Link to='/contactUs' className="group text-white  bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 px-5 py-2.5 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 w-fit text-sm">
                                                         <span>{t('products_section.button_more')}</span>
                                                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                                                    </button>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -378,13 +489,13 @@ function PlasticEngineering() {
                         </span>
                     </h2>
                     <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-                         {t('cta_section.description')}
+                        {t('cta_section.description')}
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <button className="group bg-gradient-to-r text-white from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center justify-center gap-3">
+                        <Link to='/contactUs' className="group bg-gradient-to-r text-white from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center justify-center gap-3">
                             <span> {t('cta_section.button_quote')}</span>
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                        </button>
+                        </Link>
 
                     </div>
                 </div>
@@ -399,6 +510,11 @@ function PlasticEngineering() {
                     animation: float infinite ease-in-out;
                 }
             `}</style>
+            <MaterialModal
+                material={selectedMaterial}
+                isOpen={isModalOpen}
+                onClose={closeModal}
+            />
         </>
     );
 }

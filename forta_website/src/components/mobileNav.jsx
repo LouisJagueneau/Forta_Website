@@ -4,6 +4,8 @@ import { IoIosArrowDown } from "react-icons/io"
 import { useState } from "react";
 import {Link} from 'react-router-dom'
 import { useTranslation } from 'react-i18next'; // Import useTranslation
+import LanguageSelector from "./languageSelector";
+
 
 function MobileNav() {
     const { t } = useTranslation(); // Initialize useTranslation hook
@@ -17,11 +19,13 @@ function MobileNav() {
                 <div>
                     <Link to='/' onClick={() => setIsOpen(false)} className="text-white text-[1.6rem] font-bold font-Stock_No_Bills ">Forta ltd.</Link>
                 </div>
-                <div className="">
+                <div className="flex gap-6 items-center">
+                    <LanguageSelector/>
                     <RxHamburgerMenu className="text-[#ec1c24] cursor-pointer text-[1.6rem]" onClick={() => setIsOpen(!isOpen)} />
                 </div>
             </div>
             <div className={`fixed h-full top-0 right-0 z-21 bg-[#252525] w-2/5 max-w-[250px] pl-[1.0rem] transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 `}>
+            
                 <div className="min-h-[50px] flex items-center mb-3">
                     <IoClose className='text-[#ec1c24] text-[1.6rem] hover:text-[#ec1c23d4] cursor-pointer' onClick={() => setIsOpen(!isOpen)} />
                 </div>

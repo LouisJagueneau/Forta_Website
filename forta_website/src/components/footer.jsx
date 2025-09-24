@@ -17,7 +17,6 @@ const Footer = () => {
           <h2 className="font-semibold mb-3 ">{t('footer_company_title')}</h2>
           <ul className="space-y-1">
             <li><Link to='/about' className="hover:underline cursor-pointer">{t('footer_about_us_link')}</Link></li>
-            <li><Link to='/feedback' className="hover:underline cursor-pointer">feedback</Link></li>
           </ul>
         </div>
 

@@ -28,9 +28,9 @@ function ServicesCard({title, description, list = [], link, buttonText, info, Ic
             <button className=" text-white bg-[#ec1c24]  px-3 py-1 rounded-sm hover:bg-[#c71a20] transition-colors duration-200">
               <Link to={link} className='flex items-center gap-2'><FaArrowRight /> {buttonText}</Link>
             </button>
-            <button className=" border-1 border-[#ec1c24]  text-[#ec1c24]  px-3 py-1 rounded-sm hover:bg-white transition-colors duration-200">
+            {/* <button className=" border-1 border-[#ec1c24]  text-[#ec1c24]  px-3 py-1 rounded-sm hover:bg-white transition-colors duration-200">
               <Link to={'/contactus'} className='flex items-center gap-2'>Contact Us</Link>
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

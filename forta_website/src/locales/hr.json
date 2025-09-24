@@ -99,8 +99,8 @@
   "footer_confidentiality_policy_link": "Politika privatnosti",
   "footer_legal_notice_link": "Pravne napomene",
   "footer_contact_title": "KONTAKT",
-  "footer_phone_number": "+33 06 01 01 01 01",
-  "footer_email": "support@forta.com",
+  "footer_phone_number": "+385 98 679 664",
+  "footer_email": "info@forta.hr",
   "footer_copyright_text": "Autorska prava © Forta sva prava pridržana",
   "legal_notice_company_info_title": "Podaci o tvrtki",
   "legal_notice_company_name_label": "Naziv tvrtke:",
@@ -142,9 +142,9 @@
   "conf_policy_contact_title": "Kontakt",
   "conf_policy_contact_text": "Ako imate pitanja ili nedoumica u vezi s ovom Politikom privatnosti ili vašim osobnim podacima, kontaktirajte nas na:",
   "conf_policy_contact_email_label": "E-pošta:",
-  "conf_policy_contact_email_value": "[info@forta.hr]",
+  "conf_policy_contact_email_value": "info@forta.hr",
   "conf_policy_contact_phone_label": "Telefon:",
-  "conf_policy_contact_phone_value": "[+385 xx xxx xxxx]",
+  "conf_policy_contact_phone_value": "+385 98 679 664",
   "feedback_form_title": "Pošaljite nam povratne informacije",
   "feedback_form_name": "Ime",
   "feedback_form_name_placeholder": "Vaše ime",
@@ -193,52 +193,48 @@
         "Otporan na kemikalije",
         "Lagan",
         "Reciklabilan"
-      ]
-    },
-    "PEHD": {
-      "name": "Polietilen visoke gustoće (PEHD)",
-      "description": "Visoka gustoća, idealan za zahtjevne industrijske primjene",
-      "properties": [
-        "Visoka gustoća",
-        "Otporan na UV",
-        "Netoksičan"
-      ]
+      ],
+      "fullDescription": "Polipropilen (PP) je polukristalni termoplastični polimer poznat po svom iznimnom omjeru čvrstoće i težine. To je jedna od najlakših plastika na tržištu. Njegova struktura daje mu visoku otpornost na zamor pri savijanju, što ga čini preferiranim izborom za integralne šarke. Zahvaljujući svojoj kemijskoj inertnosti, PP je vrlo otporan na organska otapala, kiseline i lužine, što je ključno za njegovu primjenu u kemijskoj ambalaži i laboratorijskoj opremi. Njegovo talište, između 160 °C i 170 °C, omogućuje toplinsku sterilizaciju i sigurnu uporabu u mikrovalnim pećnicama. Ta svojstva, zajedno s lakoćom obrade injekcijskim prešanjem ili ekstruzijom, pozicioniraju polipropilen kao ključni materijal u automobilskoj industriji, kućanskim aparatima, medicini i pakiranju."
     },
     "PE": {
       "name": "PE 300/500/1000",
-      "description": "Ultra visokoučinkoviti materijali za kritične primjene",
+      "description": "Izuzetno visokoučinkovit raspon za kritične primjene",
       "properties": [
         "Izuzetno otporan",
         "Samopodmazujući",
         "Dugotrajan"
-      ]
+      ],
+      "fullDescription": "Polietilen visoke gustoće (HDPE) je polukristalni termoplastični polimer koji je vrlo cijenjen u plastici zbog svoje lakoće strojne obrade i izvrsnog omjera cijene i performansi. Poznat je po visokoj otpornosti na udarce i krutosti, s relativno visokom gustoćom. U CNC i prerađivačkoj industriji, tehničke kvalitete klasificiraju se prema njihovoj molekularnoj masi, koja izravno utječe na njihove performanse. PE 300 je svestrana standardna kvaliteta, idealna za nekritične komponente. PE 500, s povećanom molekularnom masom, nudi bolju otpornost na abraziju i veću trajnost za dijelove podložne umjerenom trošenju. Konačno, PE 1000, ili polietilen ultravisoke molekularne mase (UHMW-PE), predstavlja vrhunac ove obitelji polimera. Njegova iznimno visoka molekularna masa daje mu neusporedivu otpornost na habanje, vrlo nizak koeficijent trenja i izvrsnu apsorpciju udaraca, što ga čini materijalom izbora za klizne primjene, zaštitne premaze i mehaničke dijelove pod velikim opterećenjem."
     },
     "PA6": {
       "name": "Poliamid 6 (PA6)",
-      "description": "Izvrsna mehanička čvrstoća i otpornost na habanje",
+      "description": "Izvrsna mehanička čvrstoća i otpornost na abraziju",
       "properties": [
         "Visoka čvrstoća",
-        "Otporan na habanje",
+        "Otpornost na abraziju",
         "Precizan"
-      ]
+      ],
+      "fullDescription": "Poliamid 6 (PA6) je polukristalni termoplastični polimer široko prepoznat u plastici zbog svog izvrsnog balansa čvrstoće, tvrdoće i žilavosti. Odlikuje se visokom otpornošću na trošenje i abraziju, niskim koeficijentom trenja i sposobnošću apsorpcije udaraca, što ga čini materijalom izbora za dinamične mehaničke primjene. U CNC industriji, PA6 je posebno cijenjen zbog svoje dobre obradivosti, omogućujući proizvodnju složenih dijelova s visokokvalitetnom završnom obradom. Njegova toplinska i kemijska otpornost također ga čini pogodnim za zahtjevna okruženja. Ta svojstva, zajedno s njegovom krutošću, pozicioniraju ga kao visokoučinkovitu zamjenu za metale u mnogim primjenama, poput zupčanika, ležajeva, valjaka i strojnih dijelova izloženih visokim naprezanjima."
     },
     "POMC": {
       "name": "POM-C (Acetal)",
-      "description": "Izuzetna dimenzijska točnost i stabilnost",
+      "description": "Izuzetna dimenzionalna preciznost i stabilnost",
       "properties": [
         "Precizan",
         "Stabilan",
         "Obradiv"
-      ]
+      ],
+      "fullDescription": "POM-C (Acetal) je polukristalni termoplastični polimer poznat po svojoj visokoj krutosti, tvrdoći i izvrsnoj dimenzionalnoj stabilnosti, osobito u vlažnim okruženjima. U inženjeringu i CNC strojnoj obradi posebno je cijenjen zbog svoje iznimne obradivosti, što omogućuje proizvodnju složenih, visokopreciznih dijelova s izvrsnom površinskom obradom. Zahvaljujući svom niskom koeficijentu trenja i dobroj otpornosti na habanje, POM-C je idealan materijal za mehaničke komponente poput zupčanika, ležajeva, valjaka i čahura, gdje često može zamijeniti metale. Njegova otpornost na puzanje također ga čini pouzdanim za dijelove pod dugotrajnim opterećenjima."
     },
     "PTFE": {
       "name": "PTFE (Teflon)",
-      "description": "Nenadmašna neprijanjajuća svojstva i toplinska otpornost",
+      "description": "Neusporedive neljepljive osobine i toplinska otpornost",
       "properties": [
-        "Neprijanjajuć",
-        "Visoka temperatura",
+        "Neljepljiv",
+        "Otpornost na visoke temperature",
         "Inertan"
-      ]
+      ],
+      "fullDescription": "PTFE (politetrafluoretilen), poznat i kao Teflon, jedinstven je polukristalni termoplastični polimer koji se široko koristi u plastici zbog svog iznimno niskog koeficijenta trenja. Ima izvanrednu kemijsku otpornost, čineći ga praktički inertnim na gotovo sve korozivne proizvode. PTFE također nudi izvrsnu otpornost na toplinu, zadržavajući svoja svojstva u širokom rasponu temperatura. U CNC obradi, iako je mekan materijal, cijenjen je za proizvodnju visokopreciznih dijelova. Njegova jedinstvena svojstva čine ga idealnim izborom za kritične primjene poput brtvi, neljepljivih premaza i komponenti izloženih velikim trenjima."
     }
   },
   "products_section": {

@@ -99,8 +99,8 @@
   "footer_confidentiality_policy_link": "Confidentiality Policy",
   "footer_legal_notice_link": "Legal Notice",
   "footer_contact_title": "CONTACT",
-  "footer_phone_number": "+33 06 01 01 01 01",
-  "footer_email": "support@forta.com",
+  "footer_phone_number": "+385 98 679 664",
+  "footer_email": "info@forta.hr",
   "footer_copyright_text": "Copyright © Forta all rights reserved",
   "legal_notice_company_info_title": "Company information",
   "legal_notice_company_name_label": "Company Name:",
@@ -142,9 +142,9 @@
   "conf_policy_contact_title": "Contact",
   "conf_policy_contact_text": "If you have any questions or concerns regarding this Confidentiality Policy or your personal data, please contact us at:",
   "conf_policy_contact_email_label": "Email:",
-  "conf_policy_contact_email_value": "[info@forta.hr]",
+  "conf_policy_contact_email_value": "info@forta.hr",
   "conf_policy_contact_phone_label": "Phone:",
-  "conf_policy_contact_phone_value": "[+385 xx xxx xxxx]",
+  "conf_policy_contact_phone_value": "+385 98 679 664",
   "feedback_form_title": "Give us your feedback",
   "feedback_form_name": "Name",
   "feedback_form_name_placeholder": "Your name",
@@ -193,16 +193,8 @@
         "Chemical resistant",
         "Lightweight",
         "Recyclable"
-      ]
-    },
-    "PEHD": {
-      "name": "High-Density Polyethylene (HDPE)",
-      "description": "High density, ideal for demanding industrial applications",
-      "properties": [
-        "High density",
-        "UV resistant",
-        "Non-toxic"
-      ]
+      ],
+      "fullDescription" : "Polypropylene (PP), whose chemical formula is a semi-crystalline thermoplastic polymer known for its exceptional strength-to-weight ratio. It is one of the lightest plastics on the market. Its structure gives it high resistance to flexural fatigue, making it a preferred choice for integral hinge applications. With excellent chemical inertness, PP is highly resistant to organic solvents, acids and alkalis, which is crucial for its use in chemical packaging and laboratory equipment. Its melting point range, between 160°C and 170°C, allows for heat sterilisation and safe use in microwaves. These properties, combined with its ease of processing by injection moulding or extrusion, position polypropylene as an essential material in the automotive, household appliance, medical and packaging industries."
     },
     "PE": {
       "name": "PE 300/500/1000",
@@ -211,7 +203,8 @@
         "Ultra resistant",
         "Self-lubricating",
         "Long-lasting"
-      ]
+      ],
+      "fullDescription" : "High-density polyethylene (HDPE) is a semi-crystalline thermoplastic polymer that is highly prized in plastics engineering for its ease of machining and excellent value for money. It is known for its high impact resistance and rigidity, with a relatively high density. In the CNC and processing industry, technical grades are classified according to their molecular weight, which directly influences their performance. PE 300 is a versatile standard grade, ideal for non-critical components. PE 500, with its increased molecular weight, offers better abrasion resistance and superior durability for parts subject to moderate wear. Finally, PE 1000, or Ultra-High Molecular Weight Polyethylene (UHMW-PE), represents the pinnacle of this family of polymers. Its exceptionally high molecular weight gives it unrivalled wear resistance, a very low coefficient of friction and excellent shock absorption, making it the material of choice for sliding applications, protective coatings and heavily stressed mechanical parts."
     },
     "PA6": {
       "name": "Polyamide 6 (PA6)",
@@ -220,7 +213,8 @@
         "High strength",
         "Abrasion resistant",
         "Precise"
-      ]
+      ],
+      "fullDescription" : "Polyamide 6 (PA6) is a semi-crystalline thermoplastic polymer widely recognised in plastics engineering for its excellent balance of strength, hardness and toughness. It is distinguished by its high resistance to wear and abrasion, low coefficient of friction and ability to absorb shocks, making it a material of choice for dynamic mechanical applications. In the CNC industry, PA6 is particularly valued for its good machinability, allowing the production of complex parts with a high-quality finish. Its thermal and chemical resistance also makes it suitable for demanding environments. These properties, combined with its rigidity, position it as a high-performance substitute for metals in many applications, such as gears, bushings, rollers and machine parts subject to high stresses."
     },
     "POMC": {
       "name": "POM-C (Acetal)",
@@ -229,7 +223,8 @@
         "Accurate",
         "Stable",
         "Machinable"
-      ]
+      ],
+      "fullDescription" : "POM-C (Acetal) is a semi-crystalline thermoplastic polymer renowned for its high rigidity, hardness and excellent dimensional stability, particularly in humid environments. In engineering and CNC machining, it is particularly valued for its exceptional machinability, which allows complex, high-precision parts to be produced with a remarkable surface finish. Thanks to its low coefficient of friction and good wear resistance, POM-C is an ideal material for mechanical components such as gears, bushings, rollers and sleeves, where it can often replace metals. Its creep resistance also makes it reliable for parts subject to long-term stress."
     },
     "PTFE": {
       "name": "PTFE (Teflon)",
@@ -238,7 +233,8 @@
         "Non-stick",
         "High temperature",
         "Inert"
-      ]
+      ],
+      "fullDescription" : "PTFE (polytetrafluoroethylene), commonly known as Teflon, is a unique semi-crystalline thermoplastic polymer that is widely used in plastic engineering due to its extremely low coefficient of friction. It has remarkable chemical resistance, making it virtually inert to almost all corrosive products. PTFE also offers excellent thermal resistance, maintaining its properties over a wide range of temperatures. In CNC machining, although it is a soft material, it is valued for the manufacture of high-precision parts. Its unique properties make it an ideal choice for critical applications such as seals, non-stick coatings and components subject to high friction loads."
     }
   },
   "products_section": {

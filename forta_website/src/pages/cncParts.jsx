@@ -3,19 +3,16 @@ import { FaArrowRight, FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import { Settings, Cog, Wrench, Zap, Shield, Target, ArrowRight, Play } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-
+import { Link } from 'react-router-dom';
 
 import CNCPartsImage from "../assets/CNCHeroImg.png"
 
 // Import des images (simulées pour l'exemple)
-const CNCTurningImage = '/api/placeholder/400/300';
-const CNCMillingImage = '/api/placeholder/400/300';
-const CNC5AxesImage = '/api/placeholder/400/300';
-const FeedScrew = '/api/placeholder/300/200';
-const Flanges = '/api/placeholder/300/200';
-const GuidesImages = '/api/placeholder/300/200';
-const RingsImage = '/api/placeholder/300/200';
-const SlidersImage = '/api/placeholder/300/200';
+import FeedScrew from '../assets/FeedScrew.png'
+import Flanges from '../assets/Flanges.png'
+import GuidesImages from '../assets/LinearGuides.png'
+import RingsImage from '../assets/Rings.png'
+import SlidersImage from '../assets/Slider.png'
 const TimingScrew = '/api/placeholder/300/200';
 
 function CncParts() {
@@ -27,7 +24,6 @@ function CncParts() {
             title: t("cncPage.services.items.turning.title"),
             description: t("cncPage.services.items.turning.description"),
             icon: <Cog className="w-6 h-6" />,
-            image: CNCTurningImage,
             specs: [
                 t("cncPage.services.items.turning.spec1"),
                 t("cncPage.services.items.turning.spec2"),
@@ -38,7 +34,6 @@ function CncParts() {
             title: t("cncPage.services.items.milling.title"),
             description: t("cncPage.services.items.milling.description"),
             icon: <Settings className="w-6 h-6" />,
-            image: CNCMillingImage,
             specs: [
                 t("cncPage.services.items.milling.spec1"),
                 t("cncPage.services.items.milling.spec2"),
@@ -49,7 +44,6 @@ function CncParts() {
             title: t("cncPage.services.items.5axes.title"),
             description: t("cncPage.services.items.5axes.description"),
             icon: <Target className="w-6 h-6" />,
-            image: CNC5AxesImage,
             specs: [
                 t("cncPage.services.items.5axes.spec1"),
                 t("cncPage.services.items.5axes.spec2"),
@@ -60,7 +54,6 @@ function CncParts() {
             title: t("cncPage.services.items.laser.title"),
             description: t("cncPage.services.items.laser.description"),
             icon: <Zap className="w-6 h-6" />,
-            image: CNC5AxesImage,
             specs: [
                 t("cncPage.services.items.laser.spec1"),
                 t("cncPage.services.items.laser.spec2"),
@@ -71,7 +64,6 @@ function CncParts() {
             title: t("cncPage.services.items.welding.title"),
             description: t("cncPage.services.items.welding.description"),
             icon: <Shield className="w-6 h-6" />,
-            image: CNC5AxesImage,
             specs: [
                 t("cncPage.services.items.welding.spec1"),
                 t("cncPage.services.items.welding.spec2"),
@@ -82,7 +74,6 @@ function CncParts() {
             title: t("cncPage.services.items.bending.title"),
             description: t("cncPage.services.items.bending.description"),
             icon: <Wrench className="w-6 h-6" />,
-            image: CNC5AxesImage,
             specs: [
                 t("cncPage.services.items.bending.spec1"),
                 t("cncPage.services.items.bending.spec2"),
@@ -222,9 +213,9 @@ function CncParts() {
                                         <span>{t('cncPage.hero.buttonDiscover')}</span>
                                         <FaArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                     </button>
-                                    <button className="group border-2 border-gray-400 hover:border-[#ec1c24] text-gray-400 hover:text-[#ec1c24] px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-3">
+                                    <Link to='/contactUs' className="group border-2 border-gray-400 hover:border-[#ec1c24] text-gray-400 hover:text-[#ec1c24] px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-3">
                                         <span>{t('cncPage.hero.buttonQuote')}</span>
-                                    </button>
+                                    </Link>
                                 </div>
                             </motion.div>
                         </div>
@@ -291,28 +282,16 @@ function CncParts() {
                                                         {/* Glow Effect */}
                                                         <div className="absolute inset-0 bg-gradient-to-br from-red-500/0 via-red-500/2 to-red-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-                                                        {/* Image Container with Overlay */}
-                                                        <div className="relative h-56 overflow-hidden">
-                                                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent z-10"></div>
-                                                            <img
-                                                                src={service.image}
-                                                                alt={service.title}
-                                                                className="w-full h-full object-cover group-hover:scale-[103%] transition-transform duration-300"
-                                                            />
-
-                                                            {/* Floating Icon */}
-                                                            <div className="absolute top-4 right-4 z-20">
-                                                                <div className="w-10 h-10 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center text-white shadow-md group-hover:rotate-90 transition-transform duration-300">
-                                                                    {service.icon}
-                                                                </div>
-                                                            </div>
-
-                                                            {/* Animated Border */}
-                                                            <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-red-500 to-red-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
-                                                        </div>
+                                                       
 
                                                         {/* Content */}
                                                         <div className="relative z-10 p-6 text-gray-800">
+                                                            {/* Floating Icon
+                                                            <div className="z-20 mb-4">
+                                                                <div className="w-10 h-10 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center text-white shadow-md group-hover:rotate-90 transition-transform duration-300">
+                                                                    {service.icon}
+                                                                </div>
+                                                            </div> */}
                                                             <h3 className="text-xl font-semibold font-poppins mb-3">
                                                                 {service.title}
                                                             </h3>
@@ -453,13 +432,10 @@ function CncParts() {
                         {t('cncPage.cta.description')}
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <button className="group bg-gradient-to-r text-white from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center justify-center gap-3">
+                        <Link to='/contactUs' className="group bg-gradient-to-r text-white from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center justify-center gap-3">
                             <span>{t('cncPage.cta.buttonQuote')}</span>
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                        </button>
-                        <button className="group border-2 border-gray-400 hover:border-red-600 text-gray-600 hover:text-red-600 px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-3">
-                            <span>{t('cncPage.cta.buttonContact')}</span>
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>

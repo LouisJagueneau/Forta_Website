@@ -99,8 +99,8 @@
   "footer_confidentiality_policy_link": "Datenschutzrichtlinie",
   "footer_legal_notice_link": "Impressum",
   "footer_contact_title": "KONTAKT",
-  "footer_phone_number": "+33 06 01 01 01 01",
-  "footer_email": "support@forta.com",
+  "footer_phone_number": "+385 98 679 664",
+  "footer_email": "info@forta.hr",
   "footer_copyright_text": "Copyright © Forta alle Rechte vorbehalten",
   "legal_notice_company_info_title": "Unternehmensinformationen",
   "legal_notice_company_name_label": "Firmenname:",
@@ -142,9 +142,9 @@
   "conf_policy_contact_title": "Kontakt",
   "conf_policy_contact_text": "Wenn Sie Fragen oder Bedenken bezüglich dieser Datenschutzrichtlinie oder Ihrer personenbezogenen Daten haben, kontaktieren Sie uns bitte unter:",
   "conf_policy_contact_email_label": "E-Mail:",
-  "conf_policy_contact_email_value": "[info@forta.hr]",
+  "conf_policy_contact_email_value": "info@forta.hr",
   "conf_policy_contact_phone_label": "Telefon:",
-  "conf_policy_contact_phone_value": "[+385 xx xxx xxxx]",
+  "conf_policy_contact_phone_value": "+385 98 679 664",
   "feedback_form_title": "Geben Sie uns Ihr Feedback",
   "feedback_form_name": "Name",
   "feedback_form_name_placeholder": "Ihr Name",
@@ -188,39 +188,33 @@
   "plastics": {
     "PP": {
       "name": "Polypropylen (PP)",
-      "description": "Vielseitiges Material mit ausgezeichneter chemischer Beständigkeit und guten mechanischen Eigenschaften",
+      "description": "Vielseitiges Material mit ausgezeichneter chemischer Beständigkeit und mechanischen Eigenschaften",
       "properties": [
         "Chemikalienbeständig",
         "Leicht",
         "Recycelbar"
-      ]
-    },
-    "PEHD": {
-      "name": "Polyethylen hoher Dichte (PEHD)",
-      "description": "Hohe Dichte, ideal für anspruchsvolle industrielle Anwendungen",
-      "properties": [
-        "Hohe Dichte",
-        "UV-beständig",
-        "Ungiftig"
-      ]
+      ],
+      "fullDescription": "Polypropylen (PP) ist ein teilkristalliner thermoplastischer Polymer, der für sein außergewöhnliches Verhältnis von Festigkeit zu Gewicht bekannt ist. Es gehört zu den leichtesten Kunststoffen auf dem Markt. Seine Struktur verleiht ihm eine hohe Beständigkeit gegen Biegeermüdung, was ihn zu einer bevorzugten Wahl für Scharnieranwendungen macht. Aufgrund seiner ausgezeichneten chemischen Inertheit ist PP hochbeständig gegen organische Lösungsmittel, Säuren und Laugen, was für den Einsatz in chemischen Verpackungen und Laborausrüstungen entscheidend ist. Sein Schmelzpunktbereich zwischen 160 °C und 170 °C ermöglicht die Wärme-Sterilisation und den sicheren Einsatz in Mikrowellen. Diese Eigenschaften, kombiniert mit seiner einfachen Verarbeitung durch Spritzguss oder Extrusion, machen Polypropylen zu einem unverzichtbaren Material in der Automobil-, Haushaltsgeräte-, Medizin- und Verpackungsindustrie."
     },
     "PE": {
       "name": "PE 300/500/1000",
-      "description": "Ultrahochleistungsbereich für kritische Anwendungen",
+      "description": "Ultrahochleistungsreihe für kritische Anwendungen",
       "properties": [
-        "Ultrahochfest",
+        "Sehr widerstandsfähig",
         "Selbstschmierend",
         "Langlebig"
-      ]
+      ],
+      "fullDescription": "Polyethylen hoher Dichte (HDPE) ist ein teilkristalliner thermoplastischer Polymer, der in der Kunststofftechnik wegen seiner leichten Bearbeitbarkeit und seines ausgezeichneten Preis-Leistungs-Verhältnisses sehr geschätzt wird. Es ist bekannt für seine hohe Schlagzähigkeit und Steifigkeit bei relativ hoher Dichte. In der CNC- und Verarbeitungsindustrie werden technische Qualitäten nach ihrem Molekulargewicht klassifiziert, das ihre Leistung direkt beeinflusst. PE 300 ist eine vielseitige Standardqualität, ideal für nicht-kritische Komponenten. PE 500, mit erhöhtem Molekulargewicht, bietet eine bessere Abriebfestigkeit und höhere Haltbarkeit für Teile mit mäßiger Beanspruchung. Schließlich stellt PE 1000, oder Polyethylen mit ultrahohem Molekulargewicht (UHMW-PE), die Spitze dieser Polymerfamilie dar. Sein außergewöhnlich hohes Molekulargewicht verleiht ihm eine unvergleichliche Verschleißfestigkeit, einen sehr niedrigen Reibungskoeffizienten und eine hervorragende Stoßdämpfung, was es zum Material der Wahl für Gleitlager, Schutzbeschichtungen und stark beanspruchte mechanische Teile macht."
     },
     "PA6": {
       "name": "Polyamid 6 (PA6)",
-      "description": "Hervorragende mechanische Festigkeit und Abriebfestigkeit",
+      "description": "Ausgezeichnete mechanische Festigkeit und Abriebfestigkeit",
       "properties": [
         "Hohe Festigkeit",
         "Abriebfest",
         "Präzise"
-      ]
+      ],
+      "fullDescription": "Polyamid 6 (PA6) ist ein teilkristalliner thermoplastischer Polymer, der in der Kunststofftechnik weithin anerkannt ist für sein ausgezeichnetes Gleichgewicht von Festigkeit, Härte und Zähigkeit. Es zeichnet sich durch eine hohe Verschleiß- und Abriebfestigkeit, einen niedrigen Reibungskoeffizienten und eine gute Stoßabsorption aus, was es zum bevorzugten Material für dynamische mechanische Anwendungen macht. In der CNC-Industrie wird PA6 besonders wegen seiner guten Bearbeitbarkeit geschätzt, die die Herstellung komplexer Teile mit hochwertiger Oberfläche ermöglicht. Seine thermische und chemische Beständigkeit macht es außerdem für anspruchsvolle Umgebungen geeignet. Diese Eigenschaften, kombiniert mit seiner Steifigkeit, positionieren es als leistungsstarken Ersatz für Metalle in vielen Anwendungen, wie Zahnräder, Buchsen, Rollen und Maschinenteile unter hoher Belastung."
     },
     "POMC": {
       "name": "POM-C (Acetal)",
@@ -228,17 +222,19 @@
       "properties": [
         "Präzise",
         "Stabil",
-        "Bearbeitbar"
-      ]
+        "Gut bearbeitbar"
+      ],
+      "fullDescription": "POM-C (Acetal) ist ein teilkristalliner thermoplastischer Polymer, der für seine hohe Steifigkeit, Härte und ausgezeichnete Maßhaltigkeit bekannt ist, insbesondere in feuchten Umgebungen. In der Technik und CNC-Bearbeitung wird er besonders wegen seiner hervorragenden Bearbeitbarkeit geschätzt, die die Herstellung komplexer, hochpräziser Teile mit exzellenter Oberflächenqualität ermöglicht. Dank seines niedrigen Reibungskoeffizienten und seiner guten Verschleißfestigkeit ist POM-C ein ideales Material für mechanische Komponenten wie Zahnräder, Buchsen, Rollen und Hülsen, wo er oft Metalle ersetzen kann. Seine Kriechbeständigkeit macht ihn außerdem zuverlässig für Teile, die langfristiger Belastung ausgesetzt sind."
     },
     "PTFE": {
       "name": "PTFE (Teflon)",
-      "description": "Unübertroffene Antihaft-Eigenschaften und Temperaturbeständigkeit",
+      "description": "Unvergleichliche Antihaft-Eigenschaften und Hitzebeständigkeit",
       "properties": [
         "Antihaftend",
         "Hitzebeständig",
         "Inert"
-      ]
+      ],
+      "fullDescription": "PTFE (Polytetrafluorethylen), allgemein bekannt als Teflon, ist ein einzigartiger teilkristalliner thermoplastischer Polymer, der in der Kunststofftechnik wegen seines extrem niedrigen Reibungskoeffizienten weit verbreitet ist. Es besitzt eine bemerkenswerte chemische Beständigkeit und ist praktisch inert gegenüber fast allen korrosiven Substanzen. PTFE bietet außerdem eine ausgezeichnete Hitzebeständigkeit und behält seine Eigenschaften über einen weiten Temperaturbereich hinweg. In der CNC-Bearbeitung, obwohl es ein weiches Material ist, wird es für die Herstellung hochpräziser Teile geschätzt. Seine einzigartigen Eigenschaften machen es zur idealen Wahl für kritische Anwendungen wie Dichtungen, Antihaftbeschichtungen und Komponenten, die hohen Reibungslasten ausgesetzt sind."
     }
   },
   "products_section": {

@@ -1,7 +1,7 @@
 {
   "welcomeTitle1": "CNC sur mesure",
-  "welcomeTitle2": "Plastique",
-  "welcomeTitle3": "Solutions pour votre industrie",
+  "welcomeTitle2": "Solutions",
+  "welcomeTitle3": "Plastique pour votre industrie",
   "heroParagraph": "Forta produit des pièces CNC sur mesure et des composants plastiques techniques. Avec plus de 30 ans d'expérience, nous gérons l'ensemble du processus de la conception à la production, en fournissant des solutions pour vos projets CNC et plastiques.",
   "heroButton": "NOS SERVICES",
   "discoverText": "Découvrir",
@@ -99,8 +99,8 @@
   "footer_confidentiality_policy_link": "Politique de confidentialité",
   "footer_legal_notice_link": "Mentions légales",
   "footer_contact_title": "CONTACT",
-  "footer_phone_number": "+33 06 01 01 01 01",
-  "footer_email": "support@forta.com",
+  "footer_phone_number": "+385 98 679 664",
+  "footer_email": "info@forta.hr",
   "footer_copyright_text": "Copyright © Forta tous droits réservés",
   "legal_notice_company_info_title": "Informations sur l'entreprise",
   "legal_notice_company_name_label": "Nom de l'entreprise :",
@@ -142,9 +142,9 @@
   "conf_policy_contact_title": "Contact",
   "conf_policy_contact_text": "Si vous avez des questions ou des préoccupations concernant cette politique de confidentialité ou vos données personnelles, veuillez nous contacter à :",
   "conf_policy_contact_email_label": "Email :",
-  "conf_policy_contact_email_value": "[info@forta.hr]",
+  "conf_policy_contact_email_value": "info@forta.hr",
   "conf_policy_contact_phone_label": "Téléphone :",
-  "conf_policy_contact_phone_value": "[+385 xx xxx xxxx]",
+  "conf_policy_contact_phone_value": "+385 98 679 664",
   "feedback_form_title": "Donnez-nous votre avis",
   "feedback_form_name": "Nom",
   "feedback_form_name_placeholder": "Votre nom",
@@ -173,8 +173,8 @@
   "product3_category": "Sur mesure",
   "hero_section": {
     "badge": "Ingénierie plastique",
-    "h1_line1": "Plastique",
-    "h1_line2": "Matériaux",
+    "h1_line1": "Matériaux",
+    "h1_line2": "Plastique",
     "h1_line3": "Sur mesure",
     "paragraph": "Transformez vos défis industriels en succès grâce à nos solutions d'ingénierie plastique. Plus de 30 ans d'innovation dédiés à la précision technique.",
     "button_explore": "Explorer nos matériaux",
@@ -186,61 +186,57 @@
     "description": "Une gamme soigneusement sélectionnée de matériaux haute performance conçus pour relever les défis les plus exigeants"
   },
   "plastics": {
-    "PP": {
-      "name": "Polypropylène (PP)",
-      "description": "Matériau polyvalent avec une excellente résistance chimique et de bonnes propriétés mécaniques",
-      "properties": [
-        "Résistant aux produits chimiques",
-        "Léger",
-        "Recyclable"
-      ]
-    },
-    "PEHD": {
-      "name": "Polyéthylène haute densité (PEHD)",
-      "description": "Haute densité, idéal pour les applications industrielles exigeantes",
-      "properties": [
-        "Haute densité",
-        "Résistant aux UV",
-        "Non toxique"
-      ]
-    },
-    "PE": {
-      "name": "PE 300/500/1000",
-      "description": "Gamme ultra-performante pour applications critiques",
-      "properties": [
-        "Ultra résistant",
-        "Auto-lubrifiant",
-        "Durable"
-      ]
-    },
-    "PA6": {
-      "name": "Polyamide 6 (PA6)",
-      "description": "Excellente résistance mécanique et à l'abrasion",
-      "properties": [
-        "Haute résistance",
-        "Résistant à l'abrasion",
-        "Précis"
-      ]
-    },
-    "POMC": {
-      "name": "POM-C (Acétal)",
-      "description": "Précision dimensionnelle et stabilité exceptionnelles",
-      "properties": [
-        "Précis",
-        "Stable",
-        "Usinable"
-      ]
-    },
-    "PTFE": {
-      "name": "PTFE (Téflon)",
-      "description": "Propriétés antiadhésives et résistance thermique inégalées",
-      "properties": [
-        "Antiadhésif",
-        "Haute température",
-        "Inerte"
-      ]
-    }
+  "PP": {
+    "name": "Polypropylène (PP)",
+    "description": "Matériau polyvalent avec une excellente résistance chimique et de bonnes propriétés mécaniques",
+    "properties": [
+      "Résistant aux produits chimiques",
+      "Léger",
+      "Recyclable"
+    ],
+    "fullDescription": "Le polypropylène (PP) est un polymère thermoplastique semi-cristallin connu pour son rapport résistance/poids exceptionnel. C’est l’un des plastiques les plus légers du marché. Sa structure lui confère une grande résistance à la fatigue par flexion, ce qui en fait un choix privilégié pour les applications de charnières intégrées. Grâce à son inertie chimique, le PP est très résistant aux solvants organiques, aux acides et aux bases, ce qui est crucial pour son utilisation dans les emballages chimiques et les équipements de laboratoire. Sa plage de fusion, comprise entre 160 °C et 170 °C, permet une stérilisation thermique et une utilisation sûre au micro-ondes. Ces propriétés, combinées à sa facilité de mise en œuvre par injection ou extrusion, font du polypropylène un matériau essentiel dans l’automobile, l’électroménager, le médical et l’emballage."
   },
+  "PE": {
+    "name": "PE 300/500/1000",
+    "description": "Gamme ultra-performante pour applications critiques",
+    "properties": [
+      "Ultra résistant",
+      "Auto-lubrifiant",
+      "Durable"
+    ],
+    "fullDescription": "Le polyéthylène haute densité (PEHD) est un polymère thermoplastique semi-cristallin très apprécié en plasturgie pour sa facilité d’usinage et son excellent rapport qualité/prix. Il est reconnu pour sa grande résistance aux chocs et sa rigidité, avec une densité relativement élevée. Dans l’industrie CNC et de transformation, les qualités techniques sont classées en fonction de leur masse moléculaire, qui influence directement leurs performances. Le PE 300 est une qualité standard polyvalente, idéale pour les composants non critiques. Le PE 500, avec sa masse moléculaire plus élevée, offre une meilleure résistance à l’abrasion et une durabilité supérieure pour les pièces soumises à une usure modérée. Enfin, le PE 1000, ou polyéthylène de masse molaire ultra-élevée (UHMW-PE), représente l’apogée de cette famille de polymères. Sa masse moléculaire exceptionnellement élevée lui confère une résistance à l’usure inégalée, un très faible coefficient de frottement et une excellente absorption des chocs, ce qui en fait le matériau de choix pour les applications de glissement, les revêtements de protection et les pièces mécaniques fortement sollicitées."
+  },
+  "PA6": {
+    "name": "Polyamide 6 (PA6)",
+    "description": "Excellente résistance mécanique et à l’abrasion",
+    "properties": [
+      "Haute résistance",
+      "Résistant à l’abrasion",
+      "Précis"
+    ],
+    "fullDescription": "Le polyamide 6 (PA6) est un polymère thermoplastique semi-cristallin largement reconnu en plasturgie pour son excellent équilibre entre résistance, dureté et ténacité. Il se distingue par sa forte résistance à l’usure et à l’abrasion, son faible coefficient de frottement et sa capacité d’absorption des chocs, ce qui en fait un matériau de choix pour les applications mécaniques dynamiques. Dans l’industrie CNC, le PA6 est particulièrement apprécié pour sa bonne usinabilité, permettant de produire des pièces complexes avec une finition de haute qualité. Sa résistance thermique et chimique le rend également adapté aux environnements exigeants. Ces propriétés, combinées à sa rigidité, en font un substitut performant aux métaux dans de nombreuses applications, comme les engrenages, paliers, galets et pièces de machines soumises à de fortes contraintes."
+  },
+  "POMC": {
+    "name": "POM-C (Acétal)",
+    "description": "Précision dimensionnelle et stabilité exceptionnelles",
+    "properties": [
+      "Précis",
+      "Stable",
+      "Usinable"
+    ],
+    "fullDescription": "Le POM-C (acétal) est un polymère thermoplastique semi-cristallin réputé pour sa grande rigidité, sa dureté et son excellente stabilité dimensionnelle, notamment en milieu humide. En ingénierie et en usinage CNC, il est particulièrement apprécié pour son usinabilité exceptionnelle, permettant de produire des pièces complexes et de haute précision avec une finition remarquable. Grâce à son faible coefficient de frottement et à sa bonne résistance à l’usure, le POM-C est un matériau idéal pour les composants mécaniques tels que les engrenages, paliers, rouleaux et bagues, où il peut souvent remplacer les métaux. Sa résistance au fluage le rend également fiable pour les pièces soumises à des contraintes à long terme."
+  },
+  "PTFE": {
+    "name": "PTFE (Téflon)",
+    "description": "Propriétés anti-adhérentes et résistance thermique inégalées",
+    "properties": [
+      "Anti-adhérent",
+      "Haute température",
+      "Inerte"
+    ],
+    "fullDescription": "Le PTFE (polytétrafluoroéthylène), communément appelé Téflon, est un polymère thermoplastique semi-cristallin unique largement utilisé en plasturgie grâce à son coefficient de frottement extrêmement faible. Il possède une résistance chimique remarquable, le rendant pratiquement inerte à presque tous les produits corrosifs. Le PTFE offre également une excellente résistance thermique, conservant ses propriétés sur une large plage de températures. En usinage CNC, bien qu’il soit un matériau tendre, il est apprécié pour la fabrication de pièces de haute précision. Ses propriétés uniques en font un choix idéal pour les applications critiques telles que les joints, les revêtements anti-adhésifs et les composants soumis à de fortes charges de frottement."
+  }
+},
   "products_section": {
     "badge": "Notre gamme",
     "title": "Solutions techniques",
@@ -286,10 +282,10 @@
   "cncPage": {
     "hero": {
       "tagline": "Usinage CNC",
-      "titleLine1": "CNC",
-      "titleLine2": "Usinage",
+      "titleLine1": "Usinage",
+      "titleLine2": "CNC",
       "subtitle": "Haute précision",
-      "description": "Excellence technique et précision au millimètre pour tous vos projets d'usinage. Une technologie de pointe au service de vos ambitions industrielles.",
+      "description": "Excellence technique pour tous vos projets d'usinage. Une technologie de pointe au service de vos ambitions industrielles.",
       "buttonDiscover": "Découvrir nos services",
       "buttonQuote": "Demander un devis"
     },

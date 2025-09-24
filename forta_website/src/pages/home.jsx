@@ -67,7 +67,7 @@ function Home() {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-white font-Stock_No_Bills text-[2.5rem] sm:text-[3.5rem] md:text-[4.2rem] xl:text-[5rem] leading-tight sm:leading-[3.8rem] md:leading-[4.5rem] xl:leading-[5.5rem] mb-8"
+              className="text-white font-poppins text-[2.5rem] sm:text-[3.5rem] md:text-[4.2rem] xl:text-[4.5rem] leading-tight sm:leading-[3.8rem] md:leading-[4.5rem] xl:leading-[5.5rem] mb-8"
             >
               <span className="block">
                 {t('welcomeTitle1')}
