@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from "motion/react";
 import CountUp from 'react-countup';
@@ -10,7 +9,7 @@ import { FaArrowRight} from "react-icons/fa6";
 // Images
 import aboutUsImage from '../assets/About_image.png';
 import aboutUsImage2 from '../assets/About_image2 .png';
-import backgroundImageV4 from '../assets/backgroundImageV4.jpg';
+import backgroundImageV4 from '../assets/backgroundImageV4.webp';
 
 function About() {
     const { t } = useTranslation();

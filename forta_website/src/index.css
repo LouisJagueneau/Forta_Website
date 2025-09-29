@@ -5,11 +5,11 @@
 
 
 .font-poppins {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', swap;
 }
 
 .font-Stock_No_Bills {
-  font-family: 'Stick No Bills', sans-serif ;
+  font-family: 'Stick No Bills', swap;
 }
 
 .custom-pagination .swiper-pagination-bullet {

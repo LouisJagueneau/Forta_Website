@@ -33,7 +33,7 @@ function Nav() {
                         <li><Link to='/about' className="text-white cursor-pointer relative font-poppins after:content-[''] after:absolute after:left-1/2 after:bottom-[-8px] after:w-0 after:h-[2px] after:bg-[#ec1c24] after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">{t('nav_about')}</Link></li>
                         <li><LanguageSelector /></li>
                     </ul>
-                    <Link to='/contactus' className='font-poppins text-white ml-12  bg-[#ec1c24] hover:bg-[#ec1c23d4] transition duration-300  px-4 py-1 rounded-full cursor-pointer text-[0.90rem]'>{t('nav_contact_us')}</Link>
+                    <Link to='/contactus' className='font-poppins text-white ml-12  bg-[#ec1c24] hover:bg-[#ec1c23d4] transition duration-300  px-4 py-2 rounded-md full cursor-pointer text-[0.90rem]'>{t('nav_contact_us')}</Link>
                 </div>
             </div>
         </div>

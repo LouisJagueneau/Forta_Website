@@ -2,15 +2,14 @@ import CountUp from 'react-countup'
 import { useInView } from 'react-intersection-observer'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
-import { useEffect, useRef, useState } from 'react';
 import { motion } from "motion/react"
 //image
 import aboutImage from '../assets/About imag.png'
-import backgroundImageV4 from '../assets/backgroundImageV4.jpg';
+import backgroundImageV4 from '../assets/backgroundImageV4.webp';
 
 //icons
 import { CiForkAndKnife } from "react-icons/ci";
-import { FaArrowRight, FaUpLong } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa6";
 import { CiMedicalCross } from "react-icons/ci";
 import { SlEnergy } from "react-icons/sl";
 import { CiBoxes } from "react-icons/ci";
@@ -21,7 +20,6 @@ import { GiMetalBar } from "react-icons/gi";
 
 //components
 import IndustrieCard from '../components/industrieCard';
-import FeedbackCard from '../components/feedbackCard';
 import ServicesCard from '../components/servicesCard';
 
 function Home() {
@@ -137,7 +135,7 @@ function Home() {
           </div>
           <div className='flex flex-col xl:flex-row xl:gap-15 2xl:gap-20'>
             <ServicesCard Icon={IoLayersOutline} info={t('PlasticsAvailable')} title={t('plasticTitle')} list={['PP', 'PEHD', 'PE300', 'PE500', 'PE1000', 'PA6', 'POM-C', 'PTFE', 'PEEK']} description={t('plasticDescription')} link='/plasticEngineering' buttonText={t('plasticButton')} />
-            <ServicesCard Icon={GiMetalBar} info={t('cncProduct')} title={t('cncTitle')} list={[t('cncProduct1'), t('cncProduct2'), t('cncProduct3'), t('cncProduct4'), t('cncProduct5'), t('cncProduct6'), t('cncProduct7'), t('cncProduct8'), t('cncProduct9')]} description={t('cncDescription')} link='/cncParts' buttonText={t('plasticButton')} />
+            <ServicesCard Icon={GiMetalBar} info={t('cncProduct')} title={t('cncTitle')} list={[t('cncProduct1'), t('cncProduct2'), t('cncProduct3'), t('cncProduct4'), t('cncProduct5'), t('cncProduct6'), t('cncProduct7'), t('cncProduct8'), t('cncProduct9')]} description={t('cncDescription')} link='/cncParts' buttonText={t('cncButton')} />
           </div>
         </div>
       </section>
@@ -158,7 +156,7 @@ function Home() {
               <div className='lg:w-6/6 2xl:w-5/6'>
                 <h3 className='font-poppins font-semibold text-[1.1rem] xl:text-[1.3rem] mb-4'>{t('aboutSubtitle')}</h3>
                 <p className='text-black text-[0.8rem] xl:text-[0.95rem] text-justify mb-6 lg:mb-12 lg:leading-6 xl:leading-7.5 '>{t('aboutDescription')}</p>
-                <button className=" text-white bg-[#ec1c24] text-[0.75rem] xl:text-[0.95rem] px-3 py-1 rounded-sm hover:bg-[#c71a20] transition-colors duration-200">
+                <button className=" text-white bg-[#ec1c24] text-[0.75rem] xl:text-[0.95rem] px-3 py-2 cursor-pointer rounded-sm hover:bg-[#c71a20] transition-colors duration-200">
                   <Link to='/about' className='flex items-center gap-2'><FaArrowRight /> {t('aboutButton')}</Link>
                 </button>
               </div>
