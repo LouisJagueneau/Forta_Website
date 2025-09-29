@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import { FaArrowRight, FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import { Droplet, FlaskRound, Shield, Thermometer, Settings, Recycle, Lightbulb, Wrench, ArrowRight, Play } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+
 import PlasticEngineeringImage from '../assets/PlasticEngineeringImage.png'
-import PlasticRods from '../assets/PlasticRods.png'
-import PlasticSheetSlider from '../assets/PlasticSheetSlider.png'
+import PlasticRods from '../assets/Rods.png'
+import PlasticSheetSlider from '../assets/Sheets.png'
 import CustomPartSlider from "../assets/CustomPartSlider.png"
+
 import { useTranslation } from 'react-i18next';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
