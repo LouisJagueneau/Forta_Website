@@ -4,22 +4,19 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
 import { motion } from "motion/react"
 //image
-import aboutImage from '../assets/About imag.png'
+import aboutImage from '../assets/About imag.webp'
 import backgroundImageV4 from '../assets/backgroundImageV4.webp';
 
 //icons
-import { CiForkAndKnife } from "react-icons/ci";
 import { FaArrowRight } from "react-icons/fa6";
-import { CiMedicalCross } from "react-icons/ci";
 import { SlEnergy } from "react-icons/sl";
-import { CiBoxes } from "react-icons/ci";
-import { CiFilter } from "react-icons/ci"
-import { IoSettingsOutline } from "react-icons/io5";
-import { IoLayersOutline } from "react-icons/io5";
+import { CiFilter, CiBoxes, CiMedicalCross, CiForkAndKnife } from "react-icons/ci"
+import { IoLayersOutline, IoSettingsOutline } from "react-icons/io5";
 import { GiMetalBar } from "react-icons/gi";
+import React from 'react';
 
 //components
-import IndustrieCard from '../components/industrieCard';
+const IndustrieCard = React.lazy(() => import('../components/industrieCard'));
 import ServicesCard from '../components/servicesCard';
 
 function Home() {
@@ -161,7 +158,7 @@ function Home() {
                 </button>
               </div>
               <div className=' overflow-hidden relative'>
-                <img className='shadow-lg hidden lg:block h-full w-full object-cover rounded-sm' src={aboutImage} alt="aboutImage" />
+                <img className='shadow-lg hidden lg:block h-full w-full object-cover rounded-sm' loading='lazy' src={aboutImage} alt="aboutImage" />
               </div>
             </div>
             <div ref={countRef} className="grid grid-cols-2 md:grid-cols-3 gap-8">
