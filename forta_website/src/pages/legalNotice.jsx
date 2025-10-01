@@ -13,16 +13,12 @@ function LegalNotice() {
                         <div className="font-poppins text-[1.0rem] flex flex-col gap-2">
                             <p><span className="font-semibold">{t('legal_notice_company_name_label')}{' '}</span>{t('legal_notice_company_name_value')}</p>
                             <p><span className="font-semibold">{t('legal_notice_registered_office_label')}{' '}</span>{t('legal_notice_registered_office_value')}</p>
-                            <p><span className="font-semibold">{t('legal_notice_registration_number_label')}{' '}</span>{t('legal_notice_registration_number_value')}</p>
-                            <p><span className="font-semibold">{t('legal_notice_court_of_registration_label')}{' '}</span>{t('legal_notice_court_of_registration_value')}</p>
                             <p><span className="font-semibold">{t('legal_notice_vat_number_label')}{' '}</span>{t('legal_notice_vat_number_value')}</p>
-                            <p><span className="font-semibold">{t('legal_notice_legal_representative_label')}{' '}</span>{t('legal_notice_legal_representative_value')}</p>
                         </div>
                     </div>
                     <div className="mb-20">
                         <h2 className="font-Stock_No_Bills text-[2.6rem] font-semibold relative inline-block mb-8">{t('legal_notice_hosting_provider_title')} <span className="absolute h-[2px] left-0 bottom-[-8px] bg-[#ec1c24] w-full rounded-full"></span></h2>
                         <div className="font-poppins text-[1.0rem] flex flex-col gap-2">
-                            <p><span className="font-semibold">{t('legal_notice_publication_manager_label')}{' '}</span>{t('legal_notice_publication_manager_value')}</p>
                             <p className="mb-6"><span className="font-semibold">{t('legal_notice_website_creator_label')}{' '}</span>{t('legal_notice_website_creator_name')}{' '} <a href='https://www.louisjagueneau.com/' className="italic text-blue-500 hover:text-blue-600">(louisjagueneau.com)</a></p>
                             <p className="text-justify leading-7 mb-6"><span className="font-semibold">{t('legal_notice_intellectual_property_label')}<br/></span>{t('legal_notice_intellectual_property_text')}</p>
                             <p className="mb-6"><span className="font-semibold">{t('legal_notice_limitation_of_liability_label')} <br/></span>{t('legal_notice_limitation_of_liability_text')}</p>
