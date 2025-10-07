@@ -339,7 +339,7 @@
       "description": "Prilagođena izrada visokopreciznih tehničkih dijelova",
       "items": {
         "feedScrew": {
-          "name": "Pužni transporteri",
+          "name": "Vijci za dovod i sinkronizaciju",
           "category": "Prijenos",
           "shortDescription": "Tehnički dio izrađen prema vašim specifikacijama",
           "button": "Pogledaj detalje"
@@ -363,13 +363,13 @@
           "button": "Pogledaj detalje"
         },
         "sliders": {
-          "name": "Klizači",
+          "name": "Plastične ploče",
           "category": "Kretanje",
           "shortDescription": "Tehnički dio izrađen prema vašim specifikacijama",
           "button": "Pogledaj detalje"
         },
         "timingScrew": {
-          "name": "Sinkronizacijski vijci",
+          "name": "Strojno obrađeni plastični dijelovi",
           "category": "Podešavanje",
           "shortDescription": "Tehnički dio izrađen prema vašim specifikacijama",
           "button": "Pogledaj detalje"

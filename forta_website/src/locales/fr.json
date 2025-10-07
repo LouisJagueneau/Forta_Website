@@ -341,7 +341,7 @@
       "description": "Fabrication sur mesure de pièces techniques de haute précision",
       "items": {
         "feedScrew": {
-          "name": "Vis sans fin",
+          "name": "Vis d’alimentation et de synchronisation",
           "category": "Transmission",
           "shortDescription": "Pièce technique usinée selon vos spécifications",
           "button": "Voir les détails"
@@ -365,13 +365,13 @@
           "button": "Voir les détails"
         },
         "sliders": {
-          "name": "Glissières",
+          "name": "Plaques en plastique",
           "category": "Mouvement",
           "shortDescription": "Pièce technique usinée selon vos spécifications",
           "button": "Voir les détails"
         },
         "timingScrew": {
-          "name": "Vis de cadencement",
+          "name": "Pièces plastiques usinées",
           "category": "Réglage",
           "shortDescription": "Pièce technique usinée selon vos spécifications",
           "button": "Voir les détails"

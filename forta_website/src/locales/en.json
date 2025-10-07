@@ -339,7 +339,7 @@
       "description": "Custom manufacturing of high-precision technical parts",
       "items": {
         "feedScrew": {
-          "name": "Feed Screws",
+          "name": "Feed & Timing Screws",
           "category": "Transmission",
           "shortDescription": "Technical part machined according to your specifications",
           "button": "View details"
@@ -363,13 +363,13 @@
           "button": "View details"
         },
         "sliders": {
-          "name": "Sliders",
+          "name": "Plastic Plates",
           "category": "Motion",
           "shortDescription": "Technical part machined according to your specifications",
           "button": "View details"
         },
         "timingScrew": {
-          "name": "Timing Screws",
+          "name": "Machined Plastic Parts",
           "category": "Adjustment",
           "shortDescription": "Technical part machined according to your specifications",
           "button": "View details"

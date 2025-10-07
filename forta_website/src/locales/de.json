@@ -339,7 +339,7 @@
       "description": "Maßgeschneiderte Fertigung hochpräziser technischer Teile",
       "items": {
         "feedScrew": {
-          "name": "Transportschnecken",
+          "name": "Zuführ- und Synchronisationsschrauben",
           "category": "Antrieb",
           "shortDescription": "Technisches Teil nach Ihren Vorgaben gefertigt",
           "button": "Details anzeigen"
@@ -363,13 +363,13 @@
           "button": "Details anzeigen"
         },
         "sliders": {
-          "name": "Gleiter",
+          "name": "Kunststoffplatten",
           "category": "Bewegung",
           "shortDescription": "Technisches Teil nach Ihren Vorgaben gefertigt",
           "button": "Details anzeigen"
         },
         "timingScrew": {
-          "name": "Taktschnecken",
+          "name": "Bearbeitete Kunststoffteile",
           "category": "Einstellung",
           "shortDescription": "Technisches Teil nach Ihren Vorgaben gefertigt",
           "button": "Details anzeigen"

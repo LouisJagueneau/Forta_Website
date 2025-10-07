@@ -13,7 +13,7 @@ import Flanges from '../assets/Flanges.png'
 import GuidesImages from '../assets/LinearGuides.png'
 import RingsImage from '../assets/Rings.png'
 import SlidersImage from '../assets/Slider.png'
-const TimingScrew = '/api/placeholder/300/200';
+import PlasticParts from '../assets/PlasticParts.png';
 
 function CncParts() {
     const [activeSlide, setActiveSlide] = useState(0);
@@ -126,7 +126,7 @@ function CncParts() {
         },
         {
             name: t("cncPage.parts.items.timingScrew.name"),
-            img: TimingScrew,
+            img: PlasticParts,
             category: t("cncPage.parts.items.timingScrew.category"),
             shortDescription: t("cncPage.parts.items.timingScrew.shortDescription"),
             button : t("cncPage.parts.items.timingScrew.button"),

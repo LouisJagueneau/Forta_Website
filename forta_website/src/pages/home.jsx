@@ -13,10 +13,9 @@ import { SlEnergy } from "react-icons/sl";
 import { CiFilter, CiBoxes, CiMedicalCross, CiForkAndKnife } from "react-icons/ci"
 import { IoLayersOutline, IoSettingsOutline } from "react-icons/io5";
 import { GiMetalBar } from "react-icons/gi";
-import React from 'react';
 
 //components
-const IndustrieCard = React.lazy(() => import('../components/industrieCard'));
+import IndustrieCard  from '../components/industrieCard';
 import ServicesCard from '../components/servicesCard';
 
 function Home() {
